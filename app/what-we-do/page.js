@@ -24,7 +24,7 @@ const page = () => {
       <Tab tabs={whatWeDoTabs} getActiveTab={getActiveTab} />
 
       <div className="max-w-screen-xl mx-auto px-40 py-16 tracking-wide text-center space-y-4">
-        <h1 className="text-5xl">OVERVIEW</h1>
+        {/* <h1 className="text-5xl">OVERVIEW</h1> */}
         <p className="text-xl">
           Our journey began with narrowing down the focus on one of the most
           vital components of the global economy—the workforce. We have been

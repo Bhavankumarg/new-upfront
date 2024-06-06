@@ -184,13 +184,13 @@ export const coreTeam = [
     post: 'Director',
     logo: <FaLinkedin />,
   },
-  {
-    id: 2,
-    imageUrl: '/coreTeam/priyamvada.png',
-    name: 'Priyamvada Tiwari',
-    post: 'Associate Director, Platform & Policy',
-    logo: <FaLinkedin />,
-  },
+  // {
+  //   id: 2,
+  //   imageUrl: '/coreTeam/priyamvada.png',
+  //   name: 'Priyamvada Tiwari',
+  //   post: 'Associate Director, Platform & Policy',
+  //   logo: <FaLinkedin />,
+  // },
   {
     id: 3,
     imageUrl: '/coreTeam/sonali.png',
@@ -205,13 +205,13 @@ export const coreTeam = [
     post: 'Programme Manager',
     logo: <FaLinkedin />,
   },
-  {
-    id: 5,
-    imageUrl: '/coreTeam/annapurna.png',
-    name: 'Annapurna Chirravuri',
-    post: 'Knowledge Management & Learning Specialist',
-    logo: <FaLinkedin />,
-  },
+  // {
+  //   id: 5,
+  //   imageUrl: '/coreTeam/annapurna.png',
+  //   name: 'Annapurna Chirravuri',
+  //   post: 'Knowledge Management & Learning Specialist',
+  //   logo: <FaLinkedin />,
+  // },
   {
     id: 6,
     imageUrl: '/coreTeam/meeta.png',
@@ -219,13 +219,13 @@ export const coreTeam = [
     post: 'Lead, Operations',
     logo: <FaLinkedin />,
   },
-  {
-    id: 7,
-    imageUrl: '/coreTeam/sachin.png',
-    name: 'Sachin Naik',
-    post: 'Program Specialist',
-    logo: <FaLinkedin />,
-  },
+  // {
+  //   id: 7,
+  //   imageUrl: '/coreTeam/sachin.png',
+  //   name: 'Sachin Naik',
+  //   post: 'Program Specialist',
+  //   logo: <FaLinkedin />,
+  // },
   {
     id: 8,
     imageUrl: '/coreTeam/sandhya.png',
