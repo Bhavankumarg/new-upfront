@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  h1,
+  h2,
+  h3 {
+    color: #222222;
+  }
+  p {
+    font-size: 18px;
+    color: #4a4a4a;
+  }
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-left: 20px solid #4a4a4a;
+  border-bottom: 15px solid transparent;
+}
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-right: 20px solid #f40f34;
+  border-bottom: 15px solid transparent;
+}
+
+.triangle-red {
+  border-left: 20px solid #f40f34;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+
+#talkbubble {
+  width: 120px;
+  height: 80px;
+  background: #E8E8E8;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+#talkbubble:before {
+  content: "";
+  position: absolute;
+  left: 45%;
+  bottom: -15px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #E8E8E8;
+  opacity: 0; /* Hide the pseudo-element initially */
+  transition: opacity 0.3s, border-top-color 0.3s;
+}
+
+#talkbubble:hover {
+  background: red;
+  
+}
+
+#talkbubble:hover:before {
+  opacity: 1; /* Show the pseudo-element on hover */
+  border-top-color: red;
+
+}
+
+/* Additional styles for other talk bubbles */
+.talkbubble-container button:hover {
+  background: red;
+}
