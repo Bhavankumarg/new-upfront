@@ -46,7 +46,18 @@ const page = () => {
       <div className="bg-[url('/whatWeDo/rectangle.png')] bg-no-repeat bg-cover flex flex-col items-center p-20 text-center mb-12">
         <h1 className="text-5xl">OUR APPROACH</h1>
         <div className="bg-white py-10 px-24 mt-10">
-          <p className="text-xl text-[#222222]">
+
+          <div className="w-full flex justify-center">
+            <Image
+              src="/whatWeDo/ourApproach.png"
+              width={500}
+              height={500}
+              alt=""
+              className="mb-10 w-3/4"
+            />
+          </div>
+
+          <p className="text-xl text-[#222222] mt-10">
             Upfront prioritises the wellbeing of the formal and informal
             workforce, placing their health and happiness at the core of its
             work, upholding its commitment to the community. We employ
@@ -69,15 +80,6 @@ const page = () => {
             reinforcing its overall mission and vision for a healthy, wealthy
             and thriving workforce.
           </p>
-          <div className="w-full flex justify-center">
-            <Image
-              src="/whatWeDo/ourApproach.png"
-              width={500}
-              height={500}
-              alt=""
-              className="mt-10 w-3/4"
-            />
-          </div>
         </div>
       </div>
 
