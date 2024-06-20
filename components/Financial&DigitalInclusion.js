@@ -1,0 +1,85 @@
+import React from "react";
+import Image from "next/image";
+
+const Financial = () => {
+  return (
+    <>
+      <div className="">
+        <Image
+          src="/whatWeDo/tab-4.png"
+          width={600}
+          height={300}
+          alt=""
+          className="w-1/3 absolute -mt-28 ms-10"
+        />
+      </div>
+
+      <div className="flex mt-20">
+        <div className="w-1/2  bg-[#FFE8EC] p-4 pt-20">
+          <p className="text-4xl bold font-normal pb-5 pt-3 mt-10">
+            Financial & Digital Inclusion
+          </p>
+
+          <div className="flex flex-row ">
+            <div className="flex flex-col">
+              <Image
+                src="/whatWeDo/tab-img-9.svg"
+                width={100}
+                height={100}
+                alt=""
+                className="w-10"
+              />
+            </div>
+            <div className="flex flex-col px-3">
+              <p className="text-md font-medium ">
+                FINANCIAL PLANNING AND <br></br>SERVICE LINKAGES:
+              </p>
+            </div>
+          </div>
+          <p className="pt-3">
+            Financial literacy is the foundation of financial well-being. The
+            workshops and resources on financial planning, budgeting, and
+            saving, equip employees with practical skills to manage their
+            finances effectively. Whether it’s setting financial goals, creating
+            a budget, or building a savings plan along with the tools and
+            guidance needed to make informed financial decisions. Upfront also
+            bridges the gap between the workforce and a range of financial
+            institutions and service providers, ensuring they have access to the
+            products and resources they need to meet their financial goals be it
+            opening bank accounts, loans, investments to ensure their financial
+            and overall wellbeing.
+          </p>
+        </div>
+        <div className="w-1/2 bg-[#FFE8EC] p-4 pt-48">
+          <div className="flex flex-row ">
+            <div className="flex flex-col">
+              <Image
+                src="/whatWeDo/tab-img-10.svg"
+                width={100}
+                height={100}
+                alt=""
+                className="w-10"
+              />
+            </div>
+            <div className="flex flex-col px-3 ">
+              <p className="text-md font-medium ">
+                DIGITAL FINANCIAL <br></br> LITERACY:
+              </p>
+            </div>
+          </div>
+
+          <p className="pt-3">
+            In today’s digital age, understanding how to navigate digital
+            financial services is essential. Thus we provide information and
+            awareness on digital financial literacy, covering topics such as
+            online banking, mobile payments, and cybersecurity. By improving
+            digital literacy skills, we empower our workforce to access and
+            utilize digital financial services safely and efficiently.
+          </p>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Financial;

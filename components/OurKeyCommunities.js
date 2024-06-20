@@ -14,7 +14,7 @@ const OurKeyCommunities = () => {
     arrows: false,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 1 ,
     autoplay: true,
     responsive: [
       {
@@ -38,10 +38,10 @@ const OurKeyCommunities = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           infinite: true,
-          dots: false,
+          dots: true,
         },
       },
     ],
@@ -56,7 +56,7 @@ const OurKeyCommunities = () => {
         <div>
           <Slider {...settings}>
             <div>
-              <div className="flex flex-col items-center space-y-3">
+              <div className="lg:flex lg:flex-col items-center space-y-3">
                 <Image
                   src="/whatWeDo/streetVendors.png"
                   width={300}

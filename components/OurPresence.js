@@ -5,8 +5,8 @@ import React from 'react'
 
 const OurPresence = () => {
   return (
-    <div className="flex">
-      <div className="w-1/2 relative">
+    <div className="lg:flex">
+      <div className="lg:w-1/2 relative">
         <div className="group relative">
           <Image
             src="/homePage/map.png"
@@ -18,6 +18,7 @@ const OurPresence = () => {
           <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300"></div>
           <div className="absolute inset-0 flex items-center cursor-pointer justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <Image
+            className='w-64 lg:w-4/5'
               src="/homePage/indiaMap.png"
               width={500}
               height={500}
@@ -27,8 +28,8 @@ const OurPresence = () => {
         </div>
       </div>
 
-      <div className="w-1/2 bg-red-600 flex flex-col justify-center items-center">
-        <div className="w-3/5 space-y-4">
+      <div className="lg:w-1/2 bg-red-600 flex flex-col justify-center items-center">
+        <div className="lg:w-3/5 space-y-4 lg:p-0 p-5 ">
           <h2 className="text-6xl text-white">
             OUR <br /> PRESENCE
           </h2>

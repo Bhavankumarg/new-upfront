@@ -4,18 +4,21 @@ export const homeBannerCarousel = [
   {
     id: 1,
     imageUrl: '/homePage/homeBanner1.png',
+    mobileimage : "/homePage/mobile_banner1.png",
     title: 'Making Wellbeing Reality for Workforces!',
     description: 'By working with the workforce and the systems',
   },
   {
     id: 2,
     imageUrl: '/homePage/homeBanner2.png',
+    mobileimage : "/homePage/mobile_banner2.png",
     title: 'Making Wellbeing Reality for Workforces!',
     description: 'By changing mindsets, behaviours and practices',
   },
   {
     id: 3,
     imageUrl: '/homePage/homeBanner3.png',
+    mobileimage : "/homePage/mobile_banner3.png",
     title: 'Making Wellbeing Reality for Workforces!',
     description:
       'By improving skills, financial security, processes and policies',
@@ -23,12 +26,14 @@ export const homeBannerCarousel = [
   {
     id: 4,
     imageUrl: '/homePage/homeBanner4.png',
+    mobileimage : "/homePage/mobile_banner4.png",
     title: 'Making Wellbeing Reality for Workforces!',
     description: 'By building agency, ensuring voices and choices',
   },
   {
     id: 5,
     imageUrl: '/homePage/homeBanner5.png',
+    mobileimage : "/homePage/mobile_banner5.png",
     title: 'Making Wellbeing Reality for Workforces!',
     description: 'By establishing partnerships and collaborations',
   },
@@ -64,27 +69,27 @@ export const whoAreWeCarousel = [
 export const ourReach = [
   {
     id: 1,
-    count: '582,405',
+    count: '582405',
     area: 'Factory Workforce',
   },
   {
     id: 2,
-    count: '1,687',
+    count: '1687',
     area: 'Frontline Health Workforce',
   },
   {
     id: 3,
-    count: '40,830',
+    count: '40830',
     area: 'Street Vendor Workforce',
   },
   {
     id: 4,
-    count: '65,032',
+    count: '65032',
     area: 'Women Workforce',
   },
 ]
 
-export const thematicAreas = [
+export const    thematicAreas = [
   {
     id: 1,
     logo: '/homePage/thematicAreas/agency.svg',
@@ -449,12 +454,12 @@ export const insightsTabs = [
     id: 4,
     tab: 'News and Publications',
   },
+  // {
+  //   id: 5,
+  //   tab: 'Social Media',
+  // },
   {
     id: 5,
-    tab: 'Social Media',
-  },
-  {
-    id: 6,
     tab: 'All',
   },
 ]
@@ -723,19 +728,19 @@ export const impact = [
   {
     id: 1,
     imageUrl: '/whatWeDo/constructionWorkers.png',
-    count: '507,670',
+    count: '507670',
     title: 'Construction workers',
   },
   {
     id: 2,
     imageUrl: '/whatWeDo/womenSexWorkers.png',
-    count: '33,58,040',
+    count: '3358040',
     title: 'Women sex workers',
   },
   {
     id: 3,
     imageUrl: '/whatWeDo/factoryWorkers1.png',
-    count: '315,564',
+    count: '315564',
     title: 'Factory workers',
   },
   {
@@ -747,25 +752,25 @@ export const impact = [
   {
     id: 5,
     imageUrl: '/whatWeDo/farmers.png',
-    count: '30,03,585',
+    count: '3003585',
     title: 'Farmers',
   },
   {
     id: 6,
     imageUrl: '/whatWeDo/fisherfolks.png',
-    count: '306,811',
+    count: '306811',
     title: 'Fisherfolks',
   },
   {
     id: 7,
     imageUrl: '/whatWeDo/informalWorkers.png',
-    count: '453,522*',
+    count: '453522',
     title: 'Informal Workers**',
   },
   {
     id: 8,
     imageUrl: '/whatWeDo/streetVendors1.png',
-    count: '352,970',
+    count: '352970',
     title: 'Street Vendors',
   },
 ]

@@ -9,11 +9,11 @@ import 'slick-carousel/slick/slick-theme.css'
 
 const OurPartners = () => {
   var settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     arrows: false,
     speed: 1000,
-    slidesToShow: 5,
+    slidesToShow: 5 ,
     slidesToScroll: 2,
     autoplay: true,
     responsive: [
@@ -38,21 +38,22 @@ const OurPartners = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           infinite: true,
           dots: false,
+          // arrows: true,
         },
       },
     ],
   }
 
   return (
-    <div className="bg-customLightGray px-10 py-16 text-center">
-      <h1 className="text-6xl mb-10">
-        <span className="text-red-600">OUR</span> COLLABORATORS
+    <div className="bg-customLightGray lg:px-10 py-16">
+      <h1 className="lg:text-6xl text-5xl mb-10 lg:px-0 px-8 text-center" >
+        <span className="text-red-600 ">OUR</span> COLLABORATORS
       </h1>
-      <div className="ps-11">
+      <div className="lg:ps-11 ps-32 pe-0">
         <Slider className="" {...settings}>
           <div>
             <Image

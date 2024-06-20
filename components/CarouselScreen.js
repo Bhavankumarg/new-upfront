@@ -18,14 +18,20 @@ const CarouselScreen = ({ details }) => {
             >
               <img
                 src={item.imageUrl}
-                class={`absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2`}
+                class={`absolute hidden lg:block w-full lg:h-auto h-[60%] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 pt-28`}
                 alt="..."
               />
-              <div className="absolute top-1/2 left-52 w-1/3">
+              <img
+                src={item.mobileimage}
+                class={`absolute block lg:hidden w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2`}
+                alt="..."
+              />
+
+              <div className="absolute top-1/2 lg:left-52 lg:w-1/3 w-80 lg:ps-0  ps-6">
                 <h2 className="text-4xl text-white bg-red-600 p-1 inline-block">
                   {item.title}
                 </h2>
-                <p className="text-4xl text-white">{item.description}</p>
+                <p className="lg:text-4xl text-3xl text-white mt-2">{item.description}</p>
               </div>
             </div>
           )
@@ -36,9 +42,9 @@ const CarouselScreen = ({ details }) => {
         class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         data-carousel-prev
       >
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full lg:bg-white/30 dark:bg-gray-800/30 lg:group-hover:bg-white/50 lg:dark:group-hover:bg-gray-800/60 lg:group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
           <svg
-            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180 hidden lg:block"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -52,7 +58,7 @@ const CarouselScreen = ({ details }) => {
               d="M5 1 1 5l4 4"
             />
           </svg>
-          <span class="sr-only">Previous</span>
+          <span class=" sr-only">Previous</span>
         </span>
       </button>
       <button
@@ -60,9 +66,9 @@ const CarouselScreen = ({ details }) => {
         class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         data-carousel-next
       >
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full lg:bg-white/30 dark:bg-gray-800/30 lg:group-hover:bg-white/50 lg:dark:group-hover:bg-gray-800/60 lg:group-focus:ring-4 group-focus:outline-none">
           <svg
-            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180 hidden lg:block"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

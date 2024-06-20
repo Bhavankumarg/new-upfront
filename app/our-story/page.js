@@ -23,7 +23,7 @@ const page = () => {
       </div>
       <Tab tabs={ourStoryTabs} getActiveTab={getActiveTab} />
 
-      <div className="px-10 py-16">
+      <div className="lg:px-24 px-12 py-16">
         <h1 className="text-6xl">
           <span className="text-red-600">WHY</span> WORKFORCE <br /> WELLBEING?
         </h1>
@@ -123,7 +123,7 @@ const page = () => {
       <OurMission />
 
       <div className="px-10 py-16">
-        <h1 className="text-6xl">
+        <h1 className="text-6xl lg:px-16 px-7">
           <span className="text-red-600">OUR</span> <br /> HISTORY
         </h1>
         <div className="flex pt-16 justify-center">
@@ -131,7 +131,14 @@ const page = () => {
             src="/ourStory/ourHistory.png"
             width={1000}
             height={700}
-            className="w-11/12"
+            className="w-11/12 hidden lg:block"
+            alt=""
+          />
+           <Image
+            src="/ourStory/ourHistoryMobile.png"
+            width={1000}
+            height={700}
+            className="w-11/12 block lg:hidden"
             alt=""
           />
         </div>

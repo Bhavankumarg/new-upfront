@@ -14,14 +14,14 @@ const ThematicAreas = () => {
   }
 
   return (
-    <div className="flex items-center gap-4 bg-customGray">
+    <div className="lg:flex items-center gap-4 bg-customGray">
       <div className="flex">
-        <div className="bg-customGrayMd h-full text-white flex items-center justify-center px-10 py-28">
+        <div className="lg:bg-customGrayMd h-full text-white flex items-center justify-center px-10 py-28">
           <h2 className="text-4xl text-white">
             THEMATIC <br /> AREAS
           </h2>
         </div>
-        <div className="triangle-right self-center"></div>
+        <div className="triangle-right self-center hidden lg:block"></div>
       </div>
       <ul
         className="flex gap-14 ps-10 pe-40 overflow-x-auto hide-scrollbar scroll-smooth focus:scroll-auto cursor-pointer"
@@ -29,7 +29,7 @@ const ThematicAreas = () => {
         ref={ulRef}
       >
         {thematicAreas.map((item) => {
-          return (
+          return (  
             <li
               key={item.id}
               className={`ps-5 ${

@@ -1,23 +1,23 @@
 import Image from 'next/image'
-
+import Link from 'next/link'
 const WhatWeDo = () => {
   return (
-    <div className="my-16 ps-10 flex justify-between">
-      <div className="w-2/5 flex flex-col justify-evenly items-start">
+    <div className="my-16 ps-10 lg:flex justify-between">
+      <div className="lg:w-2/5 flex flex-col justify-evenly items-start">
         <h1 className="text-6xl">
           <span className="text-red-600">WHAT</span> <br /> WE <br /> DO?
         </h1>
-        <p className="w-3/5 tracking-wide">
+        <p className="lg:w-3/5 tracking-wide me-3 lg:mt-0 mt-5">
           Upfront aims to achieve workforce wellbeing by unlocking human
           potential, making ‘systems’ work, orchestrating investments,
           collaborations and partnerships.Thereby making a critical value
           proposition to improve social and economic outcomes impacting people
           and planet wellbeing through scale, impact and sustainability.
         </p>
-        <button className="border border-gray-300 px-5 py-2">Know more</button>
+        <Link href="/what-we-do"><button className="border border-gray-300 px-5 py-2 lg:mt-0 mt-5">Know more</button></Link>
       </div>
 
-      <div className="w-3/5">
+      <div className="lg:w-3/5 lg:me-0 me-10 lg:mt-0 mt-10">
         <Image
           src="/homePage/whatWeDo.png"
           width={650}

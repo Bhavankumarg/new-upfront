@@ -307,7 +307,7 @@ const page = () => {
           <p className="text-black text-5xl">CONTACT INFO</p>
         </div>
 
-        <div class="grid grid-cols-3 gap-4 text-xl border-b border-gray-400">
+        <div class="lg:grid grid-cols-3 gap-4 text-xl border-b border-gray-400">
           <div class=" p-4 pt-7">
             Office<br></br> Address:
           </div>
@@ -327,15 +327,15 @@ const page = () => {
           </div>
         </div>
 
-        <div class="grid grid-cols-3 gap-4 text-xl border-b border-gray-400 ">
-          <div class="p-4">Email ID:</div>
-          <div class="p-4">Info@upfrontglobal.com</div>
+        <div class="lg:grid grid-cols-3 gap-4 text-xl border-b border-gray-400 ">
+          <div class="lg:p-4 pt-5 px-4">Email ID:</div>
+          <div class="lg:p-4 px-4">Info@upfrontglobal.com</div>
           <div className="p-4"></div>
         </div>
 
-        <div class="grid grid-cols-3 gap-4 text-xl">
-          <div class="p-4">Phone Number:</div>
-          <div class="p-4">+91 01234567890</div>
+        <div class="lg:grid grid-cols-3 lg:gap-4 text-xl">
+          <div class="lg:p-4 px-4 pt-5">Phone Number:</div>
+          <div class="lg:p-4 px-4">+91 01234567890</div>
           <div className="p-4"></div>
         </div>
       </div>

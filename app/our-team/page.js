@@ -16,7 +16,7 @@ const page = () => {
           <span className="text-red-600">CORE</span> TEAM
         </h1>
         <hr />
-        <ul className="flex  flex-wrap gap-13 p-3 mt-8">
+        <ul className="lg:flex  flex-wrap gap-13 p-3 mt-8">
           {coreTeam.map((item) => {
             return (
               <li key={item.id} className="border-s border-black w-1/5">
