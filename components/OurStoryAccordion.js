@@ -4,7 +4,7 @@ import WeBelive from '@components/WeBelieve'
 import OurVision from "./OurVision";
 import OurMission from "./OurMission";
 const OurStoryAccordion = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
   const sectionRefs = useRef([]);
   const workforceRef = useRef(null);
   const webelievehRef = useRef(null);

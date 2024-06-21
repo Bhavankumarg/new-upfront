@@ -10,7 +10,7 @@ const InsightsPageMobile = () => {
   const router = useRouter()
   const [visibleItems, setVisibleItems] = useState(8)
   const [activeTab, setActiveTab] = useState('Stories')
-  const [activeIndex, setActiveIndex] = useState(null)
+  const [activeIndex, setActiveIndex] = useState(0)
 
   const storiesRef = useRef(null)
   const casestudiesRef = useRef(null)
@@ -54,10 +54,10 @@ const InsightsPageMobile = () => {
     <>
       <div className='block lg:hidden'>
 
-      <div className="bg-[url('/insights/banner.png')] bg-cover h-[60vh] flex flex-col ps-16 pb-8">
+      {/* <div className="bg-[url('/insights/banner.png')] bg-cover h-[60vh] flex flex-col ps-16 pb-8">
         <Header />
         <h1 className="text-white text-6xl mt-auto">INSIGHTS</h1>
-      </div>
+      </div> */}
 
       <div className="">
         <div id="accordion-collapse" data-accordion="collapse">

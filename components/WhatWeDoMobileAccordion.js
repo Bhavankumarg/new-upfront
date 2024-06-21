@@ -6,7 +6,7 @@ import ThematicDesktop from './ThematicDesktop';
 import ThematicMobile from "./ThematicMobile";
 
 const WhatWeDoMobileAccordion = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
   const sectionRefs = useRef([]);
   const overviewRef = useRef(null);
   const ourApproachRef = useRef(null);

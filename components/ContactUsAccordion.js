@@ -4,7 +4,7 @@ import { Button } from "flowbite-react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const ContactUsAccordion = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
   const sectionRefs = useRef([]);
   const partnerRef = useRef(null);
   const careerRef = useRef(null);
@@ -101,14 +101,14 @@ const ContactUsAccordion = () => {
 </div>
 
       <div className="bg-[#E8E8E8] pb-10" ref={careerRef}>
-        <div className="px-14 mt-10 ">
-          <p className="text-black text-5xl pt-10">
+        <div className=" mt-10 ">
+          <p className="text-black text-5xl pt-10 px-10">
             CAREER <br /> OPPORTUNITIES
           </p>
-          <p className="text-black mt-4 text-xl">
+          <p className="text-black mt-4 text-xl px-10">
             We offer rewarding career opportunities for XYZ aspirants.
           </p>
-          <p className="text-xl text-red-500 mt-3">Current Openings</p>
+          <p className="text-xl text-red-500 mt-3 px-10">Current Openings</p>
 
           <div className="pt-10">
             <div id="accordion-collapse" data-accordion="collapse">
@@ -198,40 +198,7 @@ const ContactUsAccordion = () => {
                 aria-labelledby="accordion-collapse-heading-3"
               >
                 <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                  <p class="mb-2 text-gray-500 dark:text-gray-400">
-                    The main difference is that the core components from
-                    Flowbite are open source under the MIT license, whereas
-                    Tailwind UI is a paid product. Another difference is that
-                    Flowbite relies on smaller and standalone components,
-                    whereas Tailwind UI offers sections of pages.
-                  </p>
-                  <p class="mb-2 text-gray-500 dark:text-gray-400">
-                    However, we actually recommend using both Flowbite, Flowbite
-                    Pro, and even Tailwind UI as there is no technical reason
-                    stopping you from using the best of two worlds.
-                  </p>
-                  <p class="mb-2 text-gray-500 dark:text-gray-400">
-                    Learn more about these technologies:
-                  </p>
-                  <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
-                    <li>
-                      <a
-                        href="https://flowbite.com/pro/"
-                        class="text-blue-600 dark:text-blue-500 hover:underline"
-                      >
-                        Flowbite Pro
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://tailwindui.com/"
-                        rel="nofollow"
-                        class="text-blue-600 dark:text-blue-500 hover:underline"
-                      >
-                        Tailwind UI
-                      </a>
-                    </li>
-                  </ul>
+                 
                 </div>
               </div>
             </div>
@@ -240,100 +207,98 @@ const ContactUsAccordion = () => {
 
           {/* form start */}
 
-          <div className="bg-[#4A4A4A] py-1 px-5 mt-5 ">
-            <div className=" mt-10 ">
-              <p className="text-white ">
-                If you would like to explore an opportunity to work with
-                Upfront,
-              </p>
-              <p className="text-white">please fill up this form and submit</p>
+          <div className="bg-[#4A4A4A] py-1 px-5 mt-5">
+  <div className="mt-10">
+    <p className="text-white">
+      If you would like to explore an opportunity to work with Upfront,
+    </p>
+    <p className="text-white">please fill up this form and submit</p>
 
-              <div className="mt-5 p-5">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  <div className="mb-3">
-                    <input
-                      type="text"
-                      className="form-select border border-gray-500 w-full px-3 py-2"
-                      id="*firstName"
-                      placeholder="*First Name"
-                      name="*firstName"
-                      required
-                    />
-                  </div>
-                  <div className="mb-3 col-span-3 md:col-span-1">
-                    <input
-                      type="tel"
-                      className="form-select border border-gray-500 w-full px-3 py-2"
-                      id="phone"
-                      placeholder="*Mobile Number"
-                      name="phone"
-                      required
-                    />
-                  </div>
+    <div className="mt-5 p-5">
+      <div className="flex flex-wrap gap-4 justify-center">
+        <div className="mb-3 w-full md:w-1/3">
+          <input
+            type="text"
+            className="form-select border border-gray-500 w-full px-3 py-2"
+            id="*firstName"
+            placeholder="*First Name"
+            name="*firstName"
+            required
+          />
+        </div>
+        <div className="mb-3 w-full md:w-1/3">
+          <input
+            type="tel"
+            className="form-select border border-gray-500 w-full px-3 py-2"
+            id="phone"
+            placeholder="*Mobile Number"
+            name="phone"
+            required
+          />
+        </div>
+        <div className="mb-3 w-full md:w-1/3">
+          <input
+            type="email"
+            className="form-select border border-gray-500 w-full px-3 py-2"
+            id="email*"
+            placeholder="*Email"
+            name="email"
+            required
+          />
+        </div>
+        <div className="mb-3 w-full md:w-1/3">
+          <select
+            className="form-select border border-gray-500 text-gray-500 w-full px-3 py-2"
+            id="jobType"
+            name="jobType"
+            required
+          >
+            <option value="">*Job Type</option>
+            <option value="Part-Time">Part-Time</option>
+            <option value="Full-Time">Full-Time</option>
+          </select>
+        </div>
+        <div className="mb-3 w-full md:w-1/3">
+          <select
+            className="form-select border border-gray-500 text-gray-500 w-full px-3 py-2"
+            id="Applying For"
+            name="Applying For"
+            required
+          >
+            <option value="Project A">*Applying For</option>
+            <option value="Project A">Project A</option>
+            <option value="Project B">Project B</option>
+            <option value="Project C">Project C</option>
+          </select>
+        </div>
+        <div className="mb-3 w-full md:w-1/3">
+          <input
+            type="file"
+            className="form-select text-gray-500 bg-white w-full border px-3"
+            id="location"
+            placeholder="Attach Your Cv"
+            name="location"
+            required
+          />
+        </div>
+      </div>
+      <div className="text-center mt-5">
+        <button
+          type="button"
+          className="focus:outline-none w-44 rounded-sm text-white bg-red-500 hover:bg-red-600 font-normal text-md px-2 py-2"
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
-                  <div className="mb-3">
-                    <input
-                      type="email"
-                      className="form-select border border-gray-500 w-full px-3 py-2"
-                      id="email*"
-                      placeholder="*Email"
-                      name="email"
-                      required
-                    />
-                  </div>
-
-                  <div className="mb-3 col-span-3 md:col-span-1">
-                    <select
-                      className="form-select border border-gray-500 text-gray-500 w-full px-3 py-2"
-                      id="jobType"
-                      name="jobType"
-                      required
-                    >
-                      <option value="">*Job Type</option>
-                      <option value="Part-Time">Part-Time</option>
-                      <option value="Full-Time">Full-Time</option>
-                    </select>
-                  </div>
-
-                  <div className="mb-3">
-                    <select
-                      className="form-select border border-gray-500 text-gray-500  w-full px-3 py-2"
-                      id="Applying For"
-                      name="Applying For"
-                      required
-                    >
-                      <option value="Project A">*Applying For</option>
-                      <option value="Project A">Project A</option>
-                      <option value="Project B">Project B</option>
-                      <option value="Project C">Project C</option>
-                    </select>
-                  </div>
-
-                  <div className="mb-3 col-span-3 md:col-span-1">
-                    <input
-                      type="file"
-                      className="form-select text-gray-500 bg-white actual-file-input  w-full border"
-                      id="location"
-                      placeholder="Attach Your Cv"
-                      name="location"
-                      required
-                    />
-                  </div>
-                  <button
-                    type="button"
-                    className="focus:outline-none w-44  rounded-sm text-white bg-red-500 hover:bg-red-600  font-normal text-md px-2 py-2 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
-                  >
-                    submit
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
           {/* form end */}
         </div>
       </div>
 
-      <div className="mx-14 pb-5" ref={contactRef}>
+      <div className="px-10 pb-5" ref={contactRef}>
         <div className="mt-10 ">
           <p className="text-black text-5xl">CONTACT INFO</p>
         </div>

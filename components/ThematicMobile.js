@@ -7,7 +7,7 @@ import Workplace from "./Workplace";
 import SocialProtection from "./SocialProtection";
 
 const ThematicMobile = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);

@@ -35,11 +35,12 @@ const page = () => {
 
   return (
     <>
-     <div className='hidden lg:block'>
      <div className="bg-[url('/insights/banner.png')] bg-cover h-[60vh] flex flex-col ps-16 pb-8">
         <Header />
         <h1 className="text-white text-6xl mt-auto">INSIGHTS</h1>
       </div>
+     <div className='hidden lg:block'>
+    
       
       <Tab tabs={insightsTabs} getActiveTab={getActiveTab} />
 
