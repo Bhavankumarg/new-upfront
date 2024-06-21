@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const OurVision = () => {
   return (
-    <div className="lg:flex bg-customBlack">
+    <div className="lg:flex bg-customBlack pb-16 lg:pb-0">
       <div className="lg:flex lg:w-2/5">
         <div className="bg-customRed flex flex-col justify-center px-10 py-28 space-y-2">
           <h2 className="lg:text-5xl text-7xl text-white">

@@ -1,8 +1,20 @@
+'use client'
 import Header from '@components/Header'
 import { coreTeam, ourAdvisors } from '@utils/data'
 import Image from 'next/image'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+// import './App.css';
 
 const page = () => {
+  useEffect(() => {
+    AOS.init({
+     
+    });
+  }, []);
+
+
   return (
     <>
       <div className="bg-[url('/coreTeam/banner.png')] bg-cover h-[60vh] flex flex-col">
@@ -11,33 +23,28 @@ const page = () => {
           Collage of Upfront team pictures
         </h1>
       </div>
-      <div className="px-10 py-16 ">
-        <h1 className="text-6xl mb-6">
+      <div className="px-10 py-16 " data-aos="fade-down"data-aos-duration="1000">
+        <h1 className="text-6xl mb-6 lg:px-16">
           <span className="text-red-600">CORE</span> TEAM
         </h1>
         <hr />
-        <ul className="lg:flex  flex-wrap gap-13 p-3 mt-8">
-          {coreTeam.map((item) => {
+        <ul className="grid lg:grid-cols-4 gap-8 container mx-auto" data-aos="fade-up">
+          {coreTeam.map((item, index) => {
             return (
-              <li key={item.id} className="border-s border-black w-1/5">
-                <div className="ps-3 h-full aspect-w-1 aspect-h-1 flex flex-col">
-                  <Image
-                    src={item.imageUrl}
-                    width={250}
-                    height={250}
-                    alt={item.name}
-                    className="object-cover mb-3"
-                  />
-                  <p>{item.name}</p>
-                  <p className="text-[#7E7E7E] w-9/12 mb-3">{item.post}</p>
-                  <p className="text-4xl text-[#0177B7] mt-auto">{item.logo}</p>
-                </div>
+              <li 
+                key={item.id} 
+                className={`p-3 ${index % 2 === 1 ? 'lg:border-s-2 border-gray-400' : ''} lg:${index % 4 !== 0 ? 'border-s-2 border-gray-400' : ''}`}
+              >
+                <img src={item.imageUrl} className=' mx-auto pt-2'/>
+                <p className="pt-2">{item.name}</p>
+                <p className="text-[#7E7E7E] pt-2">{item.post}</p>
+                <p className="text-4xl text-[#0177B7] mt-3 text-center">{item.logo}</p>
               </li>
             )
           })}
         </ul>
       </div>
-{/* 
+      {/* 
       <div className="px-10 pt-10 pb-16 bg-customLightGray/25 ">
         <h1 className="text-6xl mb-6">
           <span className="text-red-600">OUR</span> ADVISORS

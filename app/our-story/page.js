@@ -8,8 +8,36 @@ import ThematicAreas from '@components/ThematicAreas'
 import { ourStoryTabs } from '@utils/data'
 import Image from 'next/image'
 import WeBelive from '@components/WeBelieve'
+import { useRef } from 'react'
 const page = () => {
-  const getActiveTab = (tab) => {
+  const worforceRef = useRef(null);
+  const webelievehRef = useRef(null);
+  const visionmissionRef = useRef(null);
+  const ourhistoryRef = useRef(null);
+
+    const scrollToSection = (ref) => {
+      if (ref.current) {
+        ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    };
+    const getActiveTab = (tab) => {
+      switch (tab) {
+        case "Why Workforce Wellbeing?":
+          scrollToSection(worforceRef);
+          break;
+        case "We Believe":
+          scrollToSection(webelievehRef);
+          break;
+        case "Vision and Mission":
+        scrollToSection(visionmissionRef);
+        break;
+      case "Our History":
+        scrollToSection(ourhistoryRef);
+        break;
+      
+      default:
+        console.log(tab);
+    }
     console.log(tab)
   }
 
@@ -23,7 +51,7 @@ const page = () => {
       </div>
       <Tab tabs={ourStoryTabs} getActiveTab={getActiveTab} />
 
-      <div className="lg:px-24 px-12 py-16">
+      <div className="lg:px-24 px-10 py-16" ref={worforceRef}>
         <h1 className="text-6xl">
           <span className="text-red-600">WHY</span> WORKFORCE <br /> WELLBEING?
         </h1>
@@ -107,7 +135,7 @@ const page = () => {
         </div>
       </div> */}
 
-      <div className="px-10 pb-16 flex justify-center">
+      <div className=" pb-16 hidden lg:block container mx-auto flex justify-center">
         <Image
           src="/ourStory/workForceWellbeing.png"
           width={1000}
@@ -116,13 +144,28 @@ const page = () => {
           alt=""
         />
       </div>
+      <div className="pb-16 block lg:hidden mx-auto container flex justify-center">
+        <Image
+          src="/ourStory/workForceWellbeingMobile.png"
+          width={1000}
+          height={700}
+          className="w-11/12"
+          alt=""
+        />
+      </div>
 
       {/* <ThematicAreas /> */}
+      <div ref={webelievehRef}>
       <WeBelive/>
+      </div>
+      <div ref={visionmissionRef}>
       <OurVision />
+      </div>
+      <div>
       <OurMission />
+      </div>
 
-      <div className="px-10 py-16">
+      <div className="px-10 py-16" ref={ourhistoryRef}>
         <h1 className="text-6xl lg:px-16 px-7">
           <span className="text-red-600">OUR</span> <br /> HISTORY
         </h1>

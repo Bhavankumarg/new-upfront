@@ -9,13 +9,13 @@ const OurReach = () => {
       <h1 className="text-6xl">
         <span className="text-red-600">OUR</span> <br /> REACH
       </h1>
-      <ul className="lg:flex gap-14 lg:px-20">
+      <ul className="lg:flex gap-14 lg:px-20 grid grid-cols-2">
         {ourReach.map((item, index) => {
           return (
             <li
               key={item.id}
-              className={`ps-5 ${
-                index === 0 ? '' : 'border-s-2 border-gray-400'
+              className={`lg:ps-5 ps-2 ${
+                index === 0 ? '' : 'lg:border-s-2 lg:border-b-0 border-gray-400'
               }`}
             >
               <div className="space-y-4 lg:mt-0 mt-5">

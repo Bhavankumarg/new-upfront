@@ -49,14 +49,14 @@ const OurKeyCommunities = () => {
 
   return (
     <>
-      <div className="space-y-5 px-10 mb-10 text-center">
+      <div className="space-y-5 lg:px-10 mb-10 text-center">
         <h1 className="text-6xl mb-10">
           OUR KEY <br /> COMMUNITIES
         </h1>
         <div>
           <Slider {...settings}>
             <div>
-              <div className="lg:flex lg:flex-col items-center space-y-3">
+              <div className="flex flex-col items-center space-y-3">
                 <Image
                   src="/whatWeDo/streetVendors.png"
                   width={300}

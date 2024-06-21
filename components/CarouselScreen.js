@@ -27,11 +27,11 @@ const CarouselScreen = ({ details }) => {
                 alt="..."
               />
 
-              <div className="absolute top-1/2 lg:left-52 lg:w-1/3 w-80 lg:ps-0  ps-6">
-                <h2 className="text-4xl text-white bg-red-600 p-1 inline-block">
+              <div className="absolute lg:top-[40%] top-[60%] lg:left-52 lg:w-1/3 w-96 lg:ps-0  ps-6">
+                <h2 className="lg:text-4xl text-2xl text-white bg-red-600 p-1 inline-block">
                   {item.title}
                 </h2>
-                <p className="lg:text-4xl text-3xl text-white mt-2">{item.description}</p>
+                <p className="lg:text-5xl text-3xl text-white mt-2">{item.description}</p>
               </div>
             </div>
           )

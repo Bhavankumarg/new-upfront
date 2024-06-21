@@ -10,13 +10,13 @@ const HealthWellbeing = () =>{
                 width={600}
                 height={300}
                 alt=""
-                className="w-1/3 absolute -mt-28 ms-10"
+                className="lg:w-1/3 lg:absolute lg:-mt-28 lg:ms-10"
               />
               </div>
              
 
-              <div className="flex mt-20">
-                <div className="w-1/2  bg-[#FFE8EC] p-4 pt-20 ">
+              <div className="lg:flex lg:mt-20">
+                <div className="lg:w-1/2  bg-[#FFE8EC] p-4 lg:pt-20 ">
                   <p className="text-4xl bold font-normal pb-5 pt-3 mt-10">
                     Health & Wellbeing
                   </p>
@@ -45,7 +45,7 @@ const HealthWellbeing = () =>{
                     workplace systems to promote overall wellness.
                   </p>
                 </div>
-                <div className="w-1/2 bg-[#FFE8EC] p-4 pt-48">
+                <div className="lg:w-1/2 bg-[#FFE8EC] p-4 lg:pt-48">
                   <div className="flex flex-row ">
                     <div className="flex flex-col">
                       <Image
@@ -72,8 +72,8 @@ const HealthWellbeing = () =>{
                 </div>
               </div>
 
-              <div className="flex">
-                <div className="w-1/2  bg-[#FFE8EC] p-4">
+              <div className="lg:flex">
+                <div className="lg:w-1/2  bg-[#FFE8EC] p-4">
                   <div className="flex flex-row ">
                     <div className="flex flex-col">
                       <Image
@@ -98,7 +98,7 @@ const HealthWellbeing = () =>{
                     well-being.
                   </p>
                 </div>
-                <div class="w-1/2  bg-[#FFE8EC] p-4">
+                <div class="lg:w-1/2  bg-[#FFE8EC] p-4">
                   <div className="flex flex-row ">
                     <div className="flex flex-col">
                       <Image

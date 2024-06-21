@@ -21,7 +21,7 @@ const WhoAreWe = () => {
           enterprise platform that enhances the health and wealth of vulnerable
           people and the planet.
         </p>
-        <Link href="/">
+        <Link href="/our-story">
           <button className="border border-gray-300 px-5 py-2">
             Find out more
           </button>

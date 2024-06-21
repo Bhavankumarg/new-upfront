@@ -38,6 +38,7 @@ const page = () => {
         <Header />
         <h1 className="text-white text-6xl mt-auto">INSIGHTS</h1>
       </div>
+      
       <Tab tabs={insightsTabs} getActiveTab={getActiveTab} />
 
       <div className="px-10 py-16 ">
@@ -50,7 +51,7 @@ const page = () => {
             .slice(0, visibleItems)
             .map((item) => {
               return (
-                <li key={item.id} className="border-s border-black mb-10">
+                <li key={item.id} className="lg:border-s lg:border-black mb-10">
                   <div className="ps-3 w-80">
                     <div className="relative">
                       <Image

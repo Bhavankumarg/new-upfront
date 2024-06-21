@@ -3,11 +3,34 @@
 import Header from '@components/Header'
 import Tab from '@components/Tab'
 import { contactUsTabs } from '@utils/data'
+import { Button } from 'flowbite-react'
+import { FaArrowRightLong } from "react-icons/fa6";
+import { useRef } from 'react'
 
 const page = () => {
-  const getActiveTab = (tab) => {
+
+  const partnerRef = useRef(null);
+  const careerRef = useRef(null);
+  const contactRef = useRef(null);
+  
+    const scrollToSection = (ref) => {
+      if (ref.current) {
+        ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    };
+    const getActiveTab = (tab) => {
+      switch (tab) {
+        case "Partner with us":
+          scrollToSection(partnerRef);
+          break;
+        case "Career Opportunities":
+          scrollToSection(careerRef);
+          break;
+        case "Contact Info":
+        scrollToSection(contactRef);
+        break;
     console.log(tab)
-  }
+  }}
   return (
     <>
       <div className="bg-[url('/contactUs/banner.png')] bg-cover h-[60vh]">
@@ -15,14 +38,28 @@ const page = () => {
       </div>
       <Tab tabs={contactUsTabs} getActiveTab={getActiveTab} />
 
-      <div className="ms-16 mt-10">
-        <p className="text-black text-5xl ">GET INVOLVED</p>
-        <p className="text-black mt-4 text-xl">
-          Join the Force behind the wellbeing of the workforce
-        </p>
-      </div>
+      <div className="lg:ms-16 ps-10 mt-10">
+  <p className="text-black text-5xl">GET INVOLVED</p>
+  <p className="text-black mt-4 text-xl">
+    Join the Force behind the wellbeing of the workforce
+  </p>
+  <div className="lg:flex lg:gap-10 pt-10" ref={partnerRef}>
+    <Button className="relative bg-black lg:w-96 w-80 p-3 group hover:bg-red-600 transition-all duration-300">
+      <span className="text-xl flex justify-center">Partner with us</span>
+      <FaArrowRightLong className="text-3xl absolute right-4 transform translate-x-6 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+    </Button>
+    <Button className="relative bg-black lg:w-96 w-80 p-3 group hover:bg-red-600 transition-all duration-300">
+      <span className="text-xl">invest</span>
+      <FaArrowRightLong className="text-3xl absolute right-4 transform translate-x-6 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+    </Button>
+    <Button className="relative bg-black lg:w-96 w-80 p-3 group hover:bg-red-600 transition-all duration-300">
+      <span className="text-xl">Work with us</span>
+      <FaArrowRightLong className="text-3xl absolute right-4 transform translate-x-6 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+    </Button>
+  </div>
+</div>
 
-      <div className="bg-[#E8E8E8] pb-10 ">
+      <div className="bg-[#E8E8E8] pb-10" ref={careerRef}>
         <div className="px-14 mt-10 ">
           <p className="text-black text-5xl pt-10">
             CAREER <br /> OPPORTUNITIES
@@ -68,20 +105,10 @@ const page = () => {
               >
                 <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
                   <p class="mb-2 text-gray-500 dark:text-gray-400">
-                    Flowbite is an open-source library of interactive components
-                    built on top of Tailwind CSS including buttons, dropdowns,
-                    modals, navbars, and more.
+                   
                   </p>
                   <p class="text-gray-500 dark:text-gray-400">
-                    Check out this guide to learn how to{' '}
-                    <a
-                      href="/docs/getting-started/introduction/"
-                      class="text-blue-600 dark:text-blue-500 hover:underline"
-                    >
-                      get started
-                    </a>{' '}
-                    and start developing websites even faster with components on
-                    top of Tailwind CSS.
+                   
                   </p>
                 </div>
               </div>
@@ -93,7 +120,7 @@ const page = () => {
                   aria-expanded="false"
                   aria-controls="accordion-collapse-body-2"
                 >
-                  <span>Is there a Figma file available?</span>
+                  <span>Marketing Manager</span>
                   <svg
                     data-accordion-icon
                     class="w-3 h-3 rotate-180 shrink-0"
@@ -118,53 +145,12 @@ const page = () => {
                 aria-labelledby="accordion-collapse-heading-2"
               >
                 <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-                  <p class="mb-2 text-gray-500 dark:text-gray-400">
-                    Flowbite is first conceptualized and designed using the
-                    Figma software so everything you see in the library has a
-                    design equivalent in our Figma file.
-                  </p>
-                  <p class="text-gray-500 dark:text-gray-400">
-                    Check out the{' '}
-                    <a
-                      href="https://flowbite.com/figma/"
-                      class="text-blue-600 dark:text-blue-500 hover:underline"
-                    >
-                      Figma design system
-                    </a>{' '}
-                    based on the utility classes from Tailwind CSS and
-                    components from Flowbite.
+                  <p>
+
                   </p>
                 </div>
               </div>
-              <h2 id="accordion-collapse-heading-3">
-                <button
-                  type="button"
-                  class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
-                  data-accordion-target="#accordion-collapse-body-3"
-                  aria-expanded="false"
-                  aria-controls="accordion-collapse-body-3"
-                >
-                  <span>
-                    What are the differences between Flowbite and Tailwind UI?
-                  </span>
-                  <svg
-                    data-accordion-icon
-                    class="w-3 h-3 rotate-180 shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5 5 1 1 5"
-                    />
-                  </svg>
-                </button>
-              </h2>
+             
               <div
                 id="accordion-collapse-body-3"
                 class="hidden"
@@ -210,6 +196,9 @@ const page = () => {
             </div>
           </div>
 
+
+          {/* form start */}
+
           <div className="bg-[#4A4A4A] py-1 px-5 mt-5 ">
             <div className=" mt-10 ">
               <p className="text-white ">
@@ -235,7 +224,7 @@ const page = () => {
                       type="tel"
                       className="form-select border border-gray-500 w-full px-3 py-2"
                       id="phone"
-                      placeholder="*Telephone"
+                      placeholder="*Mobile Number"
                       name="phone"
                       required
                     />
@@ -267,7 +256,7 @@ const page = () => {
 
                   <div className="mb-3">
                     <select
-                      className="form-select border border-gray-500 text-gray-500 w-full px-3 py-2"
+                      className="form-select border border-gray-500 text-gray-500  w-full px-3 py-2"
                       id="Applying For"
                       name="Applying For"
                       required
@@ -299,10 +288,11 @@ const page = () => {
               </div>
             </div>
           </div>
+          {/* form end */}
         </div>
       </div>
 
-      <div className="mx-14 pb-5">
+      <div className="mx-14 pb-5" ref={contactRef}>
         <div className="mt-10 ">
           <p className="text-black text-5xl">CONTACT INFO</p>
         </div>

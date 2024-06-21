@@ -189,13 +189,13 @@ export const coreTeam = [
     post: 'Director',
     logo: <FaLinkedin />,
   },
-  // {
-  //   id: 2,
-  //   imageUrl: '/coreTeam/priyamvada.png',
-  //   name: 'Priyamvada Tiwari',
-  //   post: 'Associate Director, Platform & Policy',
-  //   logo: <FaLinkedin />,
-  // },
+  {
+    id: 2,
+    imageUrl: '/coreTeam/priyamvada.png',
+    name: 'Priyamvada Tiwari',
+    post: 'Associate Director, Platform & Policy',
+    logo: <FaLinkedin />,
+  },
   {
     id: 3,
     imageUrl: '/coreTeam/sonali.png',
@@ -210,13 +210,13 @@ export const coreTeam = [
     post: 'Programme Manager',
     logo: <FaLinkedin />,
   },
-  // {
-  //   id: 5,
-  //   imageUrl: '/coreTeam/annapurna.png',
-  //   name: 'Annapurna Chirravuri',
-  //   post: 'Knowledge Management & Learning Specialist',
-  //   logo: <FaLinkedin />,
-  // },
+  {
+    id: 5,
+    imageUrl: '/coreTeam/annapurna.png',
+    name: 'Annapurna Chirravuri',
+    post: 'Knowledge Management & Learning Specialist',
+    logo: <FaLinkedin />,
+  },
   {
     id: 6,
     imageUrl: '/coreTeam/meeta.png',
@@ -224,13 +224,13 @@ export const coreTeam = [
     post: 'Lead, Operations',
     logo: <FaLinkedin />,
   },
-  // {
-  //   id: 7,
-  //   imageUrl: '/coreTeam/sachin.png',
-  //   name: 'Sachin Naik',
-  //   post: 'Program Specialist',
-  //   logo: <FaLinkedin />,
-  // },
+  {
+    id: 7,
+    imageUrl: '/coreTeam/sachin.png',
+    name: 'Sachin Naik',
+    post: 'Program Specialist',
+    logo: <FaLinkedin />,
+  },
   {
     id: 8,
     imageUrl: '/coreTeam/sandhya.png',
@@ -297,15 +297,15 @@ export const coreTeam = [
   {
     id: 17,
     imageUrl: '/coreTeam/shaonliC.png',
-    name: 'Shaonli Chakraborty',
-    post: 'Director',
+    name: 'Ritika Gupta',
+    post: 'Evidence for Change',
     logo: <FaLinkedin />,
   },
   {
     id: 18,
     imageUrl: '/coreTeam/shaonliChakraborty.png',
-    name: 'Shaonli Chakraborty',
-    post: 'Director',
+    name: 'Abdul Latheef',
+    post: 'Community Engagement',
     logo: <FaLinkedin />,
   },
   {
@@ -405,19 +405,27 @@ export const ourStoryTabs = [
 
 export const whatWeDoTabs = [
   {
-    id: 1,
-    tab: 'Our Approach',
+    id : 1,
+    tab : 'Overview'
   },
   {
     id: 2,
-    tab: 'Communities in Focus',
+    tab: 'Our Approach',
   },
   {
     id: 3,
-    tab: 'Interventions',
+    tab: 'Building Resilience of the workforces',
   },
   {
     id: 4,
+    tab: 'Our Key Communities',
+  },
+  {
+    id :5,
+    tab : 'Thematic Areas',
+  },
+  {
+    id: 6,
     tab: 'Impact',
   },
 ]
@@ -757,7 +765,7 @@ export const impact = [
   },
   {
     id: 6,
-    imageUrl: '/whatWeDo/fisherfolks.png',
+    imageUrl: '/whatWeDo/fisher_folks.png',
     count: '306811',
     title: 'Fisherfolks',
   },

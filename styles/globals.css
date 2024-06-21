@@ -84,3 +84,41 @@ body {
 .talkbubble-container button:hover {
   background: red;
 }
+
+
+#talkbubble button {
+  width: 205px;
+  height: 80px;
+  background: #E8E8E8;
+  position: relative;
+  transition: background-color 0.3s;
+  color: #222222; /* Default text color */
+}
+
+#talkbubble button:hover,
+#talkbubble button:focus,
+#talkbubble button[aria-selected="true"] {
+  background: red;
+  color: white; /* Text color when hovered or active */
+}
+
+#talkbubble button:before {
+  content: "";
+  position: absolute;
+  left: 45%;
+  bottom: -15px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #E8E8E8;
+  opacity: 0; /* Hide the pseudo-element initially */
+  transition: opacity 0.3s, border-top-color 0.3s;
+}
+
+#talkbubble button:hover:before,
+#talkbubble button:focus:before,
+#talkbubble button[aria-selected="true"]:before {
+  opacity: 1; /* Show the pseudo-element on hover or when active */
+  border-top-color: red;
+}
