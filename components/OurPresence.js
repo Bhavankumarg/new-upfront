@@ -28,12 +28,12 @@ const OurPresence = () => {
         </div>
       </div>
 
-      <div className="lg:w-1/2 bg-red-600 flex flex-col justify-center items-center">
+      <div className="lg:w-1/2 bg-red-600 flex flex-col justify-center items-center py-10">
         <div className="lg:w-3/5 space-y-4 lg:p-0 p-5 ">
           <h2 className="text-6xl text-white">
             OUR <br /> PRESENCE
           </h2>
-          <p className="text-red-200">
+          <p className="text-red-200 text-xl">
             We are based out of India and have worked across{' '}
             <span className="text-white font-semibold">17 states</span> and{' '}
             <span className="text-white font-semibold">UTs </span>

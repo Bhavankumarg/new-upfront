@@ -3,7 +3,7 @@ import CarouselFull from './CarouselFull'
 import { whoAreWeCarousel } from '@utils/data'
 import WhoWeAreCarousel from "../components/WhoWeAreCarousel"
 
-const WhoAreWeMobile = () => {
+const   WhoAreWeMobile = () => {
   return (
   
       <>
