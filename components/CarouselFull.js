@@ -20,12 +20,7 @@ const CarouselFull = ({ details }) => {
                 class="absolute block w-screen -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[550px]"
                 alt="..."
               />
-              <div className="absolute top-1/2 left-52 w-1/3">
-                <h2 className="text-4xl text-white bg-red-600 p-1 inline-block">
-                  {item.title}
-                </h2>
-                <p className="text-4xl text-white">{item.description}</p>
-              </div>
+             
             </div>
           )
         })}

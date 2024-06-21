@@ -1,14 +1,17 @@
 import Link from 'next/link'
 import CarouselFull from './CarouselFull'
 import { whoAreWeCarousel } from '@utils/data'
+import WhoWeAreCarousel from "../components/WhoWeAreCarousel"
 
-const WhoAreWe = () => {
+const WhoAreWeMobile = () => {
   return (
-   <>
-   <div className='hidden lg:block'>
-   <div className="flex">
-      <div className="w-[70%]">
-        <CarouselFull details={whoAreWeCarousel} />
+  
+      <>
+      <div className='block lg:hidden'>
+      <div className="">
+        {/* <CarouselFull details={whoAreWeCarousel} /> */}
+        <WhoWeAreCarousel/>
+
       </div>
       <div className="lg:w-2/5 w-full ps-10 lg:flex lg:flex-col justify-between items-start">
         <h1 className="text-6xl">
@@ -29,10 +32,10 @@ const WhoAreWe = () => {
           </button>
         </Link>
       </div>
-    </div>
-   </div>
-   </>
+      </div>
+      </>
+  
   )
 }
 
-export default WhoAreWe
+export default WhoAreWeMobile

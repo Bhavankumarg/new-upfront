@@ -21,7 +21,7 @@ const Page = () => {
 
   const scrollToSection = (ref) => {
     if (ref.current) {
-      ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+      ref.current.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
     }
   };
 
@@ -51,7 +51,8 @@ const Page = () => {
 
   return (
     <>
-      <div className="bg-[url('/whatWeDo/banner.png')] bg-cover h-[60vh] flex flex-col ps-16 pb-8 ">
+      <div className="">
+        <div className="bg-[url('/whatWeDo/banner.png')] bg-cover h-[60vh] flex flex-col ps-16 pb-8 ">
         <Header />
         <h1 className="text-white text-6xl mt-auto">
           WHAT <br /> WE DO
@@ -61,6 +62,8 @@ const Page = () => {
       <Tab tabs={whatWeDoTabs} getActiveTab={getActiveTab}/>
       </div>
       <WhatWeDoMobileAccordion className="block lg:hidden"/>
+
+      <div className="hidden lg:block">
       <div ref={overviewRef} className="max-w-screen-xl mx-auto lg:px-40 py-16 tracking-wide text-center space-y-4 p-5">
         <p className="text-xl">
           Our journey began with narrowing down the focus on one of the most
@@ -80,7 +83,7 @@ const Page = () => {
         </p>
       </div>
 
-      <div ref={ourApproachRef} className="bg-[url('/whatWeDo/rectangle.png')] bg-no-repeat bg-cover flex flex-col items-center lg:p-20 p-3 text-center mb-12">
+      <div ref={ourApproachRef} className="bg-[url('/whatWeDo/rectangle.png')] bg-no-repeat bg-cover flex flex-col items-center lg:p-20 p-3 text-center mb-12 ">
         <h1 className="text-5xl">OUR APPROACH</h1>
         <div className="bg-white py-10 lg:px-24 mt-10">
           <div className="w-full flex justify-center">
@@ -125,9 +128,9 @@ const Page = () => {
         </div>
       </div>
 
-      <div ref={resilienceRef} className="bg-customLightGray lg:p-12 p-4 flex justify-center mb-12">
+      <div ref={resilienceRef} className="bg-customLightGray lg:p-12 p-4 flex justify-center mb-12" >
         <div className="lg:w-2/3 space-y-5 text-center ">
-          <h1 className="text-5xl pt-5">BUILDING RESILIENCE OF<br className="hidden lg:block"/> THE WORKFORCES</h1>
+          <h1 className="text-5xl pt-5">BUILDING RESILIENCE OF<br /> THE WORKFORCES</h1>
           <p className="text-[#222222] text-xl">
             Upfront focuses on fostering individual resilience by building
             agency, ensuring access to essential services, and enhancing
@@ -152,21 +155,26 @@ const Page = () => {
         </div>
       </div>
 
-      <div ref={keyCommunitiesRef}>
+      <div ref={keyCommunitiesRef} >
         <OurKeyCommunities />
       </div>
 
-      <ThematicMobile />
+      <div >
+        <ThematicMobile/>
+      </div>
+      {/* <ThematicMobile  /> */}
       
-      <div ref={thematicAreasRef}>
+      <div ref={thematicAreasRef} >
         <ThematicDesktop/>
       </div>
 
       
 
-        <div ref={impactRef}>
+        <div ref={impactRef} >
           <Impact/>
         </div>
+      </div>
+      </div>
       {/* <Impact />   */}
     </>
   );

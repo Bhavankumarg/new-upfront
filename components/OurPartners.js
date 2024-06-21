@@ -53,7 +53,7 @@ const OurPartners = () => {
       <h1 className="lg:text-6xl text-5xl mb-10 lg:px-0 px-8 text-center" >
         <span className="text-red-600 ">OUR</span> COLLABORATORS
       </h1>
-      <div className="lg:ps-11 ps-32 pe-0">
+      <div className="lg:ps-11 ps-24 pe-0">
         <Slider className="" {...settings}>
           <div>
             <Image

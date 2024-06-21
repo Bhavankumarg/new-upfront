@@ -9,6 +9,7 @@ import ThematicAreas from "@components/ThematicAreas";
 import WhatWeDo from "@components/WhatWeDo";
 import WhoAreWe from "@components/WhoAreWe";
 import { homeBannerCarousel } from "@utils/data";
+import WhoAreWeMobile from "@components/WhoWeAreMobile";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
         <Header />
         <CarouselScreen details={homeBannerCarousel} />
       </div>
-      <div className="max-w-screen-xl lg:mx-auto lg:px-40 py-20 tracking-wide">
+      <div className="max-w-screen-xl lg:mx-auto lg:px-40 lg:py-20 tracking-wide">
         <h1 className="text-6xl text-center">
           <span className="text-red-600 ">WHY WORKFORCE</span> <br /> WELLBEING?
         </h1>
@@ -38,6 +39,7 @@ export default function Home() {
         </p>
       </div>
       <WhoAreWe />
+      <WhoAreWeMobile/>
       <WhatWeDo />
       <OurReach />
       <OurPresence />

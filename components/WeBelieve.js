@@ -28,7 +28,7 @@ const WeBelieve = () => {
             >
                 {weBelieve.map((item) => {
                     return (    
-                        <li
+                        <   li
                             key={item.id}
                             className="lg:ps-5 lg:border-s-2 lg:border-b-0 border-b-2  lg:py-0 py-5 border-gray-400"
                         >
@@ -39,7 +39,7 @@ const WeBelieve = () => {
                                     height={50}
                                     alt={item.title}
                                 />
-                                <p className="text-white text-3xl lg:text-xl">{item.title}</p>
+                                <p className="text-white text-2xl lg:text-xl">{item.title}</p>
                             </div>
                         </li>
                     )
