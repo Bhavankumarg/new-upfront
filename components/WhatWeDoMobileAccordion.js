@@ -50,7 +50,7 @@ const WhatWeDoMobileAccordion = () => {
   ];
 
   return (
-    <div className="pt-10 block lg:hidden">
+    <div className="block lg:hidden">
       <div id="accordion-collapse" data-accordion="collapse">
         {accordionData.map((item, index) => (
           <div key={index} ref={(el) => (sectionRefs.current[index] = el)}>
@@ -88,7 +88,7 @@ const WhatWeDoMobileAccordion = () => {
               className={`${activeIndex === index ? "" : "hidden"}`}
               aria-labelledby={`accordion-collapse-heading-${index + 1}`}
             >
-             
+              
             </div>
           </div>
         ))}

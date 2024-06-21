@@ -6,6 +6,7 @@ import Tab from '@components/Tab'
 import { insights, insightsTabs } from '@utils/data'
 import Image from 'next/image'
 import { useState } from 'react'
+import InsightsPageMobile from '@components/InsightsAccordionMobile'
 
 const page = () => {
   const router = useRouter()
@@ -34,7 +35,8 @@ const page = () => {
 
   return (
     <>
-      <div className="bg-[url('/insights/banner.png')] bg-cover h-[60vh] flex flex-col ps-16 pb-8">
+     <div className='hidden lg:block'>
+     <div className="bg-[url('/insights/banner.png')] bg-cover h-[60vh] flex flex-col ps-16 pb-8">
         <Header />
         <h1 className="text-white text-6xl mt-auto">INSIGHTS</h1>
       </div>
@@ -90,8 +92,15 @@ const page = () => {
           )}
         </div>
       </div>
+     </div>
+
+     <div>
+      <InsightsPageMobile/>
+     </div>
     </>
   )
 }
 
 export default page
+
+

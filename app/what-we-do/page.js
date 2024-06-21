@@ -52,7 +52,7 @@ const Page = () => {
   return (
     <>
       <div className="">
-        <div className="bg-[url('/whatWeDo/banner.png')] bg-cover h-[60vh] flex flex-col ps-16 pb-8 ">
+      <div className="bg-[url('/whatWeDo/banner.png')] bg-cover h-[60vh] flex flex-col ps-16 pb-8 ">
         <Header />
         <h1 className="text-white text-6xl mt-auto">
           WHAT <br /> WE DO
@@ -61,7 +61,9 @@ const Page = () => {
       <div className="hidden lg:block">
       <Tab tabs={whatWeDoTabs} getActiveTab={getActiveTab}/>
       </div>
-      <WhatWeDoMobileAccordion className="block lg:hidden"/>
+      <div>
+      <WhatWeDoMobileAccordion/>
+      </div>
 
       <div className="hidden lg:block">
       <div ref={overviewRef} className="max-w-screen-xl mx-auto lg:px-40 py-16 tracking-wide text-center space-y-4 p-5">
