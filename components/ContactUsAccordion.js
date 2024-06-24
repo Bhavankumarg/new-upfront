@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import Image from 'next/image';
 import { Button } from "flowbite-react";
 import { FaArrowRightLong } from "react-icons/fa6";
-import ContactForm from "@utils/ContactForm";
+import ContactForms from "@utils/ContactForms";
 
 const ContactUsAccordion = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -205,7 +205,8 @@ const ContactUsAccordion = () => {
             </div>
           </div>
 
-            <ContactForm/>
+          <ContactForms/>
+            {/* <ContactForm/> */}
           {/* form start */}
 
           {/* <div className="bg-[#4A4A4A] py-1 px-5 mt-5">
