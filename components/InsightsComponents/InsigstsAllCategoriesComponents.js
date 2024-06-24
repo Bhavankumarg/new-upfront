@@ -1,93 +1,81 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import StoriesComponents from './StoriesComponents';
 import CaseStudiesComponents from './CaseStudiesComponents';
 import AllBlogsComponents from './AllBlogsComponents';
 import BlogComponents from './BlogComponents';
 import NewsComponents from './NewsComponents';
+import { insightsTabs } from '@utils/data';
 
 const InsigstsAllCategoriesComponents = () => {
-    const [activeTab, setActiveTab] = useState(1);
+    const [activeTab, setActiveTab] = useState('All');
+    const [visibleItems, setVisibleItems] = useState(8); // State to manage number of visible items
 
-    const getTabClass = (tabIndex) => {
-        return tabIndex === activeTab
-            ? 'bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-700 font-semibold'
-            : 'bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold';
+    const getActiveTab = (tab) => {
+        setActiveTab(tab);
+        setVisibleItems(8); // Reset visible items when tab changes
     };
 
-    const getContentClass = (tabIndex) => {
-        return tabIndex === activeTab ? 'p-4' : 'hidden p-4';
+    const getTabClass = (tab) => {
+        return tab === activeTab
+            ? 'py-2 px-4 text-white text-2xl bg-black'
+            : 'py-2 px-4 text-gray-500 hover:text-gray-700 text-2xl bg-[#E8E8E8]';
     };
 
+    const getContentClass = (tab) => {
+        return tab === activeTab ? 'p-4' : 'hidden p-4';
+    };
+
+    const handleLoadMore = () => {
+        setVisibleItems((prevVisibleItems) => prevVisibleItems + 4);
+    };
 
     return (
         <>
-            <div className="container mx-auto px-4 py-8">
-                <ul className="flex border-b" id="tabs">
-                    <li className="-mb-px mr-1">
-                        <button
-                            className={getTabClass(1)}
-                            onClick={() => setActiveTab(1)}
-                        >
-                            Stories
-                        </button>
-                    </li>
-                    <li className="mr-1">
-                        <button
-                            className={getTabClass(2)}
-                            onClick={() => setActiveTab(2)}
-                        >
-                            Case Studies
-                        </button>
-                    </li>
-                    <li className="mr-1">
-                        <button
-                            className={getTabClass(3)}
-                            onClick={() => setActiveTab(3)}
-                        >
-                            Blogs
-                        </button>
-                    </li>
-                    <li className="mr-1">
-                        <button
-                            className={getTabClass(4)}
-                            onClick={() => setActiveTab(4)}
-                        >
-                            News And Publications
-                        </button>
-                    </li>
-                    <li className="mr-1">
-                        <button
-                            className={getTabClass(5)}
-                            onClick={() => setActiveTab(5)}
-                        >
-                            All
-                        </button>
-                    </li>
-
+            <div className="hidden lg:block">
+                <ul className="flex px-10 gap-10 py-5 pb-0" id="tabs">
+                    {insightsTabs.map((tabObj, index) => (
+                        <li key={index}>
+                            <button
+                                className={getTabClass(tabObj.tab)}
+                                onClick={() => getActiveTab(tabObj.tab)}
+                            >
+                                {tabObj.tab}
+                            </button>
+                        </li>
+                    ))}
                 </ul>
                 <div id="tab-contents">
-                    <div className={getContentClass(1)}>
+                    <div className={getContentClass('Stories')}>
                         <StoriesComponents />
                     </div>
-                    <div className={getContentClass(2)}>
-
+                    <div className={getContentClass('Case Studies')}>
                         <CaseStudiesComponents />
                     </div>
-                    <div className={getContentClass(3)}>
+                    <div className={getContentClass('Blogs')}>
                         <BlogComponents />
                     </div>
-                    <div className={getContentClass(4)}>
+                    <div className={getContentClass('News And Publications')}>
                         <NewsComponents />
                     </div>
-                    <div className={getContentClass(5)}>
+                    <div className={getContentClass('All')}>
                         <AllBlogsComponents />
                     </div>
+                    {activeTab !== 'All' && (
+                        <div className="text-center mt-7">
+                            {/* Conditionally render Load More button */}
+                            <button
+                                onClick={handleLoadMore}
+                                className="bg-customLightGray border border-customGrayMd px-8 py-3"
+                            >
+                                Load More
+                            </button>
+                        </div>
+                    )}
                 </div>
             </div>
-
         </>
-    )
-}
+    );
+};
 
-export default InsigstsAllCategoriesComponents
+export default InsigstsAllCategoriesComponents;

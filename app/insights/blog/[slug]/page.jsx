@@ -1,5 +1,5 @@
 import React from 'react';
-import Posts from './post'; // Adjust the import path accordingly
+import Posts from './Blogpost'; // Adjust the import path accordingly
 
 const Page = ({ params }) => {
 

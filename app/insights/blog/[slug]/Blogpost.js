@@ -2,11 +2,11 @@
 
 import React, { useState, useEffect } from "react";
 import Header from "@components/Header";
-import { CiCircleChevRight } from "react-icons/ci";
+// import { CiCircleChevRight } from "react-icons/ci";
 import Link from "next/link";
 import ConfigData from "../../../../config"; // Adjust the import path according to your project structure
 
-const Posts = ({ slug }) => {
+const BlogPosts = ({ slug }) => {
   const siteUrl = ConfigData.wpApiUrl;
   const [post, setPost] = useState(null);
 
@@ -42,7 +42,7 @@ const Posts = ({ slug }) => {
           <div className="bg-[#E8E8E8] p-4">
             <p className="text-black">
               <Link href="/insights">Insights /</Link>
-              <span className="fs-6 mb-0 px-1">Stories /</span>
+              <span className="fs-6 mb-0 px-1">Blog /</span>
               <span dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
             </p>
           </div>
@@ -59,7 +59,7 @@ const Posts = ({ slug }) => {
                   type="button"
                   className="text-white text-xl absolute top-0 start-0 w-32 text-center font-normal bg-gray-800/75 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 px-1 py-1 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
                 >
-                  STORY
+                  Blog
                 </button>
               </div>
               <p className="card-date mb-0 pt-5 pb-4 text-[#4E4E4E]">
@@ -139,4 +139,4 @@ const Posts = ({ slug }) => {
   );
 };
 
-export default Posts;
+export default BlogPosts;

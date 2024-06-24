@@ -444,33 +444,39 @@ export const contactUsTabs = [
     tab: 'Contact Info',
   },
 ]
-
 export const insightsTabs = [
-  {
-    id: 1,
-    tab: 'Stories',
-  },
-  {
-    id: 2,
-    tab: 'Case Studies',
-  },
-  {
-    id: 3,
-    tab: 'Blogs',
-  },
-  {
-    id: 4,
-    tab: 'News and Publications',
-  },
+  { id: 1, tab: 'Stories' },
+  { id: 2, tab: 'Case Studies' },
+  { id: 3, tab: 'Blogs' },
+  { id: 4, tab: 'News And Publications' },
+  { id: 5, tab: 'All' }
+];
+// export const insightsTabs = [
+//   {
+//     id: 1,
+//     tab: 'Stories',
+//   },
+//   {
+//     id: 2,
+//     tab: 'Case Studies',
+//   },
+//   {
+//     id: 3,
+//     tab: 'Blogs',
+//   },
+//   {
+//     id: 4,
+//     tab: 'News and Publications',
+//   },
   // {
   //   id: 5,
   //   tab: 'Social Media',
   // },
-  {
-    id: 5,
-    tab: 'All',
-  },
-]
+//   {
+//     id: 5,
+//     tab: 'All',
+//   },
+// ]
 
 export const healthWorkers = [
   {

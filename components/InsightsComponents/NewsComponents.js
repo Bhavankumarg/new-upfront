@@ -1,7 +1,8 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import ConfigData from '../../config'
+import ConfigData from '../../config';
+import { Button } from 'flowbite-react';
 
 const NewsComponents = () => {
     const siteUrl = ConfigData.wpApiUrl;
@@ -25,21 +26,53 @@ const NewsComponents = () => {
 
     return (
         <div>
-            <div className='d-flex flex-lg-row flex-column bg-black'>
-                {data.length > 0 ? ( // Check if data has items
-                    data.map((post) => (
-                        <div className="iv-cards col-lg-4 d-flex flex-column p-3" key={post.id}>
-                            <div className="card-body text-white d-flex flex-column justify-content-between">
-                                <h5 className="card-title">
-                                    {post.title.rendered}
-                                </h5>
-                            </div>
-                        </div>
-                    ))
-                ) : (
-                    <div className='text-white'>Loading...</div> // Render loading message while data is being fetched
+            <h2 className="text-6xl py-10 px-10">NEWS AND PUBLICATIONS</h2>
+            <hr className="px-10" />
+            <ul className="flex flex-wrap gap-6 mt-8 container mx-auto">
+        {data.length > 0 ? (
+          data.map((post) => (
+            <li key={post.id} className="lg:border-s lg:border-black mb-10">
+              <div className="ps-3 w-80">
+                <div className="relative">
+                  {post.acf && post.acf.thumbnail_image && (
+                    <img
+                      src={post.acf.thumbnail_image.url}
+                      alt={post.title.rendered}
+                      className="w-100"
+                      height={220}
+                    />
+                  )}
+                  {/* <p className="absolute top-0 text-sm bg-black/70 text-white px-3 py-1">
+                    {post.badge}
+                  </p> */}
+                </div>
+                
+                {post.acf && post.acf.date && (
+                  <p className="card-date mb-0">
+                    {new Date(post.acf.date).toLocaleDateString("en-US", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
+                  </p>
                 )}
-            </div>
+                <p className="mt-5 h-32">{post.title.rendered}</p>
+                {/* <p className="text-sm mt-3">{post.description}</p> */}
+                <Button className="text-black hover:bg-black hover:text-white">
+                  <Link
+                    href={`/insights//${post.slug}`}
+                    className="px-7 "
+                  >
+                    Read More
+                  </Link>
+                </Button>
+              </div>
+            </li>
+          ))
+        ) : (
+          <div className="text-center text-3xl">Loading...</div>
+        )}
+      </ul>
         </div>
     )
 }
