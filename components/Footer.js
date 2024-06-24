@@ -27,13 +27,13 @@ const Footer = () => {
             <div className="w-[175px] h-[1px] bg-customGrayMd my-3"></div>
           </ul>
           <ul className="text-customGrayMd text-xl">
-            <h3 className="text-white text-2xl lg:mt-0 mt-5">INSIGHTS</h3>
+           <Link href="/insights"> <h3 className="text-white text-2xl lg:mt-0 mt-5">INSIGHTS</h3></Link>
             <div className="w-[175px] h-[1px] bg-customGrayMd my-3"></div>
           </ul>
           <ul className="text-white/60 text-xl lg:mt-0 mt-5">
-            <h3 className="text-white text-2xl lg:mt-0">CONTACT US</h3>
+            <Link href="/contact-us"><h3 className="text-white text-2xl lg:mt-0">CONTACT US</h3></Link>
             <div className="w-[175px] h-[1px] bg-customGrayMd my-3"></div>
-            <li className='mt-5 lg:mt-0'>Info@upfrontglobal.com</li>
+            <Link href="mailto:Info@upfrontglobal.com"><li className='mt-5 lg:mt-0'>Info@upfrontglobal.com</li></Link>
             <li className='lg:mt-3 mt-5'>Phone: +91 01234567890</li>
           </ul>
         </div>
