@@ -3,7 +3,7 @@ const config = {
     wpApiUrl: "https://beta.upfront.global/wp-json/wp/v2",
     wpPageUrl: "",
     // Career form
-    careeFormApi: "https://docs.ivistaz.com/wp-json/contact-form-7/v1/contact-forms/239/feedback",
+    careeFormApi: "https://beta.upfront.global/wp-json/contact-form-7/v1/contact-forms/102/feedback",
     "SERVER": "8"
 }
 

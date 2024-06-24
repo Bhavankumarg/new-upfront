@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import Image from 'next/image';
 import { Button } from "flowbite-react";
 import { FaArrowRightLong } from "react-icons/fa6";
+import ContactForm from "@utils/ContactForm";
 
 const ContactUsAccordion = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -204,10 +205,10 @@ const ContactUsAccordion = () => {
             </div>
           </div>
 
-
+            <ContactForm/>
           {/* form start */}
 
-          <div className="bg-[#4A4A4A] py-1 px-5 mt-5">
+          {/* <div className="bg-[#4A4A4A] py-1 px-5 mt-5">
   <div className="mt-10">
     <p className="text-white">
       If you would like to explore an opportunity to work with Upfront,
@@ -292,7 +293,7 @@ const ContactUsAccordion = () => {
       </div>
     </div>
   </div>
-</div>
+</div> */}
 
           {/* form end */}
         </div>

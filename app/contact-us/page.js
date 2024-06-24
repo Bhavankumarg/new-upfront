@@ -7,6 +7,9 @@ import { Button } from "flowbite-react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { useRef } from "react";
 import ContactUsAccordion from "@components/ContactUsAccordion";
+import ContactForm from "@utils/ContactForm";
+import ContactFormMobile from "@utils/ContactFormMobile";
+import ContactForms from "@utils/ContactForms";
 
 const page = () => {
   const partnerRef = useRef(null);
@@ -201,9 +204,12 @@ const page = () => {
               </div>
             </div>
 
+            <ContactForms />
+              {/* <ContactForm/> */}
+              {/* <ContactFormMobile /> */}
             {/* form start */}
 
-            <div className="bg-[#4A4A4A] py-1 px-5 mt-5 ">
+            {/* <div className="bg-[#4A4A4A] py-1 px-5 mt-5 ">
               <div className=" mt-10 ">
                 <p className="text-white ">
                   If you would like to explore an opportunity to work with
@@ -293,7 +299,7 @@ const page = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* form end */}
           </div>
         </div>
