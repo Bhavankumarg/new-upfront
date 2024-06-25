@@ -10,32 +10,33 @@ import Image from 'next/image'
 import WeBelive from '@components/WeBelieve'
 import { useRef } from 'react'
 import OurStoryAccordion from '@components/OurStoryAccordion'
+
 const page = () => {
   const worforceRef = useRef(null);
   const webelievehRef = useRef(null);
   const visionmissionRef = useRef(null);
   const ourhistoryRef = useRef(null);
 
-    const scrollToSection = (ref) => {
-      if (ref.current) {
-        ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    };
-    const getActiveTab = (tab) => {
-      switch (tab) {
-        case "Why Workforce Wellbeing?":
-          scrollToSection(worforceRef);
-          break;
-        case "We Believe":
-          scrollToSection(webelievehRef);
-          break;
-        case "Vision and Mission":
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
+  const getActiveTab = (tab) => {
+    switch (tab) {
+      case "Why Workforce Wellbeing?":
+        scrollToSection(worforceRef);
+        break;
+      case "We Believe":
+        scrollToSection(webelievehRef);
+        break;
+      case "Vision and Mission":
         scrollToSection(visionmissionRef);
         break;
       case "Our History":
         scrollToSection(ourhistoryRef);
         break;
-      
       default:
         console.log(tab);
     }
@@ -50,15 +51,16 @@ const page = () => {
           OUR <br /> STORY
         </h1>
       </div>
-      <div className='hidden lg:block'>
-      <Tab tabs={ourStoryTabs} getActiveTab={getActiveTab} />
+      
+      {/* Sticky Tab Component */}
+      <div className="sticky top-0 z-50 bg-white shadow-md">
+        <Tab tabs={ourStoryTabs} getActiveTab={getActiveTab} />
       </div>
 
       <div className='block lg:hidden'>
-        <OurStoryAccordion/>
+        <OurStoryAccordion />
       </div>
 
-      <div className='hidden lg:block'>
       <div className="lg:px-24 px-10 py-16" ref={worforceRef}>
         <h1 className="text-6xl">
           <span className="text-red-600">WHY</span> WORKFORCE <br /> WELLBEING?
@@ -66,39 +68,38 @@ const page = () => {
       </div>
 
       <div className='hidden lg:block'>
-      <div className=" pb-16  container mx-auto flex justify-center">
-        <Image
-          src="/ourStory/workForceWellbeing.png"
-          width={1000}
-          height={700}
-          className="w-11/12"
-          alt=""
-        />
-      </div>
+        <div className="pb-16 container mx-auto flex justify-center">
+          <Image
+            src="/ourStory/workForceWellbeing.jpg"
+            width={1000}
+            height={700}
+            className="w-11/12"
+            alt=""
+          />
+        </div>
       </div>
 
-     <div className='block lg:hidden'>
-     <div className="pb-16 mx-auto container flex justify-center">
-        <Image
-          src="/ourStory/workForceWellbeingMobile.png"
-          width={1000}
-          height={700}
-          className="w-11/12"
-          alt=""
-        />
+      <div className='block lg:hidden'>
+        <div className="pb-16 mx-auto container flex justify-center">
+          <Image
+            src="/ourStory/workForceWellbeingMobile.png"
+            width={1000}
+            height={700}
+            className="w-11/12"
+            alt=""
+          />
+        </div>
       </div>
-     </div>
 
-      {/* <ThematicAreas /> */}
       <div ref={webelievehRef}>
-      <WeBelive/>
+        <WeBelive />
       </div>
+
       <div ref={visionmissionRef}>
-      <OurVision />
+        <OurVision />
       </div>
-      <div>
+
       <OurMission />
-      </div>
 
       <div className="px-10 py-16" ref={ourhistoryRef}>
         <h1 className="text-6xl lg:px-16 px-7">
@@ -112,7 +113,7 @@ const page = () => {
             className="w-11/12 hidden lg:block"
             alt=""
           />
-           <Image
+          <Image
             src="/ourStory/ourHistoryMobile.png"
             width={1000}
             height={700}
@@ -120,7 +121,6 @@ const page = () => {
             alt=""
           />
         </div>
-      </div>
       </div>
     </>
   )

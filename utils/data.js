@@ -89,7 +89,7 @@ export const ourReach = [
   },
 ]
 
-export const    thematicAreas = [
+export const  thematicAreas = [
   {
     id: 1,
     logo: '/homePage/thematicAreas/agency.svg',
@@ -449,7 +449,7 @@ export const insightsTabs = [
   { id: 2, tab: 'Case Studies' },
   { id: 3, tab: 'Blogs' },
   { id: 4, tab: 'News and Publications' },
-  { id: 5, tab: 'All' }
+  // { id: 5, tab: 'All' }
 ];
 // export const insightsTabs = [
 //   {

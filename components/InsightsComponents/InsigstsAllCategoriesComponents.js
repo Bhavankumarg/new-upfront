@@ -8,7 +8,7 @@ import NewsComponents from './NewsComponents';
 import { insightsTabs } from '@utils/data';
 
 const InsigstsAllCategoriesComponents = () => {
-    const [activeTab, setActiveTab] = useState('All');
+    const [activeTab, setActiveTab] = useState('Case Studies');
     const [visibleItems, setVisibleItems] = useState(8); // State to manage number of visible items
 
     const getActiveTab = (tab) => {
@@ -32,7 +32,7 @@ const InsigstsAllCategoriesComponents = () => {
 
     return (
         <>
-            <div className="hidden lg:block">
+            <div className="hidden lg:block sticky top-0 bg-white shadow-md z-50">
                 <ul className="flex px-10 gap-10 py-5 pb-0" id="tabs">
                     {insightsTabs.map((tabObj, index) => (
                         <li key={index}>
@@ -45,25 +45,25 @@ const InsigstsAllCategoriesComponents = () => {
                         </li>
                     ))}
                 </ul>
-                <div id="tab-contents">
-                    <div className={getContentClass('Stories')}>
-                        <StoriesComponents />
-                    </div>
-                    <div className={getContentClass('Case Studies')}>
-                        <CaseStudiesComponents />
-                    </div>
-                    <div className={getContentClass('Blogs')}>
-                        <BlogComponents />
-                    </div>
-                    <div className={getContentClass('News And Publications')}>
-                        <NewsComponents />
-                    </div>
-                    <div className={getContentClass('All')}>
-                        <AllBlogsComponents />
-                    </div>
-                   
-                </div>
             </div>
+            <div id="tab-contents">
+                <div className={getContentClass('Stories')}>
+                    <StoriesComponents />
+                </div>
+                <div className={getContentClass('Case Studies')}>
+                    <CaseStudiesComponents />
+                </div>
+                <div className={getContentClass('Blogs')}>
+                    <BlogComponents />
+                </div>
+                <div className={getContentClass('News And Publications')}>
+                    <NewsComponents />
+                </div>
+                {/* <div className={getContentClass('All')}>
+                    <AllBlogsComponents />
+                </div> */}
+            </div>
+           
         </>
     );
 };

@@ -34,13 +34,13 @@ const Page = () => {
       case "Overview":
         scrollToSection(overviewRef);
         break;
-      case "Our Approach":
+      case "Approach":
         scrollToSection(ourApproachRef);
         break;
-      case "Building Resilience of the workforces":
+      case "Building Resilience of the Workforces":
         scrollToSection(resilienceRef);
         break;
-      case "Our Key Communities":
+      case "Key Communities":
         scrollToSection(keyCommunitiesRef);
         break;
       case "Thematic Areas":
@@ -62,7 +62,7 @@ const Page = () => {
             WHAT <br /> WE DO
           </h1>
         </div>
-        <div className="hidden lg:block">
+        <div className="hidden lg:block sticky top-0 bg-white shadow-md z-50">
           <Tab tabs={whatWeDoTabs} getActiveTab={getActiveTab} />
         </div>
         <div>

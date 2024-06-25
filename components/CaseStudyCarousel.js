@@ -7,6 +7,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaCircleArrowRight, FaCircleArrowLeft } from "react-icons/fa6";
 import ConfigData from '../config'
+import { Button } from "flowbite-react";
+import Link from "next/link";
 
 const OurKeyCommunities = () => {
   const settings = {
@@ -14,7 +16,7 @@ const OurKeyCommunities = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     autoplay: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
@@ -97,86 +99,50 @@ const OurKeyCommunities = () => {
 
   return (
     <>
-      <div className="mb-10 text-center relative py-10">
-        <Slider {...settings}>
-          <div className="p-2 relative ">
-            <div className="">
-              <a href="#">
-                <img
-                  className="w-full rounded-0"
-                  src="/homePage/case_studies/case_studies1.png"
-                  alt=""
-                />
-              </a>
-              <div className="p-5 bg-[#FACDD4] border-0">
-                <h2 className="text-start font-bold text-xl">
-                  Individual - SV (Fisherwomen)
-                </h2>
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-start">
-                  Life Skill development among Women Fish Vendors in Tamil Nadu
-                  and enhance their knowledge on maintaining hygiene, better
-                  decision making, communication and encouraging gender equality
-                  in workplaces and communities.
-                </p>
-                <div className="flex justify-start">
-                  <button className="bg-customGray text-white p-3 mt-10">
-                    Read more 
-                  </button>
-                </div>
-              </div>
-            </div>
+      <div className="mb-10 relative">
+      <Slider {...settings}>
+  {data.length > 0 &&
+    data.map((post) => (
+      <div key={post.id} className="p-2 relative mb-5">
+        <div className="">
+          <div className="relative">
+            {post.acf && post.acf.thumbnail_image && (
+              <img
+                src={post.acf.banner_image.url}
+                alt={post.title.rendered}
+                className="w-full"
+                height={220}
+              />
+            )}
           </div>
-          <div className="p-2 relative">
-            <div className="w-full rounded-lg">
-              <a href="#">
-                <img
-                  className="w-full rounded-0"
-                  src="/homePage//case_studies/case_studies2.png"
-                  alt=""
-                />
-              </a>
-              <div className="p-5 bg-[#FACDD4] border-0">
-                <h2 className="text-xl font-bold text-start">
-                  Organisation - Factory - Sri Lanka UHD
-                </h2>
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-start">
-                  Bridging the gap between systems, resources and workforce.
-                  Build a safe workplace and a healthy and wealthy workforce.
-                </p>
-                <div className="flex justify-start">
-                  <button className="bg-customGray text-white p-3 mt-10">
-                    Read more 
-                  </button>
-                </div>
-              </div>
-            </div>
+          <div className="bg-[#FACDD4] text-start">
+          <div className="pt-5 text-xl">
+            <span
+              className=" mx-3"
+              dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+            />
           </div>
-          <div className="p-2 relative">
-            <div className="w-full rounded-lg">
-              <a href="#">
-                <img
-                  className="w-full rounded-0"
-                  src="/homePage/case_studies/case_studies3.png"
-                  alt=""
-                />
-              </a>
-              <div className="p-5 bg-[#FACDD4] border-0">
-                <h2 className="text-start text-xl font-bold">
-                  System/Society - ESIC
-                </h2>
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-start">
-                  Make the workforces more aware of the ESIC scheme and
-                  entitlement and enable them to access it easily.
-                </p>
-                <div className="flex justify-start">
-                  <button className="bg-customGray text-white p-3 mt-10">
-                    Read more 
-                  </button>
-                </div>
-              </div>
-            </div>
+          <div className="lg:h-[220px] flex flex-col justify-between">
+            <div
+              dangerouslySetInnerHTML={{
+                __html: post["excerpt"]["rendered"],
+              }}
+              className="fs-5 mb-3 mx-3 mt-5 p-1 post-content"
+            ></div>
+            {/* Assuming Button and Link are properly imported */}
+            <Button className="text-black w-52 hover:bg-black bg-[#E8E8E8] border border-[#909090] hover:text-white rounded-none mt-5 mx-3 mb-5">
+              <Link href={`/insights/case-studies/${post.slug}`} className="px-7">
+                Read Case Study
+              </Link>
+            </Button>
           </div>
-        </Slider>
+          </div>
+          
+        </div>
+      </div>
+    ))}
+</Slider>
+
       </div>
       <div className="text-center">
         <p className="text-xl mt-7">

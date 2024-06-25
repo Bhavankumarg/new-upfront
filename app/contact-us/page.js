@@ -40,7 +40,7 @@ const page = () => {
       <div className="bg-[url('/contactUs/banner.png')] bg-cover h-[60vh]">
         <Header />
       </div>
-      <div className="hidden lg:block">
+      <div className="hidden lg:block sticky top-0 bg-white shadow-md z-0">
         <Tab tabs={contactUsTabs} getActiveTab={getActiveTab} />
       </div>
 

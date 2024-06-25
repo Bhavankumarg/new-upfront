@@ -37,7 +37,7 @@ const HealthWellbeing = () => {
             </div>
           </div>
           <p className="pt-3">
-            We believe that everyday habits play a crucial role in maintaining
+           We believe that everyday habits play a crucial role in maintaining
             good health. Through education and resources, we empower workers to
             make informed choices about nutrition, sanitation, and personal
             hygiene, promoting overall wellness in the workplace.

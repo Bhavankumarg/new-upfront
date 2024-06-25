@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import CaseStudyCarousel from './CaseStudyCarousel'
+import Link from 'next/link'
 
 const CaseStudy = () => {
   return (
@@ -10,9 +11,9 @@ const CaseStudy = () => {
       </h2>
       <div className="lg:px-16 py-8 text-center lg:p-0 p-2">
         <CaseStudyCarousel />
-        <button className="bg-customGray self-center text-white p-3">
+        <Link href="/insights"><button className="bg-customGray self-center text-white p-3 mt-5">
           View All Case Studies
-        </button>
+        </button></Link>
       </div>
     </div>
   )
