@@ -49,14 +49,27 @@ const CaseStudiesComponents = () => {
                 </div>
                 <div className="bg-[#F40F34] mx-3 mt-5 p-1">
                   {/* <p  dangerouslySetInnerHTML={{ __html: post.title.rendered }}></p> */}
-                  <span className="text-white" dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
-                  
+                  <span
+                    className="text-white"
+                    dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+                  />
                 </div>
-                <Button className="text-black hover:bg-black bg-[#E8E8E8] border border-[#909090] hover:text-white rounded-none mt-5 mx-3 mb-5">
-                  <Link href={`/insights/case-studies/${post.slug}`} className="px-7">
-                    Read Casestudy
-                  </Link>
-                </Button>
+                <div className="lg:h-[220px] flex flex-col justify-between">
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: post["excerpt"]["rendered"],
+                    }}
+                    className="fs-5 mb-3 mx-3 mt-5 p-1 post-content"
+                  ></div>
+                  <Button className="text-black w-52 hover:bg-black bg-[#E8E8E8] border border-[#909090] hover:text-white rounded-none mt-5 mx-3 mb-5">
+                    <Link
+                      href={`/insights/case-studies/${post.slug}`}
+                      className="px-7"
+                    >
+                      Read Casestudy
+                    </Link>
+                  </Button>
+                </div>
               </div>
             </li>
           ))

@@ -61,17 +61,7 @@ const InsigstsAllCategoriesComponents = () => {
                     <div className={getContentClass('All')}>
                         <AllBlogsComponents />
                     </div>
-                    {activeTab !== 'All' && (
-                        <div className="text-center mt-7">
-                            {/* Conditionally render Load More button */}
-                            <button
-                                onClick={handleLoadMore}
-                                className="bg-customLightGray border border-customGrayMd px-8 py-3"
-                            >
-                                Load More
-                            </button>
-                        </div>
-                    )}
+                   
                 </div>
             </div>
         </>
@@ -79,3 +69,16 @@ const InsigstsAllCategoriesComponents = () => {
 };
 
 export default InsigstsAllCategoriesComponents;
+
+
+// {activeTab !== 'All' && (
+//     <div className="text-center mt-7">
+//         {/* Conditionally render Load More button */}
+//         <button
+//             onClick={handleLoadMore}
+//             className="bg-customLightGray border border-customGrayMd px-8 py-3 mb-10 mt-5"
+//         >
+//             Load More
+//         </button>
+//     </div>
+// )}

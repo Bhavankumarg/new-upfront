@@ -17,11 +17,9 @@ const page = () => {
 
   return (
     <>
-      <div className="bg-[url('/coreTeam/banner.png')] bg-cover h-[60vh] flex flex-col">
+      <div className="bg-[url('/coreTeam/banner.png')] bg-cover lg:h-screen h-80 lg:mt-0 mt-10 flex flex-col">
         <Header />
-        <h1 className="text-center text-white text-2xl m-auto">
-          Collage of Upfront team pictures
-        </h1>
+       
       </div>
       <div className="px-10 py-16 " data-aos="fade-down"data-aos-duration="1000">
         <h1 className="text-6xl mb-6 lg:px-16">

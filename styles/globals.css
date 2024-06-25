@@ -123,3 +123,14 @@ body {
   opacity: 1; /* Show the pseudo-element on hover or when active */
   border-top-color: red;
 }
+
+/* excerpt content */
+
+.post-content {
+  max-height: 4* 1.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}

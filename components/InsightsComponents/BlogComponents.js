@@ -30,14 +30,14 @@ const BlogComponents = () => {
   return (
     <div>
       <h2 className="text-6xl py-10 px-10">BLOGS</h2>
-    
-    <hr className="px-10" />
-    <ul className="flex flex-wrap gap-6 mt-8 container mx-auto">
+
+      <hr className="px-10" />
+      <ul className="flex flex-wrap gap-6 mt-8 container mx-auto">
         {data.length > 0 ? (
           data.map((post) => (
             <li key={post.id} className="lg:border-s lg:border-black mb-10">
               <div className="ps-3 w-80">
-              <div className="relative">
+                <div className="relative">
                   {post.acf && post.acf.thumbnail_image && (
                     <img
                       src={post.acf.thumbnail_image.url}
@@ -57,7 +57,7 @@ const BlogComponents = () => {
                   </p> */}
                 </div>
                 {post.acf && post.acf.date && (
-                  <p className="card-date mb-0">
+                  <p className="card-date mb-0 mt-3">
                     {new Date(post.acf.date).toLocaleDateString("en-US", {
                       year: "numeric",
                       month: "long",
@@ -65,16 +65,26 @@ const BlogComponents = () => {
                     })}
                   </p>
                 )}
-                 <span className="text-white" dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
-                {/* <p className="text-sm mt-3">{post.description}</p> */}
-                <Button className="text-black hover:bg-black hover:text-white rounded-none">
-                  <Link
-                    href={`/insights/blog/${post.slug}`}
-                    className="px-7 "
-                  >
-                    Read More
-                  </Link>
-                </Button>
+                <div className="lg:h-[250px] flex flex-col justify-between">
+                  <span
+                    className="text-[#4A4A4A] text-xl mt-3"
+                    dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+                  />
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: post["excerpt"]["rendered"],
+                    }}
+                    className="fs-5 mb-3 m-height mt-3 p-1 post-content"
+                  ></div>
+                  <Button className="text-black hover:bg-black bg-[#E8E8E8] border border-[#909090] hover:text-white rounded-none mt-5 w-40 mb-5">
+                    <Link
+                      href={`/insights/blog/${post.slug}`}
+                      className="px-7 "
+                    >
+                      Read more
+                    </Link>
+                  </Button>
+                </div>
               </div>
             </li>
           ))
@@ -82,7 +92,6 @@ const BlogComponents = () => {
           <div className="text-center text-3xl">Loading...</div>
         )}
       </ul>
-        
     </div>
   );
 };
