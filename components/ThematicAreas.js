@@ -34,7 +34,7 @@ const ThematicAreas = () => {
           slidesToShow: 3,
           slidesToScroll: 1,
           initialSlide: 1,
-          arrows: true  
+          // arrows: true  
         }
       }
     ]
@@ -50,7 +50,7 @@ const ThematicAreas = () => {
         </div>
         <div className="triangle-right self-center hidden lg:block"></div>
       </div>
-      <div className="w-[72%] lg:py-0 ">
+      <div className="lg:w-[72%] w-[90%] lg:py-0">
         <Slider {...settings} className="hide-scrollbar cursor-pointer">
           {thematicAreas.map((item) => {
             return (

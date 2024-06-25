@@ -29,7 +29,7 @@ const BlogComponents = () => {
 
   return (
     <div>
-      <h2 className="text-6xl py-10 px-10">BLOGS</h2>
+      <h2 className="text-6xl py-10 lg:px-10">BLOGS</h2>
 
       <hr className="px-10" />
       <ul className="flex flex-wrap gap-6 mt-8 container mx-auto">

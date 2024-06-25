@@ -160,7 +160,7 @@ import AllBlogsComponents from './AllBlogsComponents';
 import { insightsTabs } from '@utils/data';
 
 const InsightsAllMobile = () => {
-    const [activeIndex, setActiveIndex] = useState(4); // State to track active accordion item
+    const [activeIndex, setActiveIndex] = useState(1); // State to track active accordion item
 
     const toggleAccordion = (index) => {
         setActiveIndex(activeIndex === index ? null : index); // Toggle active index
@@ -219,7 +219,7 @@ const InsightsAllMobile = () => {
                                     {tabObj.tab === 'News and Publications' && (
                                         <NewsComponents />
                                     )}
-                                    {tabObj.tab === 'All' && <AllBlogsComponents />}
+                                    {/* {tabObj.tab === 'All' && <AllBlogsComponents />} */}
                                 </div>
                             )}
                         </div>

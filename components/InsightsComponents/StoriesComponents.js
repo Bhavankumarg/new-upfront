@@ -30,7 +30,7 @@ const StoriesComponents = () => {
 
   return (
     <div>
-     <h2 className="text-6xl py-10 px-10">STORIES</h2>
+     <h2 className="text-6xl py-10 lg:px-10">STORIES</h2>
     
       <hr className="px-10" />
       

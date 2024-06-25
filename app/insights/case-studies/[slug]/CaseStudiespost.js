@@ -64,7 +64,7 @@ const CaseStudiesPosts = ({ slug }) => {
                   </button>
                   <div
                     type=""
-                    className="w-96 text-white text-xl absolute bottom-2 start-0 text-center font-normal bg-[#F40F34]  focus:outline-none focus:ring-4 focus:ring-gray-300 m-2 py-1 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+                    className="lg:w-96 w-80 text-white text-xl absolute bottom-2 start-0 text-center font-normal bg-[#F40F34]  focus:outline-none focus:ring-4 focus:ring-gray-300 m-2 py-1 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
                   >
                     <span dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
                   </div>
