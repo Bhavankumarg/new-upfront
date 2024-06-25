@@ -23,23 +23,24 @@ export default function Home() {
           <span className="text-red-600 ">WHY WORKFORCE</span> <br /> WELLBEING?
         </h1>
         <p className="text-center mt-5 lg:p-0 p-5">
-          Workforces are key to economic growth however,as the world progresses
-          post COVId 19 pandemic, we have transitioned from a Volatile,
-          Uncertain, Complex, and Ambiguous (VUCA) world to a Brittle, Anxious,
-          Non-Linear, and Incomprehensible world. Global economics is also
-          moving towards circularity, however with that is also a growing range
-          of inequalities encompassing global wealth, income, gender and
-          ecological inequality across the world. The labour markets and systems
-          in most cases may be incapacitated to adjust to the changes and leaves
-          the workforces continuing to experience vulnerability. With a belief
-          that a safe and enabling work environment is non-negotiable for the
-          workforce to thrive, Upfront strives to make systems, capacities and
-          markets stronger and more inclusive to ensure both workforce and
-          businesses wellbeing, but not at the cost of each other.
+          Workforces are key to economic growth; however, as the world
+          progresses post COVID-19 pandemic, we have transitioned from a
+          Volatile, Uncertain, Complex, and Ambiguous (VUCA) world to a Brittle,
+          Anxious, Non-Linear, and Incomprehensible world. Global economics is
+          also moving towards circularity; however, with that comes a growing
+          range of inequalities encompassing global wealth, income, gender, and
+          ecological inequality across the world. In most cases, the labour
+          markets and systems may be incapacitated to adjust to the changes,
+          which leaves the workforces continuing to experience vulnerability.
+          With the belief that a safe and enabling work environment is
+          non-negotiable for the workforces to thrive, Upfront strives to make
+          systems, capacities, and markets stronger and more inclusive to ensure
+          both workforce and business wellbeing, but not at the cost of each
+          other.
         </p>
       </div>
       <WhoAreWe />
-      <WhoAreWeMobile/>
+      <WhoAreWeMobile />
       <WhatWeDo />
       <OurReach />
       <OurPresence />

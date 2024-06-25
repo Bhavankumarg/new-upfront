@@ -51,7 +51,7 @@ const OurKeyCommunities = () => {
     <>
       <div className="space-y-5 lg:px-10 mb-10 text-center">
         <h1 className="text-6xl mb-10">
-          OUR KEY <br /> COMMUNITIES
+          KEY <br /> COMMUNITIES
         </h1>
         <div>
           <Slider {...settings}>

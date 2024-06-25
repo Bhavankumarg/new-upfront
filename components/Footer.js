@@ -16,31 +16,49 @@ const Footer = () => {
         </div>
         <div className="lg:flex gap-16">
           <ul className="text-white/60 text-xl">
-            <h3 className="text-white text-2xl">ABOUT US</h3>
+            <h3 className="text-white text-2xl">About Us</h3>
             <div className="w-[175px] h-[1px] bg-customGrayMd my-3"></div>
             <Link href="/our-story/" className='flex gap-10' target='_blank'><li>Our Story</li><FaArrowRight className='mt-1'/></Link>
-            <Link href="what-we-do" className='flex gap-4' target='_blank'><li>What We Do</li><FaArrowRight className='mt-1'/></Link>
+            
             <Link href="our-team" className='flex gap-9 ' target='_blank'><li>Our Team</li><FaArrowRight className='mt-1'/></Link>
           </ul>
           <ul className="text-customGrayMd text-xl">
-            <h3 className="text-white text-2xl lg:mt-0 mt-5" >OUR WORK</h3>
+            <h3 className="text-white text-2xl lg:mt-0 mt-5" >What We Do</h3>
             <div className="w-[175px] h-[1px] bg-customGrayMd my-3"></div>
+            <Link href="/what-we-do" className='flex gap-10 text-white/60' target='_blank'><li>What We Do</li><FaArrowRight className='mt-1'/></Link>
+            
           </ul>
           <ul className="text-customGrayMd text-xl">
-           <Link href="/insights"> <h3 className="text-white text-2xl lg:mt-0 mt-5">INSIGHTS</h3></Link>
-            <div className="w-[175px] h-[1px] bg-customGrayMd my-3"></div>
-          </ul>
+      <h3 className="text-white text-2xl">Insights</h3>
+      <div className="w-[175px] h-[1px] bg-customGrayMd my-3"></div>
+      <Link href="/insights" target="_blank" className="flex items-center justify-between text-white/60">
+        <li className="flex-grow">Stories</li>
+        <FaArrowRight />
+      </Link>
+      <Link href="/insights" target="_blank" className="flex items-center justify-between text-white/60">
+        <li className="flex-grow">Case Studies</li>
+        <FaArrowRight />
+      </Link>
+      <Link href="/insights" target="_blank" className="flex items-center justify-between text-white/60">
+        <li className="flex-grow">Blogs</li>
+        <FaArrowRight />
+      </Link>
+      <Link href="/insights" target="_blank" className="flex items-center justify-between text-white/60">
+        <li className="flex-grow">News and Publications</li>
+        <FaArrowRight />
+      </Link>
+    </ul>
           <ul className="text-white/60 text-xl lg:mt-0 mt-5">
-            <Link href="/contact-us"><h3 className="text-white text-2xl lg:mt-0">CONTACT US</h3></Link>
+            <Link href="/contact-us"><h3 className="text-white text-2xl lg:mt-0">Contact Us</h3></Link>
             <div className="w-[175px] h-[1px] bg-customGrayMd my-3"></div>
             <Link href="mailto:Info@upfrontglobal.com"><li className='mt-5 lg:mt-0'>Info@upfrontglobal.com</li></Link>
-            <li className='lg:mt-3 mt-5'>Phone: +91 01234567890</li>
+            {/* <li className='lg:mt-3 mt-5'>Phone: +91 01234567890</li> */}
           </ul>
         </div>
       </div>
       <div className="bg-customGray flex px-10 py-6">
         <p className="text-gray-400">
-          Upfront s an initiative of the Catalyst Group 2024. All Rights
+          Upfront is an initiative of the Catalyst Group 2024. All Rights
           Reserved
         </p>
       </div>

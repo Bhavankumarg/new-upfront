@@ -39,8 +39,8 @@ const AgencyBuilding = () => {
           </div>
           <p className="pt-3">
             Sharing knowledge with men and women that includes social and gender
-            norms, empowering participants to challenge stereotypes and improve
-            themselves and ask for what they deserve. Lifeskills training is
+            norms, empowering participants to challenge stereotypes, improve
+            themselves, and ask for what they deserve. Life skills training is
             also integrated with tools for their personal and professional
             development.
           </p>
@@ -65,7 +65,7 @@ const AgencyBuilding = () => {
 
           <p className="pt-3">
             Supporting the career advancement of women and young girls in the
-            workplace through mentorship programs, skills development
+            workplace through mentorship programmes, skill development
             initiatives, and handholding to help women navigate their career
             paths with confidence. Additionally, Upfront works closely with
             employers to strengthen workplace policies and practices that
@@ -76,6 +76,6 @@ const AgencyBuilding = () => {
       </div>
     </>
   );
-};
+};    
 
 export default AgencyBuilding;

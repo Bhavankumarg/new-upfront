@@ -10,8 +10,8 @@ const CaseStudy = () => {
       </h2>
       <div className="lg:px-16 py-8 text-center lg:p-0 p-2">
         <CaseStudyCarousel />
-        <button className="bg-customGray self-center text-white p-3 mt-10">
-          View All Casestudies
+        <button className="bg-customGray self-center text-white p-3">
+          View All Case Studies
         </button>
       </div>
     </div>

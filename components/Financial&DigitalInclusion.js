@@ -37,17 +37,17 @@ const Financial = () => {
             </div>
           </div>
           <p className="pt-3">
-            Financial literacy is the foundation of financial well-being. The
-            workshops and resources on financial planning, budgeting, and
-            saving, equip employees with practical skills to manage their
-            finances effectively. Whether it’s setting financial goals, creating
-            a budget, or building a savings plan along with the tools and
+            Financial literacy is the foundation of financial wellbeing. Our
+            workshops and resources on financial planning, budgeting, and saving
+            equip employees with practical skills to manage their finances
+            effectively. Whether it's setting financial goals, creating a
+            budget, or building a savings plan, we provide the tools and
             guidance needed to make informed financial decisions. Upfront also
             bridges the gap between the workforce and a range of financial
             institutions and service providers, ensuring they have access to the
-            products and resources they need to meet their financial goals be it
-            opening bank accounts, loans, investments to ensure their financial
-            and overall wellbeing.
+            products and resources they need to meet their financial goals, such
+            as opening bank accounts, obtaining loans, and making investments to
+            ensure their financial and overall wellbeing.
           </p>
         </div>
         <div className="lg:w-1/2 bg-[#FFE8EC] p-4 lg:pt-48">
@@ -69,12 +69,12 @@ const Financial = () => {
           </div>
 
           <p className="pt-3">
-            In today’s digital age, understanding how to navigate digital
-            financial services is essential. Thus we provide information and
+            In today's digital age, understanding how to navigate digital
+            financial services is essential.We provide information and create
             awareness on digital financial literacy, covering topics such as
             online banking, mobile payments, and cybersecurity. By improving
             digital literacy skills, we empower our workforce to access and
-            utilize digital financial services safely and efficiently.
+            utilise digital financial services safely and efficiently.
           </p>
         </div>
       </div>

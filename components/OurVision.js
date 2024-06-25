@@ -9,7 +9,7 @@ const OurVision = () => {
             OUR <br /> VISION
           </h2>
           <p className="text-white lg:text-2xl text-3xl lg:w-3/4 w-full">
-            Make Wellbeing a reality for the Workforces
+            Make Wellbeing a Reality for the Workforces
           </p>
         </div>
         <div className="hidden lg:block triangle-right self-center triangle-red"></div>

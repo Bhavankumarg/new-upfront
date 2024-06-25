@@ -39,11 +39,11 @@ const GenderEquality = () => {
           <p className="pt-3">
             We are committed to creating a safe and respectful work environment
             for all. Through comprehensive prevention, mitigation, and redressal
-            mechanism, Upfront actively works sexual harassment and gender-based
-            violence in the workplace. This includes raising awareness,
-            providing information and resources, conducting policy reviews, and
-            implementing reformative practices to ensure accountability and
-            support for victims.
+            mechanisms, Upfront actively works to address sexual harassment and
+            gender-based violence in the workplace. This includes raising
+            awareness, providing information and resources, conducting policy
+            reviews, and implementing reformative practices to ensure
+            accountability and support for the victims.
           </p>
         </div>
         <div className="lg:w-1/2 bg-[#FFE8EC] p-4 lg:pt-56">
@@ -65,13 +65,13 @@ const GenderEquality = () => {
           </div>
 
           <p className="pt-3">
-            We recognize the importance of making our workplaces and workspaces
-            accessible and inclusive for everyone, regardless of caste, creed,
-            gender identity, or physical ability. Our initiatives focus on
-            removing barriers to participation and creating a culture of
-            acceptance and belonging. We strive to foster an environment where
-            all employees feel valued, respected, and empowered to contribute
-            their unique perspectives and talents.
+            We recognise the importance of making workplaces accessible and
+            inclusive for everyone, regardless of caste, creed, gender identity,
+            or physical ability. Our initiatives focus on removing barriers to
+            participation and creating a culture of acceptance and belonging. We
+            strive to foster an environment where all employees feel valued,
+            respected, and empowered to contribute their unique perspectives and
+            talents.
           </p>
         </div>
       </div>

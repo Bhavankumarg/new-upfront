@@ -5,21 +5,21 @@ export const homeBannerCarousel = [
     id: 1,
     imageUrl: '/homePage/homeBanner1.png',
     mobileimage : "/homePage/mobile_banner1.png",
-    title: 'Making Wellbeing Reality for Workforces!',
-    description: 'By working with the workforce and the systems',
+    title: 'Making Wellbeing a Reality for the Workforces',
+    description: 'By working with the workforces and the systems',
   },
   {
     id: 2,
     imageUrl: '/homePage/homeBanner2.png',
     mobileimage : "/homePage/mobile_banner2.png",
-    title: 'Making Wellbeing Reality for Workforces!',
-    description: 'By changing mindsets, behaviours and practices',
+    title: 'Making Wellbeing a Reality for the Workforces',
+    description: 'By changing mindsets, behaviours, and practices',
   },
   {
     id: 3,
     imageUrl: '/homePage/homeBanner3.png',
     mobileimage : "/homePage/mobile_banner3.png",
-    title: 'Making Wellbeing Reality for Workforces!',
+    title: 'Making Wellbeing a Reality for the Workforces',
     description:
       'By improving skills, financial security, processes and policies',
   },
@@ -27,14 +27,14 @@ export const homeBannerCarousel = [
     id: 4,
     imageUrl: '/homePage/homeBanner4.png',
     mobileimage : "/homePage/mobile_banner4.png",
-    title: 'Making Wellbeing Reality for Workforces!',
+    title: 'Making Wellbeing a Reality for the Workforces',
     description: 'By building agency, ensuring voices and choices',
   },
   {
     id: 5,
     imageUrl: '/homePage/homeBanner5.png',
     mobileimage : "/homePage/mobile_banner5.png",
-    title: 'Making Wellbeing Reality for Workforces!',
+    title: 'Making Wellbeing a Reality for the Workforces',
     description: 'By establishing partnerships and collaborations',
   },
 ]
@@ -108,12 +108,12 @@ export const    thematicAreas = [
   {
     id: 4,
     logo: '/homePage/thematicAreas/health.svg',
-    title: 'Preventive and promotive health',
+    title: 'Preventive and Promotive Health',
   },
   {
     id: 5,
     logo: '/homePage/thematicAreas/climate.svg',
-    title: 'Just Transition & Climate actions',
+    title: 'Just Transition & Climate Actions',
   },
   {
     id: 6,
@@ -123,22 +123,22 @@ export const    thematicAreas = [
   {
     id: 7,
     logo: '/homePage/thematicAreas/accomodation.svg',
-    title: 'Safe & sustainable accommodation',
+    title: 'Safe & Sustainable Accommodation',
   },
   {
     id: 8,
     logo: '/homePage/thematicAreas/career.svg',
-    title: 'career progression for women',
+    title: 'Career Progression for Women',
   },
   {
     id: 9,
     logo: '/homePage/thematicAreas/safe.svg',
-    title: 'Safe & sustainable workplaces',
+    title: 'Safe & Sustainable Workplaces',
   },
   {
     id: 10,
     logo: '/homePage/thematicAreas/workplace.svg',
-    title: 'Inclusive workplaces',
+    title: 'Inclusive Workplaces',
   },
 ]
 
@@ -146,7 +146,7 @@ export const weBelieve = [
   {
     id: 1,
     logo: '/ourStory/we_believe/thematic1.svg',
-    title: 'Every human being has the potential',
+    title: 'Every human being has potential',
   },
   {
     id: 2,
@@ -228,7 +228,7 @@ export const coreTeam = [
     id: 7,
     imageUrl: '/coreTeam/sachin.png',
     name: 'Sachin Naik',
-    post: 'Program Specialist',
+    post: 'Programme Specialist',
     logo: <FaLinkedin />,
   },
   {
@@ -270,7 +270,7 @@ export const coreTeam = [
     id: 13,
     imageUrl: '/coreTeam/aparna.png',
     name: 'Aparna Suresh',
-    post: 'Street Vendor Well-being',
+    post: 'Street Vendor Wellbeing',
     logo: <FaLinkedin />,
   },
   {
@@ -410,15 +410,15 @@ export const whatWeDoTabs = [
   },
   {
     id: 2,
-    tab: 'Our Approach',
+    tab: 'Approach',
   },
   {
     id: 3,
-    tab: 'Building Resilience of the workforces',
+    tab: 'Building Resilience of the Workforces',
   },
   {
     id: 4,
-    tab: 'Our Key Communities',
+    tab: 'Key Communities',
   },
   {
     id :5,
@@ -433,7 +433,7 @@ export const whatWeDoTabs = [
 export const contactUsTabs = [
   {
     id: 1,
-    tab: 'Partner with us',
+    tab: 'Partner With Us',
   },
   {
     id: 2,
@@ -448,7 +448,7 @@ export const insightsTabs = [
   { id: 1, tab: 'Stories' },
   { id: 2, tab: 'Case Studies' },
   { id: 3, tab: 'Blogs' },
-  { id: 4, tab: 'News And Publications' },
+  { id: 4, tab: 'News and Publications' },
   { id: 5, tab: 'All' }
 ];
 // export const insightsTabs = [
@@ -779,7 +779,7 @@ export const impact = [
     id: 7,
     imageUrl: '/whatWeDo/informalWorkers.png',
     count: '453522',
-    title: 'Informal Workers**',
+    title: 'Informal Workers',
   },
   {
     id: 8,

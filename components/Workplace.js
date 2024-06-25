@@ -38,11 +38,11 @@ const Workplace = () => {
           </div>
           <p className="pt-3">
             Effective communication is essential for resolving conflicts and
-            addressing issues in the workplace. With the workforce, we emphasise
-            the importance of clear, respectful communication and provide tools
-            and strategies for effective problem-solving. A strong component
-            focuses on empathy-building and leadership development, encouraging
-            the workers to understand and support each other’s perspectives and
+            addressing issues in the workplace. We emphasise the importance of
+            clear, respectful communication and provide tools and strategies for
+            effective problem-solving. A significant part of our efforts focus
+            on empathy-building and leadership development, encouraging the
+            workforce to understand and support each other's perspectives and
             take on leadership roles in promoting positive change.
           </p>
         </div>
@@ -65,10 +65,10 @@ const Workplace = () => {
           </div>
 
           <p className="pt-3">
-            Workforce should be aware of their rights and responsibilities in
+            The workforce should be aware of its rights and responsibilities in
             the workplace. Through workshops, training sessions, and
             informational resources, we educate the workforce about their legal
-            rights under labor laws and human rights principles empowering the
+            rights under labour laws and human rights principles, empowering the
             employees to advocate for themselves and others in the workplace.
           </p>
         </div>

@@ -52,7 +52,7 @@ const page = () => {
         <div className="lg:ms-16 ps-10 mt-10">
           <p className="text-black text-5xl">GET INVOLVED</p>
           <p className="text-black mt-4 text-xl">
-            Join the Force behind the wellbeing of the workforce
+            Join the Force behind the Wellbeing of the Workforces
           </p>
           <div className="lg:flex lg:gap-10 pt-10 " ref={partnerRef}>
             <Button className="relative bg-black lg:w-96 w-80 p-3 group hover:bg-red-600 transition-all duration-300">
@@ -62,7 +62,7 @@ const page = () => {
               <FaArrowRightLong className="text-3xl absolute right-4 transform translate-x-6 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
             </Button>
             <Button className="relative bg-black lg:w-96 w-80 p-3 group hover:bg-red-600 transition-all duration-300">
-              <span className="text-xl">invest</span>
+              <span className="text-xl">Invest</span>
               <FaArrowRightLong className="text-3xl absolute right-4 transform translate-x-6 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
             </Button>
             <Button className="relative bg-black lg:w-96 w-80 p-3 group hover:bg-red-600 transition-all duration-300">
@@ -77,9 +77,9 @@ const page = () => {
             <p className="text-black text-5xl pt-10">
               CAREER <br /> OPPORTUNITIES
             </p>
-            <p className="text-black mt-4 text-xl">
+            {/* <p className="text-black mt-4 text-xl">
               We offer rewarding career opportunities for XYZ aspirants.
-            </p>
+            </p> */}
             <p className="text-xl text-red-500 mt-3">Current Openings</p>
 
             <div className="pt-10">
@@ -331,13 +331,14 @@ const page = () => {
 
           <div class="lg:grid grid-cols-3 gap-4 text-xl border-b border-gray-400 ">
             <div class="lg:p-4 pt-5 px-4">Email ID:</div>
-            <div class="lg:p-4 px-4">Info@upfrontglobal.com</div>
+            <div class="lg:p-4 px-4">Info@upfrontglobal.com</div>  
+            {/* <Link href="mailto:Info@upfrontglobal.com"><li className='mt-5 lg:mt-0'>Info@upfrontglobal.com</li></Link> */}
             <div className="p-4"></div>
           </div>
 
           <div class="lg:grid grid-cols-3 lg:gap-4 text-xl">
             <div class="lg:p-4 px-4 pt-5">Phone Number:</div>
-            <div class="lg:p-4 px-4">+91 01234567890</div>
+            {/* <div class="lg:p-4 px-4">+91 01234567890</div> */}
             <div className="p-4"></div>
           </div>
         </div>
