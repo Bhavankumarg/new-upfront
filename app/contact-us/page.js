@@ -10,6 +10,7 @@ import ContactUsAccordion from "@components/ContactUsAccordion";
 import ContactForm from "@utils/ContactForm";
 import ContactFormMobile from "@utils/ContactFormMobile";
 import ContactForms from "@utils/ContactForms";
+import PartnerForm from "@utils/PartnerForm";
 
 const page = () => {
   const partnerRef = useRef(null);
@@ -38,11 +39,8 @@ const page = () => {
   return (
     <>
       <div className="lg:bg-[url('/contactUs/banner.png')] bg-[url('/contactUs/bannerMobile.png')] bg-cover lg:h-[80vh] h-[600px] flex flex-col lg:ps-16 ps-10 pb-8">
-      
         <Header />
-        <h1 className="text-white text-6xl mt-auto">
-            CONTACT US
-          </h1>
+        <h1 className="text-white text-6xl mt-auto">CONTACT US</h1>
       </div>
       {/* <div className="lg:bg-[url('/contactUs/banner.png')] bg-[url('/contactUs/banneMobile.png')] bg-cover lg:h-[80vh] h-[600px] flex flex-col ps-16 pb-8 ">
           <Header />
@@ -58,19 +56,26 @@ const page = () => {
         <ContactUsAccordion />
       </div>
 
-      <div className="hidden lg:block">
+      <div className="">
         <div className=" ps-10 mt-10">
           <p className="text-black lg:text-6xl text-3xl">GET INVOLVED</p>
           <p className="text-black mt-4 text-xl">
             Join the force behind the Wellbeing of the Workforces
           </p>
-          {/* <div className="lg:flex lg:gap-10 pt-10 " ref={partnerRef}>
-            <Button className="relative bg-black lg:w-96 w-80 p-3 group hover:bg-red-600 transition-all duration-300">
+
+          <div className="lg:flex lg:gap-10 pt-10 " ref={partnerRef}>
+            <Button
+              className="relative bg-black lg:w-96 w-80 p-3 group hover:bg-red-600 transition-all duration-300"
+              data-modal-target="default-modal"
+              data-modal-toggle="default-modal"
+              // class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
               <span className="text-xl flex justify-center">
                 Partner with us
               </span>
               <FaArrowRightLong className="text-3xl absolute right-4 transform translate-x-6 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
             </Button>
+
             <Button className="relative bg-black lg:w-96 w-80 p-3 group hover:bg-red-600 transition-all duration-300">
               <span className="text-xl">Invest</span>
               <FaArrowRightLong className="text-3xl absolute right-4 transform translate-x-6 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
@@ -79,7 +84,47 @@ const page = () => {
               <span className="text-xl">Work with us</span>
               <FaArrowRightLong className="text-3xl absolute right-4 transform translate-x-6 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
             </Button>
-          </div> */}
+          </div>
+        </div>
+
+        <div
+          id="default-modal"
+          tabindex="-1"
+          aria-hidden="true"
+          class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+        >
+          <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                <button
+                  type="button"
+                  class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                  data-modal-hide="default-modal"
+                >
+                  <svg
+                    class="w-3 h-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 14"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                    />
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+                </button>
+              </div>
+
+              <div class="p-4 md:p-5 space-y-4">
+                <PartnerForm />
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="bg-[#E8E8E8] pb-10" ref={careerRef}>
@@ -215,8 +260,8 @@ const page = () => {
             </div>
 
             <ContactForms />
-              {/* <ContactForm/> */}
-              {/* <ContactFormMobile /> */}
+            {/* <ContactForm/> */}
+            {/* <ContactFormMobile /> */}
             {/* form start */}
 
             {/* <div className="bg-[#4A4A4A] py-1 px-5 mt-5 ">
@@ -341,7 +386,7 @@ const page = () => {
 
           <div class="lg:grid grid-cols-3 gap-4 text-xl border-b border-gray-400 ">
             <div class="lg:p-4 pt-5 px-4">Email ID:</div>
-            <div class="lg:p-4 px-4">Info@upfrontglobal.com</div>  
+            <div class="lg:p-4 px-4">Info@upfrontglobal.com</div>
             {/* <Link href="mailto:Info@upfrontglobal.com"><li className='mt-5 lg:mt-0'>Info@upfrontglobal.com</li></Link> */}
             <div className="p-4"></div>
           </div>

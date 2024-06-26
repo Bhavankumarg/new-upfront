@@ -1,8 +1,9 @@
 import React, { useState, useRef } from "react";
-import Image from 'next/image';
+import Image from "next/image";
 import { Button } from "flowbite-react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import ContactForms from "@utils/ContactForms";
+import PartnerForm from "@utils/PartnerForm";
 
 const ContactUsAccordion = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -10,7 +11,6 @@ const ContactUsAccordion = () => {
   const partnerRef = useRef(null);
   const careerRef = useRef(null);
   const contactRef = useRef(null);
-
 
   const toggleAccordion = (index, ref) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -32,11 +32,10 @@ const ContactUsAccordion = () => {
       title: "Contact Info",
       ref: contactRef,
     },
-      
   ];
 
   return (
-    <div className=" block lg:hidden">
+    <div className=" hidden lg:block">
       <div id="accordion-collapse" data-accordion="collapse">
         {accordionData.map((item, index) => (
           <div key={index} ref={(el) => (sectionRefs.current[index] = el)}>
@@ -44,7 +43,9 @@ const ContactUsAccordion = () => {
               <button
                 type="button"
                 className={`flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-400 focus:ring-0 focus:ring-red-50 dark:focus:ring-red-800 dark:border-gray-100 dark:text-gray-400 gap-3 ${
-                  activeIndex === index ? "bg-gray-400 text-white" : "hover:bg-gray-400 hover:text-white dark:hover:bg-red-800"
+                  activeIndex === index
+                    ? "bg-gray-400 text-white"
+                    : "hover:bg-gray-400 hover:text-white dark:hover:bg-red-800"
                 }`}
                 onClick={() => toggleAccordion(index, item.ref)}
                 aria-expanded={activeIndex === index}
@@ -53,7 +54,9 @@ const ContactUsAccordion = () => {
                 <span>{item.title}</span>
                 <svg
                   data-accordion-icon
-                  className={`w-3 h-3 shrink-0 ${activeIndex === index ? "rotate-180" : ""}`}
+                  className={`w-3 h-3 shrink-0 ${
+                    activeIndex === index ? "rotate-180" : ""
+                  }`}
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -73,34 +76,33 @@ const ContactUsAccordion = () => {
               id={`accordion-collapse-body-${index + 1}`}
               className={`${activeIndex === index ? "" : "hidden"}`}
               aria-labelledby={`accordion-collapse-heading-${index + 1}`}
-            >
-              
-            </div>
+            ></div>
           </div>
         ))}
       </div>
-      
-      <div className="lg:ms-16 ps-10 mt-10">
-  <p className="text-black text-3xl">GET INVOLVED</p>
-  <p className="text-black mt-4 text-xl">
-    Join the Force behind the wellbeing of the workforce
-  </p>
-  <div className="lg:flex lg:gap-10 pt-10" ref={partnerRef}>
-    <Button className="relative bg-black lg:w-96 w-80 p-3 group hover:bg-red-600 transition-all duration-300">
-      <span className="text-xl flex justify-center">Partner with us</span>
-      <FaArrowRightLong className="text-3xl absolute right-4 transform translate-x-6 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
-    </Button>
-    <Button className="relative bg-black lg:w-96 w-80 p-3 group hover:bg-red-600 transition-all duration-300">
-      <span className="text-xl">invest</span>
-      <FaArrowRightLong className="text-3xl absolute right-4 transform translate-x-6 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
-    </Button>
-    <Button className="relative bg-black lg:w-96 w-80 p-3 group hover:bg-red-600 transition-all duration-300">
-      <span className="text-xl">Work with us</span>
-      <FaArrowRightLong className="text-3xl absolute right-4 transform translate-x-6 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
-    </Button>
-  </div>
-</div>
 
+      <div className="lg:ms-16 ps-10 mt-10">
+        <p className="text-black text-3xl">GET INVOLVED</p>
+        <p className="text-black mt-4 text-xl">
+          Join the Force behind the wellbeing of the workforce
+        </p>
+        <div className="lg:flex lg:gap-10 pt-10" ref={partnerRef}>
+          <Button className="relative bg-black lg:w-96 w-80 p-3 group hover:bg-red-600 transition-all duration-300">
+            <span className="text-xl flex justify-center">Partner with us</span>
+            <FaArrowRightLong className="text-3xl absolute right-4 transform translate-x-6 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+          </Button>
+          <Button className="relative bg-black lg:w-96 w-80 p-3 group hover:bg-red-600 transition-all duration-300">
+            <span className="text-xl">invest</span>
+            <FaArrowRightLong className="text-3xl absolute right-4 transform translate-x-6 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+          </Button>
+          <Button className="relative bg-black lg:w-96 w-80 p-3 group hover:bg-red-600 transition-all duration-300">
+            <span className="text-xl">Work with us</span>
+            <FaArrowRightLong className="text-3xl absolute right-4 transform translate-x-6 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+          </Button>
+        </div>
+      </div>
+     
+     
       <div className="bg-[#E8E8E8] pb-10" ref={careerRef}>
         <div className=" mt-10 ">
           <p className="text-black text-3xl pt-10 px-10">
@@ -146,12 +148,8 @@ const ContactUsAccordion = () => {
                 aria-labelledby="accordion-collapse-heading-1"
               >
                 <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                  <p class="mb-2 text-gray-500 dark:text-gray-400">
-                   
-                  </p>
-                  <p class="text-gray-500 dark:text-gray-400">
-                   
-                  </p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400"></p>
+                  <p class="text-gray-500 dark:text-gray-400"></p>
                 </div>
               </div>
               <h2 id="accordion-collapse-heading-2">
@@ -187,26 +185,22 @@ const ContactUsAccordion = () => {
                 aria-labelledby="accordion-collapse-heading-2"
               >
                 <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-                  <p>
-
-                  </p>
+                  <p></p>
                 </div>
               </div>
-             
+
               <div
                 id="accordion-collapse-body-3"
                 class="hidden"
                 aria-labelledby="accordion-collapse-heading-3"
               >
-                <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                 
-                </div>
+                <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700"></div>
               </div>
             </div>
           </div>
 
-          <ContactForms/>
-            {/* <ContactForm/> */}
+          <ContactForms />
+          {/* <ContactForm/> */}
           {/* form start */}
 
           {/* <div className="bg-[#4A4A4A] py-1 px-5 mt-5">
@@ -337,8 +331,7 @@ const ContactUsAccordion = () => {
           <div className="p-4"></div>
         </div>
       </div>
-      </div>
-    
+    </div>
   );
 };
 

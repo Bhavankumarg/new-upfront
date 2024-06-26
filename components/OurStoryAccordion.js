@@ -84,11 +84,11 @@ const OurStoryAccordion = () => {
         ))}
       </div>
       
-      <div ref={workforceRef}>
+      {/* <div ref={workforceRef}>
       <h1 className="text-3xl px-5 py-10">
           <span className="text-red-600">WHY</span> WORKFORCE <br /> WELLBEING?
         </h1>
-      </div>
+      </div> */}
 
      
 {/* 
@@ -104,7 +104,7 @@ const OurStoryAccordion = () => {
       </div>
       </div> */}
 
-     <div className='block lg:hidden'>
+     {/* <div className='block lg:hidden'>
      <div className="pb-16 mx-auto container flex justify-center">
         <Image
           src="/ourStory/workForceWellbeingMobile.png"
@@ -114,10 +114,10 @@ const OurStoryAccordion = () => {
           alt=""
         />
       </div>
-     </div>
+     </div> */}
 
       {/* <ThematicAreas /> */}
-      <div ref={webelievehRef}>
+      {/* <div ref={webelievehRef}>
       <WeBelive/>
       </div>
       <div ref={vissionRef}>
@@ -125,9 +125,9 @@ const OurStoryAccordion = () => {
       </div>
       <div>
       <OurMission />
-      </div>
+      </div> */}
 
-      <div className="px-10 py-16" ref={ourhistoryRef}>
+      {/* <div className="px-10 py-16" ref={ourhistoryRef}>
         <h1 className="text-6xl lg:px-16 px-7">
           <span className="text-red-600">OUR</span> <br /> HISTORY
         </h1>
@@ -147,7 +147,7 @@ const OurStoryAccordion = () => {
             alt=""
           />
         </div>
-      </div>
+      </div> */}
       </div>
     
   );

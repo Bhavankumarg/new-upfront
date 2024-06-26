@@ -8,7 +8,7 @@ const CarouselScreen = ({ details }) => {
       class="relative w-full lg:h-screen"
       data-carousel="slide"
     >
-      <div class="relative lg:h-full h-[650px] overflow-hidden">
+      <div class="relative lg:h-full h-[780px] overflow-hidden">
         {details.map((item) => {
           return (
             <div

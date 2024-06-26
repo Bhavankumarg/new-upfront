@@ -188,6 +188,7 @@ export const coreTeam = [
     name: 'Shaonli Chakraborty',
     post: 'Director',
     logo: <FaLinkedin />,
+    url: 'https://www.linkedin.com/in/shaonli-chakraborty-she-her-58936b7/',
   },
   {
     id: 2,
@@ -195,6 +196,7 @@ export const coreTeam = [
     name: 'Priyamvada Tiwari',
     post: 'Associate Director, Platform & Policy',
     logo: <FaLinkedin />,
+    url:'https://www.linkedin.com/in/priyamvada-tiwari2023/',
   },
   {
     id: 3,

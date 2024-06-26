@@ -61,11 +61,11 @@ const page = () => {
       </div>
 
       <div className='block lg:hidden'>
-        {/* <OurStoryAccordion /> */}
+        <OurStoryAccordion />
       </div>
 
       <div className="lg:px-24 px-10 py-16" ref={worforceRef}>
-        <h1 className="text-6xl">
+        <h1 className="lg:text-6xl text-3xl">
           <span className="text-red-600">WHY</span> WORKFORCE <br /> WELLBEING?
         </h1>
       </div>
