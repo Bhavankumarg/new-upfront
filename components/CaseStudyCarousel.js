@@ -116,15 +116,15 @@ const   OurKeyCommunities = () => {
             )}
           </div>
           <div className="bg-[#FACDD4] text-start">
-         <div className="mx-3">
+      
          <div className="pt-5 text-xl">
             <span
-              className=" mx-3"
+              className="text-start mx-3"
               dangerouslySetInnerHTML={{ __html: post.title.rendered }}
             />
           </div>
 
-          <div className="lg:h-[220px] flex flex-col justify-between">
+          <div className="lg:h-[220px] h-[200px] flex flex-col justify-between">
             <div
               dangerouslySetInnerHTML={{
                 __html: post["excerpt"]["rendered"],
@@ -138,7 +138,7 @@ const   OurKeyCommunities = () => {
               </Link>
             </Button>
           </div>
-         </div>
+        
           </div>
           
         </div>

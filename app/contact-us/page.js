@@ -64,7 +64,7 @@ const page = () => {
           <p className="text-black mt-4 text-xl">
             Join the force behind the Wellbeing of the Workforces
           </p>
-          <div className="lg:flex lg:gap-10 pt-10 " ref={partnerRef}>
+          {/* <div className="lg:flex lg:gap-10 pt-10 " ref={partnerRef}>
             <Button className="relative bg-black lg:w-96 w-80 p-3 group hover:bg-red-600 transition-all duration-300">
               <span className="text-xl flex justify-center">
                 Partner with us
@@ -79,7 +79,7 @@ const page = () => {
               <span className="text-xl">Work with us</span>
               <FaArrowRightLong className="text-3xl absolute right-4 transform translate-x-6 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
             </Button>
-          </div>
+          </div> */}
         </div>
 
         <div className="bg-[#E8E8E8] pb-10" ref={careerRef}>
