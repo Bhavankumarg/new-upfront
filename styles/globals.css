@@ -161,3 +161,10 @@ body {
   line-height: 1;
 }
 
+@media (max-width:767px){
+  .hover\:bg-gray-100:hover {
+    
+    background-color: transparent !important;
+}
+}
+
