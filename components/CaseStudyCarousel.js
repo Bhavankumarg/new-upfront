@@ -147,12 +147,12 @@ const   OurKeyCommunities = () => {
 </Slider>
 
       </div>
-      <div className="text-center">
+      {/* <div className="text-center">
         <p className="text-xl mt-7">
           And Other Workforces Including Plantation Workers, Domestic Workers,
           Gig Workers Etc.
         </p>
-      </div>
+      </div> */}
     </>
   );
 };

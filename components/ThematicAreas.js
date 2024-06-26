@@ -59,7 +59,7 @@ const ThematicAreas = () => {
                   <Image
                     src={item.logo}
                     width={60}
-                    height={50}
+                    height={60}
                     alt={item.title}
                   />
                   <p className="text-white text-center">{item.title}</p>

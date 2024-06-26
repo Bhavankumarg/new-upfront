@@ -20,7 +20,7 @@ export default function Home() {
       </div>
       <div className="max-w-screen-xl lg:mx-auto lg:px-40 lg:py-20 tracking-wide">
         <h1 className="text-6xl text-center">
-          <span className="text-red-600 ">WHY WORKFORCE</span> <br /> WELLBEING?
+          <span className="text-red-600 ">WHY WORKFORCE</span> <br /> WELLBEING
         </h1>
         <p className="text-center mt-5 lg:p-0 p-5 text-xl">
           Workforces are key to economic growth; however, as the world

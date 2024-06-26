@@ -52,7 +52,7 @@ const page = () => {
         <div className="lg:ms-16 ps-10 mt-10">
           <p className="text-black text-5xl">GET INVOLVED</p>
           <p className="text-black mt-4 text-xl">
-            Join the Force behind the Wellbeing of the Workforces
+            Join the force behind the Wellbeing of the Workforces
           </p>
           <div className="lg:flex lg:gap-10 pt-10 " ref={partnerRef}>
             <Button className="relative bg-black lg:w-96 w-80 p-3 group hover:bg-red-600 transition-all duration-300">
