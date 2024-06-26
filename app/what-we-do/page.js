@@ -62,7 +62,7 @@ const Page = () => {
             WHAT <br /> WE DO
           </h1>
         </div>
-        <div className="hidden lg:block sticky top-0 bg-white shadow-md z-50">
+        <div className="hidden lg:block bg-white shadow-md z-50">
           <Tab tabs={whatWeDoTabs} getActiveTab={getActiveTab} />
         </div>
         <div>

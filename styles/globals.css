@@ -115,10 +115,10 @@ body {
   color: white;
 }
 
-.selected:before {
+/* .selected:before {
   opacity: 1 !important; /* Show the pseudo-element when active */
   border-top-color: red !important;
-}
+} */
 
 .talkbubble-container {
   display: flex;
@@ -152,6 +152,7 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for better visibility */
 }
 
+@media(min-width:769px)  {
 .text-6xl {
   font-size: 3rem  !important;
   line-height: 1 !important;
@@ -159,6 +160,7 @@ body {
 .lg\:text-6xl {
   font-size: 3rem !important  ;
   line-height: 1;
+}
 }
 
 @media (max-width:767px){

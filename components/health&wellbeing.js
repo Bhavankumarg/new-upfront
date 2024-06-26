@@ -32,7 +32,7 @@ const HealthWellbeing = () => {
             </div>
             <div className="flex flex-col px-3">
               <p className="text-md font-medium">
-                NUTRITION, SANITATION &<br /> PERSONAL HYGIENE:
+                NUTRITION, SANITATION AND<br /> PERSONAL HYGIENE:
               </p>
             </div>
           </div>
@@ -84,7 +84,7 @@ const HealthWellbeing = () => {
             </div>
             <div className="flex flex-col px-3">
               <p className="text-md font-medium">
-                PRIMARY HEALTH & NON-COMMUNICABLE DISEASES (NCDS):
+                PRIMARY HEALTH AND<br/> NON-COMMUNICABLE DISEASES (NCDS):
               </p>
             </div>
           </div>
