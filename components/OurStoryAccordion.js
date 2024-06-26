@@ -40,7 +40,7 @@ const OurStoryAccordion = () => {
   ];
 
   return (
-    <div className=" block lg:hidden">
+    <div className="block lg:hidden">
       <div id="accordion-collapse" data-accordion="collapse">
         {accordionData.map((item, index) => (
           <div key={index} ref={(el) => (sectionRefs.current[index] = el)}>
@@ -91,7 +91,7 @@ const OurStoryAccordion = () => {
       </div>
 
      
-
+{/* 
       <div className='hidden lg:block'>
       <div className=" pb-16  container mx-auto flex justify-center">
         <Image
@@ -102,7 +102,7 @@ const OurStoryAccordion = () => {
           alt=""
         />
       </div>
-      </div>
+      </div> */}
 
      <div className='block lg:hidden'>
      <div className="pb-16 mx-auto container flex justify-center">

@@ -53,6 +53,9 @@ const page = () => {
       </div>
       
       {/* Sticky Tab Component */}
+      <div className=''>
+
+      </div>
       <div className="sticky top-0 z-50 bg-white shadow-md hidden lg:block">
         <Tab tabs={ourStoryTabs} getActiveTab={getActiveTab} />
       </div>

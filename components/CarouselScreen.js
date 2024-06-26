@@ -18,7 +18,7 @@ const CarouselScreen = ({ details }) => {
             >
               <img
                 src={item.imageUrl}
-                class={`absolute hidden lg:block w-full lg:h-auto h-[60%] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 pt-28`}
+                class={`absolute hidden lg:block w-full lg:h-auto h-[60%] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2`}
                 alt="..."
               />
               <img
