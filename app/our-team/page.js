@@ -17,7 +17,7 @@ const page = () => {
 
   return (
     <>
-      <div className="bg-[url('/coreTeam/banner.png')] bg-cover lg:h-screen h-80 lg:mt-0 mt-10 flex flex-col">
+      <div className="lg:bg-[url('/coreTeam/banner.png')] bg-[url('/coreTeam/banner_mobile.png')] bg-cover lg:h-screen h-80 lg:mt-0 mt-10 flex flex-col">
         <Header />
        
       </div>
