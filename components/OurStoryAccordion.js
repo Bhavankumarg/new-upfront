@@ -85,7 +85,7 @@ const OurStoryAccordion = () => {
       </div>
       
       <div ref={workforceRef}>
-      <h1 className="text-6xl px-5 py-10">
+      <h1 className="text-3xl px-5 py-10">
           <span className="text-red-600">WHY</span> WORKFORCE <br /> WELLBEING?
         </h1>
       </div>

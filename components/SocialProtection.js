@@ -10,7 +10,7 @@ const SocialProtection = () => {
           width={600}
           height={300}
           alt=""
-          className="lg:w-1/3 lg:absolute ms-10 lg:-mt-28 md:w-full xl:w-[500px] h-auto sm:w-auto" 
+          className="lg:w-1/3 lg:absolute lg:ms-10 lg:-mt-28 md:w-full xl:w-[500px] h-auto sm:w-auto" 
         />
       </div>
 

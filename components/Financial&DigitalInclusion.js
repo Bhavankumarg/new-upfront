@@ -10,7 +10,7 @@ const Financial = () => {
           width={600}
           height={300}
           alt=""
-          className="ms-10   lg:absolute lg:-mt-28 md:w-full xl:w-[500px] h-auto sm:w-auto "
+          className="lg:ms-10   lg:absolute lg:-mt-28 md:w-full xl:w-[500px] h-auto sm:w-auto "
         />
       </div>
 

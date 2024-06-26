@@ -152,3 +152,12 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for better visibility */
 }
 
+.text-6xl {
+  font-size: 3rem  !important;
+  line-height: 1 !important;
+}
+.lg\:text-6xl {
+  font-size: 3rem !important  ;
+  line-height: 1;
+}
+

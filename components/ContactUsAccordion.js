@@ -81,7 +81,7 @@ const ContactUsAccordion = () => {
       </div>
       
       <div className="lg:ms-16 ps-10 mt-10">
-  <p className="text-black text-5xl">GET INVOLVED</p>
+  <p className="text-black text-3xl">GET INVOLVED</p>
   <p className="text-black mt-4 text-xl">
     Join the Force behind the wellbeing of the workforce
   </p>
@@ -103,7 +103,7 @@ const ContactUsAccordion = () => {
 
       <div className="bg-[#E8E8E8] pb-10" ref={careerRef}>
         <div className=" mt-10 ">
-          <p className="text-black text-5xl pt-10 px-10">
+          <p className="text-black text-3xl pt-10 px-10">
             CAREER <br /> OPPORTUNITIES
           </p>
           <p className="text-black mt-4 text-xl px-10">

@@ -172,7 +172,7 @@ const WhatWeDoMobileAccordion = () => {
         className="bg-customLightGray lg:p-12 p-4 flex justify-center mb-12"
       >
         <div className="lg:w-2/3 space-y-5 text-center ">
-          <h1 className="text-5xl pt-5">
+          <h1 className="text-3xl pt-5">
             BUILDING RESILIENCE OF
             <br className="hidden lg:block" /> THE WORKFORCES
           </h1>
