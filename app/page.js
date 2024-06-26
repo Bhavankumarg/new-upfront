@@ -24,7 +24,7 @@ export default function Home() {
         </h1>
         <p className="text-center mt-5 lg:p-0 p-5 text-xl">
           Workforces are key to economic growth; however, as the world
-          progresses post COVID-19 pandemic, we have transitioned from a
+          progresses post the COVID-19 pandemic, we have transitioned from a
           Volatile, Uncertain, Complex, and Ambiguous (VUCA) world to a Brittle,
           Anxious, Non-Linear, and Incomprehensible world. Global economics is
           also moving towards circularity; however, with that comes a growing
