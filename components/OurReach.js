@@ -20,7 +20,7 @@ const OurReach = () => {
             >
               <div className="space-y-4 lg:mt-0 mt-5">
                 <h2 className="text-4xl text-red-600"><CountUp end={item.count} duration={5}/></h2>
-                <p className="w-11/12">{item.area}</p>
+                <p className="w-11/12 text-xl">{item.area}</p>
               </div>
             </li>
           )

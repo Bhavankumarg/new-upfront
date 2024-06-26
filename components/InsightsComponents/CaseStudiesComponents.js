@@ -73,7 +73,7 @@ const CaseStudiesComponents = () => {
                       href={`/insights/case-studies/${post.slug}`}
                       className="px-7"
                     >
-                      Read Casestudy
+                      Read Case Study
                     </Link>
                   </Button>
                 </div>

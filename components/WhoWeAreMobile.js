@@ -27,7 +27,7 @@ const   WhoAreWeMobile = () => {
           people and the planet.
         </p>
         <Link href="/our-story">
-          <button className="border border-gray-300 px-5 py-2">
+          <button className="border border-gray-300 px-5 py-2 hover:bg-black hover:text-white">
             Find out more
           </button>
         </Link>

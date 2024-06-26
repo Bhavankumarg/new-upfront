@@ -31,7 +31,7 @@ const ThematicAreas = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 1,
           // arrows: true  
@@ -43,7 +43,7 @@ const ThematicAreas = () => {
   return (
     <div className="lg:flex items-center lg:gap-4 bg-customGray">
       <div className="flex">
-        <div className="lg:bg-customGrayMd h-full text-white flex items-center justify-center px-10 lg:py-28 py-16">
+        <div className="lg:bg-customGrayMd h-full text-white flex items-center justify-center px-10 lg:py-16 py-16">
           <h2 className="text-6xl text-white">
             THEMATIC <br /> AREAS
           </h2>
@@ -54,11 +54,11 @@ const ThematicAreas = () => {
         <Slider {...settings} className="hide-scrollbar cursor-pointer">
           {thematicAreas.map((item) => {
             return (
-              <div key={item.id} className="px-5 border-s lg:h-36 h-full">
+              <div key={item.id} className="px-5 border-s lg:h-36 h-48">
                 <div className="space-y-3 flex flex-col justify-center items-center">
                   <Image
                     src={item.logo}
-                    width={50}
+                    width={60}
                     height={50}
                     alt={item.title}
                   />

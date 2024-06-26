@@ -2,7 +2,7 @@ import Link from "next/link";
 import CarouselFull from "./CarouselFull";
 import { whoAreWeCarousel } from "@utils/data";
 
-const WhoAreWe = () => {
+const  WhoAreWe = () => {
   return (
     <>
       <div className="hidden lg:block">
@@ -14,7 +14,7 @@ const WhoAreWe = () => {
             <h1 className="text-6xl">
               <span className="text-red-600">WHO</span> <br /> WE ARE?
             </h1>
-            <p className="lg:w-3/5 tracking-wide mt-7 mb-5 lg:p-0 me-5">
+            <p className="lg:w-3/5 tracking-wide mt-7 mb-5 lg:p-0 me-5 text-xl">
               Upfront strives to make wellbeing a reality for formal and
               informal workforces. We are a proud Indian and global entity that
               is committed to enriching the lives of millions of workers working
@@ -24,7 +24,7 @@ const WhoAreWe = () => {
               wealth of vulnerable people and the planet.
             </p>
             <Link href="/our-story">
-              <button className="border border-gray-300 px-5 py-2">
+              <button className="border border-gray-300 px-5 py-2 hover:bg-black hover:text-white">
                 Find out more
               </button>
             </Link>

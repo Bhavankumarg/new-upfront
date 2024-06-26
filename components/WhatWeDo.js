@@ -7,7 +7,7 @@ const WhatWeDo = () => {
         <h1 className="text-6xl">
           <span className="text-red-600">WHAT</span> <br /> WE DO?
         </h1>
-        <p className="lg:w-3/5 tracking-wide me-3 lg:mt-0 mt-5">
+        <p className="lg:w-3/5 tracking-wide me-3 lg:mt-0 mt-5 text-xl">
           Upfront aims to enhance workforce wellbeing by unlocking human
           potential, optimising systems, and orchestrating investments,
           collaborations, and partnerships. This approach represents a critical
@@ -16,7 +16,7 @@ const WhatWeDo = () => {
           and sustainability.
         </p>
         <Link href="/what-we-do">
-          <button className="border border-gray-300 px-5 py-2 lg:mt-0 mt-5">
+          <button className="border border-gray-300 px-5 py-2 lg:mt-0 mt-5 hover:bg-black hover:text-white">
             Know more
           </button>
         </Link>

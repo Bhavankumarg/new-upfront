@@ -2,6 +2,13 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import { FaArrowRight, FaInstagram, FaSquareXTwitter, FaLinkedin } from "react-icons/fa6";
+import { CiLinkedin } from "react-icons/ci";
+import { FaXTwitter } from "react-icons/fa6";
+import { SlSocialLinkedin } from "react-icons/sl";
+import { FaLinkedinIn } from "react-icons/fa";
+
+
+
 
 const Footer = () => {
   return (
@@ -19,41 +26,41 @@ const Footer = () => {
           <div className="flex flex-wrap gap-16 lg:gap-28">
             <ul className="text-white/60 text-xl mb-8 lg:mb-0">
               <h3 className="text-white text-2xl">About Us</h3>
-              <div className="w-[175px] h-[1px] bg-customGrayMd my-3"></div>
-              <Link href="/our-story/" className="flex gap-10">
-                <li>Our Story</li>
+              <div className="lg:w-[175px] w-[300px] h-[1px] bg-customGrayMd my-3"></div>
+              <Link href="/our-story/" className="flex gap-10  hover:text-red-600">
+                <li className="flex-grow">Our Story</li>
                 <FaArrowRight className="mt-1" />
               </Link>
-              <Link href="/our-team" className="flex gap-9 mt-2">
-                <li>Our Team</li>
+              <Link href="/our-team" className="flex gap-9 mt-2  hover:text-red-600">
+                <li className="flex-grow">Our Team</li>
                 <FaArrowRight className="mt-1" />
               </Link>
             </ul>
             <ul className="text-customGrayMd text-xl mb-8 lg:mb-0">
               <h3 className="text-white text-2xl">What We Do</h3>
-              <div className="w-[175px] h-[1px] bg-customGrayMd my-3"></div>
-              <Link href="/what-we-do" className="flex gap-10 text-white/60">
-                <li>What We Do</li>
+              <div className="lg:w-[175px] w-[300px] h-[1px] bg-customGrayMd my-3"></div>
+              <Link href="/what-we-do" className="flex gap-10 text-white/60  hover:text-red-600">
+                <li className="flex-grow">What We Do</li>
                 <FaArrowRight className="mt-1" />
               </Link>
             </ul>
             <ul className="text-customGrayMd text-xl mb-8 lg:mb-0">
               <h3 className="text-white text-2xl">Insights</h3>
-              <div className="w-[175px] h-[1px] bg-customGrayMd my-3"></div>
-              <Link href="/insights" className="flex items-center justify-between text-white/60">
+              <div className="lg:w-[175px] w-[300px] h-[1px] bg-customGrayMd my-3"></div>
+              <Link href="/insights" className="flex items-center justify-between text-white/60 hover:text-red-600">
                 <li className="flex-grow">Stories</li>
                 <FaArrowRight />
               </Link>
-              <Link href="/insights" className="flex items-center justify-between text-white/60 mt-2">
+              <Link href="/insights" className="flex items-center justify-between text-white/60 mt-2 hover:text-red-600 ">
                 <li className="flex-grow">Case Studies</li>
                 <FaArrowRight />
               </Link>
-              <Link href="/insights" className="flex items-center justify-between text-white/60 mt-2">
+              <Link href="/insights" className="flex items-center justify-between text-white/60 mt-2 hover:text-red-600">
                 <li className="flex-grow">Blogs</li>
                 <FaArrowRight />
               </Link>
-              <Link href="/insights" className="flex items-center justify-between text-white/60 mt-2">
-                <li className="flex-grow">News and Publications</li>
+              <Link href="/insights" className="flex items-center justify-between text-white/60 mt-2 hover:text-red-600 ">
+                <li className="flex-grow me-3">News and Publications</li>
                 <FaArrowRight />
               </Link>
             </ul>
@@ -61,18 +68,18 @@ const Footer = () => {
               <Link href="/contact-us">
                 <h3 className="text-white text-2xl">Contact Us</h3>
               </Link>
-              <div className="w-[175px] h-[1px] bg-customGrayMd my-3"></div>
+              <div className="lg:w-[175px] w-[300px] h-[1px] bg-customGrayMd my-3"></div>
               <Link href="mailto:Info@upfrontglobal.com">
-                <li className="mt-5">Info@upfrontglobal.com</li>
+                <li className="mt-5  hover:text-red-600">Info@upfrontglobal.com</li>
               </Link>
-              <li className="flex pt-5 gap-5 text-3xl">
-                <Link href="https://www.linkedin.com/showcase/upfrontcg/">
-                  <FaLinkedin />
+              <li className="flex pt-5 gap-5 text-3xl ">
+                <Link href="https://www.linkedin.com/showcase/upfrontcg/" className="hover:text-white">
+                  <FaLinkedinIn />
                 </Link>
-                <Link href="https://twitter.com/UpfrontCG">
-                  <FaSquareXTwitter />
+                <Link href="https://twitter.com/UpfrontCG" className="hover:text-white">
+                  <FaXTwitter />
                 </Link>
-                <Link href="https://www.instagram.com/upfront.global/" className="text-white">
+                <Link href="https://www.instagram.com/upfront.global/" className="hover:text-white">
                   <FaInstagram />
                 </Link>
               </li>

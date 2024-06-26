@@ -10,7 +10,7 @@ import ConfigData from '../config'
 import { Button } from "flowbite-react";
 import Link from "next/link";
 
-const OurKeyCommunities = () => {
+const   OurKeyCommunities = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -116,18 +116,20 @@ const OurKeyCommunities = () => {
             )}
           </div>
           <div className="bg-[#FACDD4] text-start">
-          <div className="pt-5 text-xl">
+         <div className="mx-3">
+         <div className="pt-5 text-xl">
             <span
               className=" mx-3"
               dangerouslySetInnerHTML={{ __html: post.title.rendered }}
             />
           </div>
+
           <div className="lg:h-[220px] flex flex-col justify-between">
             <div
               dangerouslySetInnerHTML={{
                 __html: post["excerpt"]["rendered"],
               }}
-              className="fs-5 mb-3 mx-3 mt-5 p-1 post-content"
+              className="text-xl mb-3 mx-3 mt-5 p-1 post-content"
             ></div>
             {/* Assuming Button and Link are properly imported */}
             <Button className="text-black w-52 hover:bg-black bg-[#E8E8E8] border border-[#909090] hover:text-white rounded-none mt-5 mx-3 mb-5">
@@ -136,6 +138,7 @@ const OurKeyCommunities = () => {
               </Link>
             </Button>
           </div>
+         </div>
           </div>
           
         </div>

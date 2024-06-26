@@ -21,7 +21,7 @@ const ThematicDesktop = () => {
 
   return (
     <>
-      <div className="mt-10 px-10 hidden lg:block">
+      <div className="mt-10 hidden lg:block container mx-auto">
         <p className="text-center text-6xl pb-10 text-[#222222]">THEMATIC AREAS</p>
         <div>
           <div className="border-0 border-gray-200 dark:border-gray-700">

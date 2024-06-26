@@ -4,13 +4,13 @@ import Image from "next/image";
 const HealthWellbeing = () => {
   return (
     <>
-      <div className="relative lg:w-1/3 lg:absolute lg:-mt-28 lg:ms-10">
+      <div className="relative lg:w-1/3 xl:w-auto lg:absolute lg:-mt-28 lg:ms-10 bg-red-500">
         <Image
           src="/whatWeDo/tab-img.png"
           width={600}
           height={300}
           alt=""
-          className="md:w-full xl:w-auto h-auto sm:w-auto"
+          className="md:w-full xl:w-full h-auto sm:w-auto"
         />
       </div>
 
