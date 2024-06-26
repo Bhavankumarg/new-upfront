@@ -743,19 +743,19 @@ export const impact = [
     id: 1,
     imageUrl: '/whatWeDo/constructionWorkers.png',
     count: '507670',
-    title: 'Construction workers',
+    title: 'Construction Workers',
   },
   {
     id: 2,
     imageUrl: '/whatWeDo/womenSexWorkers.png',
     count: '3358040',
-    title: 'Women sex workers',
+    title: 'Women Sex Workers',
   },
   {
     id: 3,
     imageUrl: '/whatWeDo/factoryWorkers1.png',
     count: '315564',
-    title: 'Factory workers',
+    title: 'Factory Workers',
   },
   {
     id: 4,

@@ -16,7 +16,7 @@ const WeBelieve = () => {
     return (
         <div className="lg:flex items-center gap-4 bg-customGray">
             <div className="flex">
-                <div className="h-full text-white flex items-center justify-center px-10 lg:py-28 py-10 ">
+                <div className="h-full text-white flex items-center justify-center px-10 lg:py-20 py-10 ">
                     <h2 className="lg:text-6xl text-3xl text-white">
                         WE <br /> BELIEVE
                     </h2>

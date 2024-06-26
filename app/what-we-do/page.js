@@ -56,7 +56,7 @@ const Page = () => {
   return (
     <>
       <div className="">
-        <div className="bg-[url('/whatWeDo/banner.png')] bg-cover h-[60vh] flex flex-col ps-16 pb-8 ">
+        <div className="lg:bg-[url('/whatWeDo/banner.png')] bg-[url('/whatWeDo/bannerMobile.png')] bg-cover lg:h-[60vh] h-[600px] flex flex-col ps-16 pb-8 ">
           <Header />
           <h1 className="text-white text-6xl mt-auto">
             WHAT <br /> WE DO
