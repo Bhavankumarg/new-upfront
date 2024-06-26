@@ -63,7 +63,7 @@ const OurKeyCommunities = () => {
                   height={300}
                   alt=""
                 />
-                <p>Street Vendors</p>
+                <p className='text-xl'>Street Vendors</p>
               </div>
             </div>
             <div>
@@ -74,7 +74,7 @@ const OurKeyCommunities = () => {
                   height={300}
                   alt=""
                 />
-                <p>Factory Workers</p>
+                <p className='text-xl'>Factory Workers</p>
               </div>
             </div>
 
@@ -86,7 +86,7 @@ const OurKeyCommunities = () => {
                   height={300}
                   alt=""
                 />
-                <p>Frontline Health Workers</p>
+                <p className='text-xl'>Frontline Health Workers</p>
               </div>
             </div>
           </Slider>

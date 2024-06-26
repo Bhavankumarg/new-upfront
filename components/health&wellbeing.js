@@ -10,7 +10,7 @@ const HealthWellbeing = () => {
           width={600}
           height={300}
           alt=""
-          className="md:w-full xl:w-full h-auto sm:w-auto"
+          className="md:w-full xl:w-[500px] h-auto sm:w-auto"
         />
       </div>
 
