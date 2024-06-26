@@ -4,13 +4,13 @@ import Image from "next/image";
 const SocialProtection = () => {
   return (
     <>
-      <div className="lg:flex lg:justify-end xl:ms-[820px] xl:justify-normal">
+      <div className="">
         <Image
           src="/whatWeDo/tab-6.png"
           width={600}
           height={300}
           alt=""
-          className="lg:w-1/3 lg:absolute lg:-mt-28 md:w-full xl:w-auto h-auto sm:w-auto" 
+          className="lg:w-1/3 lg:absolute ms-10 lg:-mt-28 md:w-full xl:w-auto h-auto sm:w-auto" 
         />
       </div>
 

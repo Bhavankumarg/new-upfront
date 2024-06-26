@@ -4,13 +4,13 @@ import Image from "next/image";
 const Financial = () => {
   return (
     <>
-      <div className="lg:flex justify-center xl:justify-start xl:ms-[450px]">
+      <div className="">
         <Image
           src="/whatWeDo/tab-4.png"
           width={600}
           height={300}
           alt=""
-          className=" xl:-me-0 lg:absolute lg:-mt-28 md:w-full xl:w-auto h-auto sm:w-auto "
+          className="ms-10   lg:absolute lg:-mt-28 md:w-full xl:w-auto h-auto sm:w-auto "
         />
       </div>
 

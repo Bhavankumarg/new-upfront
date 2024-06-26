@@ -4,7 +4,7 @@ import Image from "next/image";
 const Workplace = () => {
   return (
     <>
-      <div className="flex lg:justify-center lg:ms-[150px] xl:justify-start xl:ms-[650px]">
+      <div className="">
         <Image
           src="/whatWeDo/tab-5.png"
           width={600}
