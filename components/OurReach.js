@@ -6,7 +6,7 @@ import CountUp from 'react-countup';
 const OurReach = () => {
   return (
     <div className="bg-customLightGray bg-opacity-60 py-16 px-10 lg:flex justify-between items-center">
-      <h1 className="text-6xl">
+      <h1 className="lg:text-6xl text-3xl">
         <span className="text-red-600">OUR</span> <br /> REACH
       </h1>
       <ul className="lg:flex gap-14 lg:px-20 grid grid-cols-2">

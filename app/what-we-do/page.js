@@ -72,7 +72,7 @@ const Page = () => {
         <div className="hidden lg:block">
           <div
             ref={overviewRef}
-            className="max-w-screen-xl mx-auto lg:px-40 py-16 tracking-wide text-center space-y-4 p-5"
+            className="max-w-screen-xl mx-auto lg:px-40 tracking-wide text-center space-y-4 p-5"
           >
             <p className="text-xl">
               Our journey began with narrowing our focus on one of the most
@@ -93,9 +93,9 @@ const Page = () => {
 
           <div
             ref={ourApproachRef}
-            className="bg-[url('/whatWeDo/rectangle.png')] bg-no-repeat bg-cover flex flex-col items-center lg:p-20 p-3 text-center mb-12 "
+            className="bg-[url('/whatWeDo/rectangle.png')] bg-no-repeat bg-cover flex flex-col items-center lg:p-10 p-3 text-center"
           >
-            <h1 className="text-5xl">APPROACH</h1>
+            <h1 className="lg:text-6xl text-3xl">APPROACH</h1>
             <div className="bg-white lg:px-24 mt-10">
               <div className="w-full flex justify-center">
                 <Image
@@ -139,7 +139,7 @@ const Page = () => {
             className="bg-customLightGray lg:p-12 p-4 flex justify-center mb-12"
           >
             <div className="lg:w-2/3 space-y-5 text-center ">
-              <h1 className="text-5xl pt-5">
+              <h1 className="lg:text-6xl text-3xl pt-5">
                 BUILDING RESILIENCE OF
                 <br /> THE WORKFORCES
               </h1>

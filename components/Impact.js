@@ -6,7 +6,7 @@ import CountUp from 'react-countup'
 const Impact = () => {
   return (
     <div className="bg-[#F4E7E9] lg:flex justify-between gap-5 mt-10 px-10 py-16">
-      <h1 className="text-5xl">IMPACT</h1>
+      <h1 className="lg:text-6xl text-3xl">IMPACT</h1>
       <div className="lg:w-4/5 space-y-7">
         <h2 className="text-3xl lg:w-1/2">
           Relief, Recovery & Resilience for <CountUp end={8299061} duration={5}/> individual Workers & their Families

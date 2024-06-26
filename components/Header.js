@@ -14,7 +14,10 @@ const Header = () => {
   }, [])
 
   return (
-    <nav className="absolute top-0 left-0 z-40 w-full lg:bg-transparent bg-[#222222]">
+    <div className=''>
+
+   
+    <nav className="absolute top-0 left-0 z-40 w-full lg:bg-transparent bg-[#222222] ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 px-4 py-5 border-b border-gray-400">
         <Link
           href="/"
@@ -143,6 +146,7 @@ const Header = () => {
         </div>
       </div>
     </nav>
+    </div>
   )
 }
 

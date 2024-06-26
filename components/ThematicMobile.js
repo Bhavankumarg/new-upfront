@@ -42,7 +42,7 @@ const ThematicMobile = () => {
 
   return (
     <div className="pt-10 block lg:hidden">
-       <p className="text-center text-6xl pb-10 text-[#222222]">THEMATIC AREAS</p>
+       <p className="text-center text-3xl pb-10 text-[#222222]">THEMATIC AREAS</p>
       <div id="accordion-collapse" data-accordion="collapse">
         {accordionData.map((item, index) => (
           <div key={index}>

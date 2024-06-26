@@ -27,7 +27,7 @@ const NewsComponents = () => {
 
   return (
     <div>
-      <h2 className="text-6xl py-10 lg:px-10">NEWS AND PUBLICATIONS</h2>
+      <h2 className="lg:text-6xl text-3xl py-10 lg:px-10">NEWS AND PUBLICATIONS</h2>
       <hr className="px-10" />
       <ul className="flex flex-wrap gap-6 mt-8 container mx-auto">
         {data.length > 0 ? (

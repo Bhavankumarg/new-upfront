@@ -30,7 +30,7 @@ const OurPresence = () => {
 
       <div className="lg:w-1/2 bg-red-600 flex flex-col justify-center items-center py-10">
         <div className="lg:w-3/5 space-y-4 lg:p-0 p-5 ">
-          <h2 className="text-6xl text-white">
+          <h2 className="lg:text-6xl text-3xl text-white">
             OUR <br /> PRESENCE
           </h2>
           <p className="text-red-200 text-xl">

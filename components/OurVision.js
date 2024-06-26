@@ -5,7 +5,7 @@ const OurVision = () => {
     <div className="lg:flex bg-customBlack pb-16 lg:pb-0">
       <div className="lg:flex lg:w-2/5">
         <div className="bg-customRed flex flex-col justify-center px-10 py-28 space-y-2">
-          <h2 className="lg:text-5xl text-7xl text-white">
+          <h2 className="lg:text-6xl text-3xl text-white">
             OUR <br /> VISION
           </h2>
           <p className="text-white lg:text-xl text-3xl lg:w-3/4 w-full">

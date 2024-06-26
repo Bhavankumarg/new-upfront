@@ -18,8 +18,8 @@ export default function Home() {
         <Header />
         <CarouselScreen details={homeBannerCarousel} />
       </div>
-      <div className="max-w-screen-xl lg:mx-auto lg:px-40 lg:py-20 tracking-wide">
-        <h1 className="text-6xl text-center">
+      <div className="max-w-screen-xl lg:mx-auto lg:px-40 lg:py-7 tracking-wide">
+        <h1 className="lg:text-6xl text-3xl text-center">
           <span className="text-red-600 ">WHY WORKFORCE</span> <br /> WELLBEING
         </h1>
         <p className="text-center mt-5 lg:p-0 p-5 text-xl">

@@ -49,8 +49,8 @@ const page = () => {
       </div>
 
       <div className="hidden lg:block">
-        <div className="lg:ms-16 ps-10 mt-10">
-          <p className="text-black text-5xl">GET INVOLVED</p>
+        <div className=" ps-10 mt-10">
+          <p className="text-black lg:text-6xl text-3xl">GET INVOLVED</p>
           <p className="text-black mt-4 text-xl">
             Join the force behind the Wellbeing of the Workforces
           </p>
@@ -74,7 +74,7 @@ const page = () => {
 
         <div className="bg-[#E8E8E8] pb-10" ref={careerRef}>
           <div className="px-14 mt-10 ">
-            <p className="text-black text-5xl pt-10">
+            <p className="text-black lg:text-6xl text-3xl pt-10">
               CAREER <br /> OPPORTUNITIES
             </p>
             {/* <p className="text-black mt-4 text-xl">
@@ -306,7 +306,7 @@ const page = () => {
 
         <div className="mx-14 pb-5" ref={contactRef}>
           <div className="mt-10 ">
-            <p className="text-black text-5xl">CONTACT INFO</p>
+            <p className="text-black lg:text-6xl text-3xl">CONTACT INFO</p>
           </div>
 
           <div class="lg:grid grid-cols-3 gap-4 text-xl border-b border-gray-400">

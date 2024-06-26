@@ -47,7 +47,7 @@ const page = () => {
     <>
       <div className="bg-ourStory bg-cover h-[60vh] flex flex-col ps-16 pb-8">
         <Header />
-        <h1 className="text-white text-6xl mt-auto">
+        <h1 className="text-white lg:text-6xl text-3xl mt-auto">
           OUR <br /> STORY
         </h1>
       </div>
@@ -61,7 +61,7 @@ const page = () => {
       </div>
 
       <div className='block lg:hidden'>
-        <OurStoryAccordion />
+        {/* <OurStoryAccordion /> */}
       </div>
 
       <div className="lg:px-24 px-10 py-16" ref={worforceRef}>
@@ -105,7 +105,7 @@ const page = () => {
       <OurMission />
 
       <div className="px-10 py-16" ref={ourhistoryRef}>
-        <h1 className="text-6xl lg:px-16 px-7">
+        <h1 className="lg:text-6xl text-3xl lg:px-16 px-7">
           <span className="text-red-600">OUR</span> <br /> HISTORY
         </h1>
         <div className="flex pt-16 justify-center">

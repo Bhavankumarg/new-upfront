@@ -302,7 +302,7 @@ const ContactUsAccordion = () => {
 
       <div className="px-10 pb-5" ref={contactRef}>
         <div className="mt-10 ">
-          <p className="text-black text-5xl">CONTACT INFO</p>
+          <p className="text-black text-3xl">CONTACT INFO</p>
         </div>
 
         <div class="lg:grid grid-cols-3 gap-4 text-xl border-b border-gray-400">

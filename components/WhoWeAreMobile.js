@@ -14,7 +14,7 @@ const   WhoAreWeMobile = () => {
 
       </div>
       <div className="lg:w-2/5 w-full ps-10 lg:flex lg:flex-col justify-between items-start">
-        <h1 className="text-6xl">
+        <h1 className="lg:text-6xl text-3xl">
           <span className="text-red-600">WHO</span> <br /> ARE WE?
         </h1>
         <p className="lg:w-3/5 tracking-wide mt-7 mb-5 lg:p-0 me-5">

@@ -44,7 +44,7 @@ const ThematicAreas = () => {
     <div className="lg:flex items-center lg:gap-4 bg-customGray">
       <div className="flex">
         <div className="lg:bg-customGrayMd h-full text-white flex items-center justify-center px-10 lg:py-16 py-16">
-          <h2 className="text-6xl text-white">
+          <h2 className="lg:text-6xl text-3xl text-white">
             THEMATIC <br /> AREAS
           </h2>
         </div>

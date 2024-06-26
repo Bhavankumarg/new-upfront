@@ -4,7 +4,7 @@ const WhatWeDo = () => {
   return (
     <div className="my-16 ps-10 lg:flex justify-between">
       <div className="lg:w-2/5 flex flex-col justify-evenly items-start">
-        <h1 className="text-6xl">
+        <h1 className="lg:text-6xl text-3xl">
           <span className="text-red-600">WHAT</span> <br /> WE DO
         </h1>
         <p className="lg:w-3/5 tracking-wide me-3 lg:mt-0 mt-5 text-xl">

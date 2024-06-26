@@ -238,13 +238,13 @@ export const coreTeam = [
     post: 'Implementation Manager',
     logo: <FaLinkedin />,
   },
-  {
-    id: 9,
-    imageUrl: '/coreTeam/prabhakaran.png',
-    name: 'Prabhakaran V',
-    post: 'Program Specialist - TN',
-    logo: <FaLinkedin />,
-  },
+  // {
+  //   id: 9,
+  //   imageUrl: '/coreTeam/prabhakaran.png',
+  //   name: 'Prabhakaran V',
+  //   post: 'Program Specialist - TN',
+  //   logo: <FaLinkedin />,
+  // },
   {
     id: 10,
     imageUrl: '/coreTeam/tanya.png',

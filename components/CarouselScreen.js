@@ -5,10 +5,10 @@ const CarouselScreen = ({ details }) => {
   return (
     <div
       id="controls-carousel"
-      class="relative w-full h-screen"
+      class="relative w-full lg:h-screen"
       data-carousel="slide"
     >
-      <div class="relative h-full overflow-hidden">
+      <div class="relative lg:h-full h-[650px] overflow-hidden">
         {details.map((item) => {
           return (
             <div
@@ -18,7 +18,7 @@ const CarouselScreen = ({ details }) => {
             >
               <img
                 src={item.imageUrl}
-                class={`absolute hidden lg:block w-full lg:h-auto h-[60%] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2`}
+                class={`absolute hidden lg:block w-full lg:h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2`}
                 alt="..."
               />
               <img

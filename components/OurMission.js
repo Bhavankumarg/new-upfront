@@ -8,7 +8,7 @@ const OurMission = () => {
       </div>
       <img src='/ourStory/ourMissionMobile.png' className='w-full block lg:hidden'/>
       <div className="bg-customRed flex flex-col justify-center px-10 py-28 space-y-2 lg:w-2/5">
-        <h2 className="lg:text-5xl text-7xl text-white">
+        <h2 className="lg:text-6xl text-3xl text-white">
           OUR <br /> MISSION
         </h2>
         <p className="text-white lg:text-xl  text-3xl lg:w-9/12">
