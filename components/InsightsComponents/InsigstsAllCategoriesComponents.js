@@ -46,7 +46,7 @@ const InsigstsAllCategoriesComponents = () => {
                     ))}
                 </ul>
             </div>
-            <div id="tab-contents">
+            <div id="tab-contents" className='hidden lg:block'>
                 <div className={getContentClass('Stories')}>
                     <StoriesComponents />
                 </div>
@@ -56,7 +56,7 @@ const InsigstsAllCategoriesComponents = () => {
                 <div className={getContentClass('Blogs')}>
                     <BlogComponents />
                 </div>
-                <div className={getContentClass('News And Publications')}>
+                <div className={getContentClass('News and Publications')}>
                     <NewsComponents />
                 </div>
                 {/* <div className={getContentClass('All')}>

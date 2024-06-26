@@ -4,13 +4,13 @@ import Image from "next/image";
 const Workplace = () => {
   return (
     <>
-      <div className="">
+      <div className="flex lg:justify-center lg:ms-[150px] xl:justify-start xl:ms-[650px]">
         <Image
           src="/whatWeDo/tab-5.png"
           width={600}
           height={300}
           alt=""
-          className="lg:w-1/3 lg:absolute lg:-mt-28 lg:ms-10"
+          className="lg:w-1/3 lg:absolute lg:-mt-28 lg:ms-10 md:w-full xl:w-auto h-auto sm:w-auto"
         />
       </div>
 

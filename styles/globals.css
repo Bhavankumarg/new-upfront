@@ -47,17 +47,23 @@ body {
 }
 
 #talkbubble {
-  width: 120px;
+  width: 200px;
   height: 80px;
   background: #E8E8E8;
   position: relative;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 0 auto; /* Center align the talk bubble */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 #talkbubble:before {
   content: "";
   position: absolute;
-  left: 45%;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: -15px;
   width: 0;
   height: 0;
@@ -68,61 +74,63 @@ body {
   transition: opacity 0.3s, border-top-color 0.3s;
 }
 
-#talkbubble:hover {
-  background: red;
-  color: #E8E8E8 !important;
-  
-}
-
-
-#talkbubble:hover:before {
-  opacity: 1; /* Show the pseudo-element on hover */
-  border-top-color: red;
-
-}
-
-/* Additional styles for other talk bubbles */
-.talkbubble-container button:hover {
-  background: red;
-}
-
-
-#talkbubble button {
-  width: 205px;
-  height: 80px;
-  background: #E8E8E8;
-  position: relative;
-  transition: background-color 0.3s;
-  color: #222222; /* Default text color */
-}
-
+#talkbubble:hover,
 #talkbubble button:hover,
 #talkbubble button:focus,
 #talkbubble button[aria-selected="true"] {
   background: red;
-  color: white; /* Text color when hovered or active */
+  color: white !important;
 }
 
-#talkbubble button:before {
-  content: "";
-  position: absolute;
-  left: 45%;
-  bottom: -15px;
-  width: 0;
-  height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 15px solid #E8E8E8;
-  opacity: 0; /* Hide the pseudo-element initially */
-  transition: opacity 0.3s, border-top-color 0.3s;
-}
-
+#talkbubble:hover:before,
 #talkbubble button:hover:before,
 #talkbubble button:focus:before,
 #talkbubble button[aria-selected="true"]:before {
   opacity: 1; /* Show the pseudo-element on hover or when active */
   border-top-color: red;
 }
+
+#talkbubble button {
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+#talkbubble button:hover,
+#talkbubble button:focus,
+#talkbubble button[aria-selected="true"] {
+  background: red;
+  color: white;
+}
+
+#talkbubble button:focus {
+  outline: none;
+}
+
+.selected {
+  background: red;
+  color: white;
+}
+
+.selected:before {
+  opacity: 1 !important; /* Show the pseudo-element when active */
+  border-top-color: red !important;
+}
+
+.talkbubble-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between talk bubbles */
+}
+
+.talkbubble-container button:hover {
+  background: red;
+}
+
 
 /* excerpt content */
 
@@ -143,3 +151,4 @@ body {
   background-color: white; /* Ensure it has a background color */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for better visibility */
 }
+

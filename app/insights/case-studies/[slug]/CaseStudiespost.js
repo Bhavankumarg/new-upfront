@@ -70,13 +70,13 @@ const CaseStudiesPosts = ({ slug }) => {
                   </div>
                 </div>
               )}
-              <p className="card-date mb-0 pt-5 pb-4 text-[#4E4E4E]">
+              {/* <p className="card-date mb-0 pt-5 pb-4 text-[#4E4E4E]">
                 {new Date(post.acf.date).toLocaleDateString("en-US", {
                   year: "numeric",
                   month: "long",  
                   day: "numeric",
                 })}
-              </p>
+              </p> */}
               <div
                 className=""
                 dangerouslySetInnerHTML={{ __html: post.content.rendered }}

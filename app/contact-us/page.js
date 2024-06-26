@@ -23,7 +23,7 @@ const page = () => {
   };
   const getActiveTab = (tab) => {
     switch (tab) {
-      case "Partner with us":
+      case "Partner With Us":
         scrollToSection(partnerRef);
         break;
       case "Career Opportunities":

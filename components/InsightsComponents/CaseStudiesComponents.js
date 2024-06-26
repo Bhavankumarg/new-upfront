@@ -46,7 +46,14 @@ const CaseStudiesComponents = () => {
                       height={220}
                     />
                   )}
+                  <button
+                    type="button"
+                    className="text-white text-xl absolute top-0 start-0 w-32 text-center font-normal bg-gray-800/75 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 px-1 py-1 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+                  >
+                    CASE STUDY
+                  </button>
                 </div>
+                
                 <div className="bg-[#F40F34] mx-3 mt-5 p-1">
                   {/* <p  dangerouslySetInnerHTML={{ __html: post.title.rendered }}></p> */}
                   <span

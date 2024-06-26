@@ -7,7 +7,10 @@ import Link from 'next/link'
 
 const Header = () => {
   useEffect(() => {
-    initFlowbite()
+    // Delaying the initFlowbite call to ensure DOM is fully loaded
+    setTimeout(() => {
+      initFlowbite()
+    }, 100)
   }, [])
 
   return (

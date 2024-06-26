@@ -4,13 +4,13 @@ import Image from "next/image";
 const AgencyBuilding = () => {
   return (
     <>
-      <div className="">
+      <div className="xl:ms-28">
         <Image
           src="/whatWeDo/tab-3.png"
           width={600}
           height={300}
           alt=""
-          className="lg:w-1/3 lg:absolute lg:-mt-28 lg:ms-10"
+          className="lg:w-1/3 lg:absolute lg:-mt-28 lg:ms-36 md:w-full xl:w-auto h-auto sm:w-auto"
         />
       </div>
 

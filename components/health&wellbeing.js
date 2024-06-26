@@ -4,23 +4,23 @@ import Image from "next/image";
 const HealthWellbeing = () => {
   return (
     <>
-      <div className="">
+      <div className="relative lg:w-1/3 lg:absolute lg:-mt-28 lg:ms-10">
         <Image
           src="/whatWeDo/tab-img.png"
           width={600}
           height={300}
           alt=""
-          className="lg:w-1/3 lg:absolute lg:-mt-28 lg:ms-10"
+          className="md:w-full xl:w-auto h-auto sm:w-auto"
         />
       </div>
 
       <div className="lg:flex lg:mt-20">
-        <div className="lg:w-1/2  bg-[#FFE8EC] p-4 lg:pt-20 ">
+        <div className="lg:w-1/2 bg-[#FFE8EC] p-4 lg:pt-20">
           <p className="text-4xl bold font-normal pb-5 pt-3 mt-10">
             Health & Wellbeing
           </p>
 
-          <div className="flex flex-row ">
+          <div className="flex flex-row">
             <div className="flex flex-col">
               <Image
                 src="/whatWeDo/tab-img-1.svg"
@@ -31,20 +31,20 @@ const HealthWellbeing = () => {
               />
             </div>
             <div className="flex flex-col px-3">
-              <p className="text-md font-medium ">
-                NUTRITION, SANITATION &<br></br> PERSONAL HYGIENE:
+              <p className="text-md font-medium">
+                NUTRITION, SANITATION &<br /> PERSONAL HYGIENE:
               </p>
             </div>
           </div>
           <p className="pt-3">
-           We believe that everyday habits play a crucial role in maintaining
+            We believe that everyday habits play a crucial role in maintaining
             good health. Through education and resources, we empower workers to
             make informed choices about nutrition, sanitation, and personal
             hygiene, promoting overall wellness in the workplace.
           </p>
         </div>
         <div className="lg:w-1/2 bg-[#FFE8EC] p-4 lg:pt-48">
-          <div className="flex flex-row ">
+          <div className="flex flex-row">
             <div className="flex flex-col">
               <Image
                 src="/whatWeDo/tab-img-2.svg"
@@ -55,8 +55,8 @@ const HealthWellbeing = () => {
               />
             </div>
             <div className="flex flex-col px-3">
-              <p className="text-md font-medium ">
-                STRESS MANAGEMENT AND <br></br>MENTAL HEALTH:
+              <p className="text-md font-medium">
+                STRESS MANAGEMENT AND <br />MENTAL HEALTH:
               </p>
             </div>
           </div>
@@ -71,8 +71,8 @@ const HealthWellbeing = () => {
       </div>
 
       <div className="lg:flex">
-        <div className="lg:w-1/2  bg-[#FFE8EC] p-4">
-          <div className="flex flex-row ">
+        <div className="lg:w-1/2 bg-[#FFE8EC] p-4">
+          <div className="flex flex-row">
             <div className="flex flex-col">
               <Image
                 src="/whatWeDo/tab-img-3.svg"
@@ -83,8 +83,8 @@ const HealthWellbeing = () => {
               />
             </div>
             <div className="flex flex-col px-3">
-              <p className="text-md font-medium ">
-                PRIMARY HEALTH & NON-<br></br>COMMUNICABLE DISEASES (NCDS):
+              <p className="text-md font-medium">
+                PRIMARY HEALTH & NON-<br />COMMUNICABLE DISEASES (NCDS):
               </p>
             </div>
           </div>
@@ -94,8 +94,8 @@ const HealthWellbeing = () => {
             and manage conditions that may affect workforce wellbeing.
           </p>
         </div>
-        <div class="lg:w-1/2  bg-[#FFE8EC] p-4">
-          <div className="flex flex-row ">
+        <div className="lg:w-1/2 bg-[#FFE8EC] p-4">
+          <div className="flex flex-row">
             <div className="flex flex-col">
               <Image
                 src="/whatWeDo/tab-img-4.svg"
@@ -106,8 +106,8 @@ const HealthWellbeing = () => {
               />
             </div>
             <div className="flex flex-col px-3">
-              <p className="text-md font-medium ">
-                WOMEN’S HEALTH AND<br></br> WELLBEING: (NCDS):
+              <p className="text-md font-medium">
+                WOMEN’S HEALTH AND<br /> WELLBEING:
               </p>
             </div>
           </div>

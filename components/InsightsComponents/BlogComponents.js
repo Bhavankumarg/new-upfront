@@ -35,14 +35,14 @@ const BlogComponents = () => {
       <ul className="flex flex-wrap gap-6 mt-8 container mx-auto">
         {data.length > 0 ? (
           data.map((post) => (
-            <li key={post.id} className="lg:border-s lg:border-black mb-10">
-              <div className="ps-3 w-80">
+            <li key={post.id} className="lg:border mb-10">
+              <div className="w-80">
                 <div className="relative">
                   {post.acf && post.acf.thumbnail_image && (
                     <img
                       src={post.acf.thumbnail_image.url}
                       alt={post.title.rendered}
-                      className="w-100"
+                      className="w-full"
                       height={220}
                     />
                   )}
@@ -52,12 +52,9 @@ const BlogComponents = () => {
                   >
                     BLOG
                   </button>
-                  {/* <p className="absolute top-0 text-sm bg-black/70 text-white px-3 py-1">
-                    {post.badge}
-                  </p> */}
                 </div>
                 {post.acf && post.acf.date && (
-                  <p className="card-date mb-0 mt-3">
+                  <p className="card-date mb-0 mt-3 mx-3">
                     {new Date(post.acf.date).toLocaleDateString("en-US", {
                       year: "numeric",
                       month: "long",
@@ -65,21 +62,23 @@ const BlogComponents = () => {
                     })}
                   </p>
                 )}
-                <div className="lg:h-[250px] flex flex-col justify-between">
+                <div className="bg-[#F40F34] mx-3 mt-5 p-1">
                   <span
-                    className="text-[#4A4A4A] text-xl mt-3"
+                    className="text-white"
                     dangerouslySetInnerHTML={{ __html: post.title.rendered }}
                   />
+                </div>
+                <div className="lg:h-[220px] flex flex-col justify-between">
                   <div
                     dangerouslySetInnerHTML={{
                       __html: post["excerpt"]["rendered"],
                     }}
-                    className="fs-5 mb-3 m-height mt-3 p-1 post-content"
+                    className="fs-5 mb-3 mx-3 mt-5 p-1 post-content"
                   ></div>
-                  <Button className="text-black hover:bg-black bg-[#E8E8E8] border border-[#909090] hover:text-white rounded-none mt-5 w-40 mb-5">
+                  <Button className="text-black w-52 hover:bg-black bg-[#E8E8E8] border border-[#909090] hover:text-white rounded-none mt-5 mx-3 mb-5">
                     <Link
                       href={`/insights/blog/${post.slug}`}
-                      className="px-7 "
+                      className="px-7"
                     >
                       Read more
                     </Link>
