@@ -135,9 +135,9 @@ const page = () => {
             {/* <p className="text-black mt-4 text-xl">
               We offer rewarding career opportunities for XYZ aspirants.
             </p> */}
-            <p className="text-xl text-red-500 mt-3">Current Openings</p>
+            <p className="text-xl text-red-500 mt-3">No Current Openings</p>
 
-            <div className="pt-10">
+            {/* <div className="pt-10">
               <div id="accordion-collapse" data-accordion="collapse">
                 <h2 id="accordion-collapse-heading-1">
                   <button
@@ -257,7 +257,7 @@ const page = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <ContactForms />
             {/* <ContactForm/> */}

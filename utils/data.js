@@ -204,6 +204,7 @@ export const coreTeam = [
     name: 'Sonali Maheshwari',
     post: 'Lead, Content and Solutions',
     logo: <FaLinkedin />,
+    url:'https://www.linkedin.com/in/sonalimaheshwari/',
   },
   {
     id: 4,
@@ -211,6 +212,7 @@ export const coreTeam = [
     name: 'Sathish KN',
     post: 'Programme Manager',
     logo: <FaLinkedin />,
+    url:'https://www.linkedin.com/in/sathish-kn-b71415133/',
   },
   {
     id: 5,
@@ -218,6 +220,7 @@ export const coreTeam = [
     name: 'Annapurna Chirravuri',
     post: 'Knowledge Management & Learning Specialist',
     logo: <FaLinkedin />,
+    url:'https://www.linkedin.com/in/annapurna-chirravuri-8b0b8b126/',
   },
   {
     id: 6,
@@ -225,6 +228,7 @@ export const coreTeam = [
     name: 'Meeta Sen',
     post: 'Lead, Operations',
     logo: <FaLinkedin />,
+    url:'https://www.linkedin.com/in/meeta-sen-58750228/'
   },
   {
     id: 7,
@@ -232,6 +236,7 @@ export const coreTeam = [
     name: 'Sachin Naik',
     post: 'Programme Specialist',
     logo: <FaLinkedin />,
+    url:'',
   },
   {
     id: 8,
@@ -239,6 +244,7 @@ export const coreTeam = [
     name: 'Sandhya GS',
     post: 'Implementation Manager',
     logo: <FaLinkedin />,
+    url:'https://www.linkedin.com/in/sandhya-shivaramaiah-107296119/',
   },
   // {
   //   id: 9,
@@ -253,6 +259,7 @@ export const coreTeam = [
     name: 'Tanya Singh',
     post: 'Monitoring and Learning Specialist',
     logo: <FaLinkedin />,
+    url:'https://www.linkedin.com/in/tanya-singh-a394b422b/',
   },
   {
     id: 11,
@@ -260,6 +267,7 @@ export const coreTeam = [
     name: 'Abhinav Kumar',
     post: 'Associate Project Manager',
     logo: <FaLinkedin />,
+    url:'https://www.linkedin.com/in/abhinav16111995/',
   },
   {
     id: 12,
@@ -267,6 +275,7 @@ export const coreTeam = [
     name: 'Sunitha Bai',
     post: 'Technical Specialist, Content & Solutions',
     logo: <FaLinkedin />,
+    url:'',
   },
   {
     id: 13,
@@ -274,6 +283,7 @@ export const coreTeam = [
     name: 'Aparna Suresh',
     post: 'Street Vendor Wellbeing',
     logo: <FaLinkedin />,
+    url:'',
   },
   {
     id: 14,
@@ -281,6 +291,7 @@ export const coreTeam = [
     name: 'Bhoopathy P',
     post: 'Social Protection',
     logo: <FaLinkedin />,
+    url:'https://www.linkedin.com/in/bhoopathy-pandarinathan-89901a78/',
   },
   {
     id: 15,
@@ -288,6 +299,7 @@ export const coreTeam = [
     name: 'Shankar AG',
     post: 'Invest for Wellness for Workforces',
     logo: <FaLinkedin />,
+    url:'https://www.linkedin.com/in/shankar-a-g-2b7a9656/',
   },
   {
     id: 16,
@@ -295,6 +307,7 @@ export const coreTeam = [
     name: 'Siddhant Sawhney',
     post: 'Technology',
     logo: <FaLinkedin />,
+    url:'https://www.linkedin.com/in/siddhant-sawhney-86875869/',
   },
   {
     id: 17,
@@ -302,6 +315,7 @@ export const coreTeam = [
     name: 'Ritika Gupta',
     post: 'Evidence for Change',
     logo: <FaLinkedin />,
+    url:'https://www.linkedin.com/in/ritika-gupta-57529620/',
   },
   {
     id: 18,
@@ -309,6 +323,7 @@ export const coreTeam = [
     name: 'Abdul Latheef',
     post: 'Community Engagement',
     logo: <FaLinkedin />,
+    url:'https://www.linkedin.com/in/abdul-latheef-p-7510a8200/'
   },
   {
     id: 19,
@@ -316,6 +331,7 @@ export const coreTeam = [
     name: 'Prabhakaran V',
     post: 'Programme Specialist',
     logo: <FaLinkedin />,
+    url:'https://www.linkedin.com/in/prabhakaran-v-he-him-70787375/',
   },
   {
     id: 20,
@@ -323,6 +339,7 @@ export const coreTeam = [
     name: 'Retu Singh',
     post: 'Consultant',
     logo: <FaLinkedin />,
+    url:'',
   },
   {
     id: 21,
@@ -330,6 +347,7 @@ export const coreTeam = [
     name: 'Ramji Tripathi',
     post: 'Network Consultant',
     logo: <FaLinkedin />,
+    url:'',
   },
   {
     id: 22,
