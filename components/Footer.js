@@ -87,8 +87,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-customGray flex justify-center py-6">
-        <p className="text-gray-400 text-center">
+      <div className="bg-customGray flex py-6">
+        <p className="text-gray-400 px-10">
           Upfront is an initiative of the Catalyst Group 2024. All Rights Reserved
         </p>
       </div>

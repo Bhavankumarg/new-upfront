@@ -81,7 +81,7 @@ const StoriesComponents = () => {
             </li>
           ))
         ) : (
-          <div className="text-center text-3xl">Loading...</div>
+          <div className="text-center text-3xl">Currently No Data Available</div>
         )}
       </ul>
     </div>
