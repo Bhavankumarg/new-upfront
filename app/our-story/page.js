@@ -56,12 +56,12 @@ const page = () => {
       <div className=''>
 
       </div>
-      <div className=" z-50 bg-white shadow-md hidden lg:block">
+      <div className="sticky z-50 bg-white shadow-md hidden lg:block">
         <Tab tabs={ourStoryTabs} getActiveTab={getActiveTab} />
       </div>
 
       <div className='block lg:hidden'>
-        <OurStoryAccordion />
+        {/* <OurStoryAccordion /> */}
       </div>
 
       <div className="lg:px-24 px-10 py-16" ref={worforceRef}>
