@@ -56,13 +56,13 @@ const Page = () => {
   return (
     <>
       <div className="">
-        <div className="lg:bg-[url('/whatWeDo/banner.png')] bg-[url('/whatWeDo/bannerMobile.png')] bg-cover lg:h-[60vh] h-[600px] flex flex-col ps-16 pb-8 ">
+        <div className="lg:bg-[url('/whatWeDo/banner.png')] bg-[url('/whatWeDo/bannerMobile.png')] bg-cover lg:h-[60vh] h-[600px] flex flex-col  pb-8 ">
           <Header />
-          <h1 className="text-white text-6xl mt-auto">
+          <h1 className="text-white text-6xl mt-auto ps-16">
             WHAT <br /> WE DO
           </h1>
         </div>
-        <div className="hidden lg:block bg-white shadow-md z-50">
+        <div className="hidden lg:block bg-white shadow-md z-50 sticky">
           <Tab tabs={whatWeDoTabs} getActiveTab={getActiveTab} />
         </div>
         <div>

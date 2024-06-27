@@ -38,9 +38,9 @@ const page = () => {
   };
   return (
     <>
-      <div className="lg:bg-[url('/contactUs/banner.png')] bg-[url('/contactUs/bannerMobile.png')] bg-cover lg:h-[80vh] h-[600px] flex flex-col lg:ps-16 ps-10 pb-8">
+      <div className="lg:bg-[url('/contactUs/banner.png')] bg-[url('/contactUs/bannerMobile.png')] bg-cover lg:h-[80vh] h-[600px] flex flex-col   pb-8">
         <Header />
-        <h1 className="text-white text-6xl mt-auto">CONTACT US</h1>
+        <h1 className="text-white text-6xl mt-auto lg:ps-16 ps-10">CONTACT US</h1>
       </div>
       {/* <div className="lg:bg-[url('/contactUs/banner.png')] bg-[url('/contactUs/banneMobile.png')] bg-cover lg:h-[80vh] h-[600px] flex flex-col ps-16 pb-8 ">
           <Header />
@@ -48,9 +48,10 @@ const page = () => {
             CONTACT US
           </h1>
         </div> */}
-      <div className="hidden lg:block sticky top-0 bg-white shadow-md z-0">
-        <Tab tabs={contactUsTabs} getActiveTab={getActiveTab} />
-      </div>
+     <div className="hidden lg:block sticky top-[200px] bg-white shadow-md z-0">
+  <Tab tabs={contactUsTabs} getActiveTab={getActiveTab} />
+</div>
+
 
       <div className="block lg:hidden">
         <ContactUsAccordion />

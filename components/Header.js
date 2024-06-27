@@ -7,6 +7,7 @@ import Link from 'next/link'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,22 +18,35 @@ const Header = () => {
       }
     }
 
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setIsMobile(true)
+      } else {
+        setIsMobile(false)
+      }
+    }
+
     window.addEventListener('scroll', handleScroll)
+    window.addEventListener('resize', handleResize)
+    
+    // Initial checks
+    handleResize()
     
     // Call initFlowbite after ensuring DOM is fully loaded
     setTimeout(() => {
       initFlowbite()
     }, 100)
 
-    // Clean up the event listener
+    // Clean up event listeners
     return () => {
       window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('resize', handleResize)
     }
   }, [])
 
   return (
     <div className='sticky'>
-      <nav className={`absolute  top-0 left-0 z-40 bg-[#222222] w-full lg:${isScrolled ? 'bg-[#222222]' : 'bg-transparent'}`}>
+      <nav className={`absolute top-0 left-0 z-40 w-full ${isScrolled && !isMobile ? 'bg-[#222222]' : 'lg:bg-transparent'} ${isMobile ? 'bg-black' : ''}`}>
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 px-4 py-5 border-b border-gray-400">
           <Link
             href="/"
