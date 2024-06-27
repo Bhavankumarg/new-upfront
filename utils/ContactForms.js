@@ -170,7 +170,7 @@ const ContactForm = ({ subject }) => {
               <div className="mb-3">
                 <input
                   name="firstname"
-                  className={`form-select border border-gray-500 w-full px-3 py-2 ${
+                  className={`form-select border border-gray-500 w-full px-3 py-2${
                     errors.firstname ? "is-invalid" : ""
                   }`}
                   placeholder="Enter Name"

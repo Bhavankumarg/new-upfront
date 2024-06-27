@@ -103,7 +103,7 @@ const PartnerForm = ({ subject }) => {
 
   return (
     <>
-      {successMessage ? '' : (<small style={{ color: '#555' }}>All fields are mandatory</small>)}
+      {/* {successMessage ? '' : (<small style={{ color: '#555' }}></small>)} */}
       {/* {successMessage ? '' : (<h3>Submit a CV/Resume:</h3>)} */}
       <div className="form-bg mb-5">
         {formVisible ? (
