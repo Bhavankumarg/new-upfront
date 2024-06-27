@@ -51,7 +51,7 @@ const ThematicAreas = () => {
         <div className="triangle-right self-center hidden lg:block"></div>
       </div>
       <div className="lg:w-[72%] w-[90%] lg:py-0">
-        <Slider {...settings} className="hide-scrollbar cursor-pointer">
+        <Slider {...settings} className="hide-scrollbar">
           {thematicAreas.map((item) => {
             return (
               <div key={item.id} className="px-5 border-s lg:h-36 h-48">

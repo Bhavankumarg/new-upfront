@@ -14,8 +14,9 @@ import WhoAreWeMobile from "@components/WhoWeAreMobile";
 export default function Home() {
   return (
     <>
+     <Header />
       <div className="relative">
-        <Header />
+       
         <CarouselScreen details={homeBannerCarousel} />
       </div>
       <div className="max-w-screen-xl lg:mx-auto lg:px-40 lg:py-7 tracking-wide">
