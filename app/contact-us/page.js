@@ -38,8 +38,9 @@ const page = () => {
   };
   return (
     <>
+     <Header />
       <div className="lg:bg-[url('/contactUs/banner.png')] bg-[url('/contactUs/bannerMobile.png')] bg-cover lg:h-[80vh] h-[600px] flex flex-col   pb-8">
-        <Header />
+       
         <h1 className="text-white text-6xl mt-auto lg:ps-16 ps-10">CONTACT US</h1>
       </div>
       {/* <div className="lg:bg-[url('/contactUs/banner.png')] bg-[url('/contactUs/banneMobile.png')] bg-cover lg:h-[80vh] h-[600px] flex flex-col ps-16 pb-8 ">
@@ -48,7 +49,7 @@ const page = () => {
             CONTACT US
           </h1>
         </div> */}
-     <div className="hidden lg:block sticky top-[200px] bg-white shadow-md z-0">
+     <div className="hidden lg:block sticky top-24 bg-white shadow-md z-10">
   <Tab tabs={contactUsTabs} getActiveTab={getActiveTab} />
 </div>
 

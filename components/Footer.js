@@ -29,11 +29,11 @@ const Footer = () => {
               <div className="lg:w-[175px] w-[300px] h-[1px] bg-customGrayMd my-3"></div>
               <Link href="/our-story/" className="flex gap-10  hover:text-red-600">
                 <li className="flex-grow">Our Story</li>
-                <FaArrowRight className="mt-1" />
+                <FaArrowRight className="mt-1 me-20" />
               </Link>
               <Link href="/our-team" className="flex gap-9 mt-2  hover:text-red-600">
                 <li className="flex-grow">Our Team</li>
-                <FaArrowRight className="mt-1" />
+                <FaArrowRight className="mt-1 me-20" />
               </Link>
             </ul>
             <ul className="text-customGrayMd text-xl mb-8 lg:mb-0">
@@ -41,27 +41,27 @@ const Footer = () => {
               <div className="lg:w-[175px] w-[300px] h-[1px] bg-customGrayMd my-3"></div>
               <Link href="/what-we-do" className="flex gap-10 text-white/60  hover:text-red-600">
                 <li className="flex-grow">What We Do</li>
-                <FaArrowRight className="mt-1" />
+                <FaArrowRight className="mt-1 me-20" />
               </Link>
             </ul>
             <ul className="text-customGrayMd text-xl mb-8 lg:mb-0">
               <h3 className="text-white text-2xl">Insights</h3>
-              <div className="lg:w-[175px] w-[300px] h-[1px] bg-customGrayMd my-3"></div>
+              <div className="lg:w-[220px] w-[300px] h-[1px] bg-customGrayMd my-3"></div>
               <Link href="/insights" className="flex items-center justify-between text-white/60 hover:text-red-600">
                 <li className="flex-grow">Stories</li>
-                <FaArrowRight />
+                <FaArrowRight className="me-20"/>
               </Link>
               <Link href="/insights" className="flex items-center justify-between text-white/60 mt-2 hover:text-red-600 ">
                 <li className="flex-grow">Case Studies</li>
-                <FaArrowRight />
+                <FaArrowRight className="me-20"/>
               </Link>
               <Link href="/insights" className="flex items-center justify-between text-white/60 mt-2 hover:text-red-600">
                 <li className="flex-grow">Blogs</li>
-                <FaArrowRight />
+                <FaArrowRight className="me-20"/>
               </Link>
               <Link href="/insights" className="flex items-center justify-between text-white/60 mt-2 hover:text-red-600 ">
                 <li className="flex-grow me-3">News and Publications</li>
-                <FaArrowRight />
+                <FaArrowRight className="me-20"/>
               </Link>
             </ul>
             <ul className="text-white/60 text-xl">
@@ -70,16 +70,16 @@ const Footer = () => {
               </Link>
               <div className="lg:w-[175px] w-[300px] h-[1px] bg-customGrayMd my-3"></div>
               <Link href="mailto:Info@upfrontglobal.com">
-                <li className="mt-5  hover:text-red-600">Info@upfrontglobal.com</li>
+                <li className="mt-5  hover:text-red-600">info@upfrontglobal.com</li>
               </Link>
               <li className="flex pt-5 gap-5 text-3xl ">
-                <Link href="https://www.linkedin.com/showcase/upfrontcg/" className="hover:text-white">
+                <Link target="_blank" href="https://www.linkedin.com/showcase/upfrontcg/" className="hover:text-white">
                   <FaLinkedinIn />
                 </Link>
-                <Link href="https://twitter.com/UpfrontCG" className="hover:text-white">
+                <Link target="_blank" href="https://twitter.com/UpfrontCG" className="hover:text-white">
                   <FaXTwitter />
                 </Link>
-                <Link href="https://www.instagram.com/upfront.global/" className="hover:text-white">
+                <Link target="_blank" href="https://www.instagram.com/upfront.global/" className="hover:text-white">
                   <FaInstagram />
                 </Link>
               </li>

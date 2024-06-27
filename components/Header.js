@@ -1,53 +1,54 @@
-'use client'
-
-import { useEffect, useState } from 'react'
-import { initFlowbite } from 'flowbite'
-import Image from 'next/image'
-import Link from 'next/link'
+"use client";
+import { useEffect, useState } from "react";
+import { initFlowbite } from "flowbite";
+import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobile, setIsMobile] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setIsScrolled(true)
-      } else {
-        setIsScrolled(false)
-      }
-    }
+      setIsScrolled(window.scrollY > 100);
+    };
 
     const handleResize = () => {
-      if (window.innerWidth <= 768) {
-        setIsMobile(true)
-      } else {
-        setIsMobile(false)
-      }
-    }
+      setIsMobile(window.innerWidth <= 768);
+    };
 
-    window.addEventListener('scroll', handleScroll)
-    window.addEventListener('resize', handleResize)
-    
+    // Event listeners for scroll and resize
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+
     // Initial checks
-    handleResize()
-    
-    // Call initFlowbite after ensuring DOM is fully loaded
+    handleScroll();
+    handleResize();
+
+    // Initialize Flowbite (assuming this is some external library function)
     setTimeout(() => {
-      initFlowbite()
-    }, 100)
+      initFlowbite();
+    }, 100);
 
     // Clean up event listeners
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-      window.removeEventListener('resize', handleResize)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
-    <div className='sticky'>
-      <nav className={`absolute top-0 left-0 z-40 w-full ${isScrolled && !isMobile ? 'bg-[#222222]' : 'lg:bg-transparent'} ${isMobile ? 'bg-black' : ''}`}>
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 px-4 py-5 border-b border-gray-400">
+    <div className="sticky top-0 z-50 bottom-0  ">
+      <nav
+        className={`absolute top-0 left-0 z-40 w-full ${
+          isScrolled && !isMobile ? "bg-[#222222]" : "lg:bg-transparent"
+        } ${isMobile ? "bg-black" : ""}`}
+      >
+        <div
+          className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 px-4 py-5 ${
+            isScrolled ? "border-none" : "border-b border-gray-400"
+          } border-b border-gray-400`}
+        >
           <Link
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -57,6 +58,7 @@ const Header = () => {
               width={isScrolled ? 70 : 109}
               height={isScrolled ? 70 : 103}
               alt="Upfront logo"
+              className="transition-all duration-300"
               priority
             />
           </Link>
@@ -84,15 +86,22 @@ const Header = () => {
               />
             </svg>
           </button>
-          <div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+          <div
+            className="hidden w-full md:block md:w-auto"
+            id="navbar-dropdown"
+          >
             <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 text-white border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:items-center md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
                 <button
                   id="dropdownNavbarLink"
                   data-dropdown-toggle="dropdownNavbar"
-                  className="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto  md:dark:hover:text-blue-500 dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  className={`flex items-center justify-between w-full py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto ${
+                    isScrolled && !isMobile
+                      ? "md:dark:hover:text-blue-500 dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                      : ""
+                  }`}
                 >
-                  About Us{' '}
+                  About Us{" "}
                   <svg
                     className="w-2.5 h-2.5 ms-2.5"
                     aria-hidden="true"
@@ -112,7 +121,7 @@ const Header = () => {
 
                 <div
                   id="dropdownNavbar"
-                  className="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                  className="z absolute hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
                 >
                   <ul
                     className="py-2 text-sm text-gray-700 dark:text-gray-400"
@@ -121,7 +130,7 @@ const Header = () => {
                     <li>
                       <Link
                         href="/our-story"
-                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        className="block text-lg px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Our Story
                       </Link>
@@ -129,7 +138,7 @@ const Header = () => {
                     <li>
                       <Link
                         href="/our-team"
-                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        className="block text-lg px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Our Team
                       </Link>
@@ -168,7 +177,7 @@ const Header = () => {
         </div>
       </nav>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

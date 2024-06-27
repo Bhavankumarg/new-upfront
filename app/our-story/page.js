@@ -45,8 +45,9 @@ const page = () => {
 
   return (
     <>
+     <Header />
       <div className="lg:bg-[url('/ourStory/banner.png')] bg-[url('/ourStory/bannerMobile.png')] bg-cover lg:h-[80vh] h-[600px] flex flex-col pb-8">
-        <Header />
+       
         <h1 className="text-white lg:text-6xl text-3xl mt-auto lg:ps-16 ps-10">
           OUR <br /> STORY
         </h1>
@@ -56,7 +57,7 @@ const page = () => {
       <div className=''>
 
       </div>
-      <div className="sticky z-50 bg-white shadow-md hidden lg:block">
+      <div className="sticky z-10 top-24 bg-white shadow-md hidden lg:block">
         <Tab tabs={ourStoryTabs} getActiveTab={getActiveTab} />
       </div>
 
