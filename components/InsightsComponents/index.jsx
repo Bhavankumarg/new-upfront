@@ -7,7 +7,7 @@ const index = () => {
         <div>
             <InsightsBanner />
             <InsigstsAllCategoriesComponents />
-            <InsightsAllMobile/>
+            {/* <InsightsAllMobile/> */}
         </div>
     )
 }

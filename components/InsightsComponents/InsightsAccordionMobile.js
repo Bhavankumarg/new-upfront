@@ -211,11 +211,11 @@ const InsightsAllMobile = () => {
                                     aria-labelledby={`accordion-collapse-heading-${index + 1}`}
                                     className="p-4"
                                 >
-                                    {tabObj.tab === 'Stories' && <StoriesComponents />}
-                                    {tabObj.tab === 'Case Studies' && (
+                                    {tabObj.tab === 'Case Studies' && <CaseStudiesComponents />}
+                                    {/* {tabObj.tab === 'Case Studies' && (
                                         <CaseStudiesComponents />
-                                    )}
-                                    {tabObj.tab === 'Blogs' && <BlogComponents />}
+                                    )} */}
+                                    {tabObj.tab === 'Stories(Blogs)' && <BlogComponents />}
                                     {tabObj.tab === 'News and Publications' && (
                                         <NewsComponents />
                                     )}

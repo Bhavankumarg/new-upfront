@@ -71,9 +71,9 @@ const Page = () => {
         metaImage={metaImage}
       />
       <div className="">
-        <div className="lg:bg-[url('/whatWeDo/banner.png')] bg-[url('/whatWeDo/bannerMobile.png')] bg-cover lg:h-[80vh] h-[600px] flex flex-col  pb-8 ">
+        <div className="lg:bg-[url('/whatWeDo/banner.png')] bg-[url('/whatWeDo/bannerMobile.png')] bg-cover lg:h-[75vh] h-[400px] flex flex-col  pb-8 ">
          
-          <h1 className="text-white text-6xl mt-auto ps-16">
+          <h1 className="text-white lg:text-6xl text-3xl mt-auto ps-16">
             WHAT <br /> WE DO
           </h1>
         </div>
@@ -81,14 +81,15 @@ const Page = () => {
           <Tab tabs={whatWeDoTabs} getActiveTab={getActiveTab} />
         </div>
         <div>
-          <WhatWeDoMobileAccordion />
+          {/* <WhatWeDoMobileAccordion /> */}
         </div>
 
-        <div className="hidden lg:block">
+        <div className="">
           <div
             ref={overviewRef}
             className="max-w-screen-xl mx-auto lg:px-40 tracking-wide text-center space-y-4 p-5"
           >
+            <h2 className="lg:text-6xl text-3xl lg:hidden block">OVERVIEW</h2>
             <p className="text-xl">
               Our journey began with narrowing our focus on one of the most
               vital components of the global economy—<br/>the workforce. We have been
@@ -118,15 +119,15 @@ const Page = () => {
                   width={500}
                   height={500}
                   alt=""
-                  className="mb-10 lg:w-3/4 w-full hidden lg:block"
+                  className="lg:mb-10 lg:w-3/4 w-full hidden lg:block"
                 />
               </div>
-              <p className="text-xl text-[#222222] mt-10 lg:p-0 p-5">
+              <p className="text-xl text-[#222222] lg:mt-10 lg:p-0">
                 Upfront prioritises the wellbeing of both the formal and
                 informal workforce, placing their health and happiness at the
                 core of its work, upholding its commitment to the community.
               </p>
-              <p className="text-xl text-[#222222] lg:p-0 p-5 mt-3">
+              <p className="text-xl text-[#222222] lg:p-0 mt-3">
                 We employ innovative, transformative, and sustainable practices
                 tailored to be locally applicable, sensitive, and inclusive,
                 effectively addressing specific needs and requirements to bring
@@ -136,7 +137,7 @@ const Page = () => {
                 becoming part of forums and platforms, and leveraging collective
                 strengths to achieve greater impact and scalability.
               </p>
-              <p className="text-xl text-[#222222] lg:p-0 p-5 mt-3">
+              <p className="text-xl text-[#222222] lg:p-0 mt-3">
               Upfront also promotes sustainability by shaping and influencing leaders, investments, systems, and policies, ensuring that workforce wellbeing practices and principles are integrated at all levels of decision-making. Ensuring <b>sustainability</b> requires investment in the cause. Upfront designs innovative financing solutions to encourage such investments and generate tangible results, reinforcing its overall mission and vision for a healthy, wealthy, and thriving workforce.
               </p>
               <Image

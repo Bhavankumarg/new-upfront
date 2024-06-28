@@ -11,7 +11,7 @@ const Tab = ({ tabs, getActiveTab }) => {
 
   return (
     <>
-      <ul className="bg-customLightGray flex">
+      <ul className="bg-customLightGray lg:flex">
         {tabs.map((item) => {
           return (
             <li

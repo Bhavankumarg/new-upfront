@@ -32,14 +32,14 @@ const BlogComponents = () => {
       <h2 className="lg:text-6xl text-3xl py-10 lg:px-10">STORIES(BLOGS)</h2>
 
       <hr className="px-10" />
-      <ul className="flex flex-wrap gap-6 mt-8 container mx-auto">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 container mx-auto">
         {data.length > 0 ? (
           data.map((post) => (
-            <li key={post.id} className="lg:border mb-10">
-              <div className="w-80">
+            <li key={post.id} className="border mb-10">
+              <div className="w-full">
                 <div className="relative">
                   {post.acf && post.acf.thumbnail_image && (
-                    <div className=" lg:min-h-[220px]">
+                    <div className="lg:min-h-[220px]">
                       <img
                         src={post.acf.thumbnail_image.url}
                         alt={post.title.rendered}
@@ -55,15 +55,6 @@ const BlogComponents = () => {
                     BLOG
                   </button>
                 </div>
-                {/* {post.acf && post.acf.date && (
-                  <p className="card-date mb-0 mt-3 mx-3">
-                    {new Date(post.acf.date).toLocaleDateString("en-US", {
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                    })}
-                  </p>
-                )} */}
                 <div className="bg-[#F40F34] mx-3 mt-5 p-1">
                   <span
                     className="text-white"

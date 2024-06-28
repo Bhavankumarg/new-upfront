@@ -476,7 +476,7 @@ export const contactUsTabs = [
 export const insightsTabs = [
   // { id: 1, tab: 'Stories' },
   { id: 1, tab: 'Case Studies' },
-  { id: 2, tab: 'Stories(Blogs)' },
+  { id: 2, tab: 'Stories (Blogs)' },
   { id: 3, tab: 'News and Publications' },
   // { id: 5, tab: 'All' }
 ];

@@ -16,22 +16,26 @@ import { FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <div className="bg-customBlack pt-12 pb-24 px-10">
+      <div className="bg-customBlack pt-6 pb-12 px-10">
         <div className="max-w-screen-xl mx-auto flex flex-wrap justify-between">
           <div className="mb-10 lg:mb-0">
             <Link href="/">
-            <Image
-              src="/homePage/upfrontLogo.svg"
-              width={118}
-              height={111}
-              alt="upfront logo"
-            /></Link>
+              <Image
+                src="/homePage/upfrontLogo.svg"
+                width={118}
+                height={100}
+                alt="upfront logo"
+              />
+            </Link>
           </div>
-          <div className="flex flex-wrap gap-16 lg:gap-28">
+          <div className="flex flex-wrap gap-4 lg:gap-28 mt-6">
             <ul className="text-white/60 text-xl mb-8 lg:mb-0">
               <h3 className="text-white text-2xl">About Us</h3>
               <div className="lg:w-[175px] w-[300px] h-[1px] bg-customGrayMd my-3"></div>
-              <Link href="/our-story/" className="flex gap-10 hover:text-red-600 group">
+              <Link
+                href="/our-story/"
+                className="flex gap-10 hover:text-red-600 group"
+              >
                 <li className="flex-grow">Our Story</li>
                 <FaArrowRight className="mt-1 me-20 group-hover:animate-spin" />
               </Link>
@@ -124,10 +128,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-customGray flex py-6">
-        <p className="text-gray-400 px-10">
-          Upfront is an entity of the Catalyst Group 2024. All Rights
-          Reserved
+      <div className="bg-customGray flex py-6 justify-center items-center">
+        <p className="text-gray-400 text-center">
+          Upfront is a part of the Catalyst Group 2024. All Rights Reserved
         </p>
       </div>
     </>

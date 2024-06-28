@@ -83,7 +83,7 @@ const metaImage = "/ourStory/banner.png"
       <div className='hidden lg:block'>
         <div className="pb-16 container mx-auto flex justify-center">
           <Image
-            src="/ourStory/workForceWellbeing.jpg"
+            src="/ourStory/workForceWellbeing.png"
             width={1000}
             height={700}
             className="w-11/12"
@@ -114,7 +114,7 @@ const metaImage = "/ourStory/banner.png"
 
       <OurMission />
 
-      <div className="px-10 py-16" ref={ourhistoryRef}>
+      <div className="px-5 py-16" ref={ourhistoryRef}>
         <h4 className="lg:text-6xl text-3xl lg:px-16 px-7">
           <span className="text-red-600">OUR</span> <br /> HISTORY
         </h4>

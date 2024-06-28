@@ -28,7 +28,7 @@ const InsigstsAllCategoriesComponents = () => {
 
     return (
         <>
-           <div className='sticky hidden lg:block z-10 top-24'>
+           <div className='sticky  z-10 top-24'>
            <Tab tabs={insightsTabs} getActiveTab={getActiveTab} />
            </div>
             {/* <div className="hidden lg:block sticky top-0 bg-white shadow-md z-50">
@@ -49,7 +49,7 @@ const InsigstsAllCategoriesComponents = () => {
                  <div className={getContentClass('Case Studies')}>
                     <CaseStudiesComponents />
                 </div>
-                 <div className={getContentClass('Stories(Blogs)')}>
+                 <div className={getContentClass('Stories (Blogs)')}>
                     <BlogComponents />
                 </div>
                
