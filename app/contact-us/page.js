@@ -33,7 +33,7 @@ const Page = () => {
         );
       case "Join Us":
         return (
-          <div className="bg-[#E8E8E8] pb-10">
+          <div className=" pb-10">
             <div className="px-14 mt-10 ">
               <p className="text-black lg:text-6xl text-3xl pt-10">
                 CAREER <br /> OPPORTUNITIES
