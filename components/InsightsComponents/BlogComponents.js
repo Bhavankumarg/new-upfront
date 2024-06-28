@@ -53,7 +53,7 @@ const BlogComponents = () => {
                     BLOG
                   </button>
                 </div>
-                {post.acf && post.acf.date && (
+                {/* {post.acf && post.acf.date && (
                   <p className="card-date mb-0 mt-3 mx-3">
                     {new Date(post.acf.date).toLocaleDateString("en-US", {
                       year: "numeric",
@@ -61,7 +61,7 @@ const BlogComponents = () => {
                       day: "numeric",
                     })}
                   </p>
-                )}
+                )} */}
                 <div className="bg-[#F40F34] mx-3 mt-5 p-1">
                   <span
                     className="text-white"
