@@ -17,6 +17,9 @@ body {
     color: #4a4a4a;
   }
 }
+.section-with-margin {
+  margin-top: 230px; 
+}
 
 .triangle-right {
   width: 0;
@@ -138,6 +141,15 @@ body {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+}
+
+.post-content-title {
+  height: 5em !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3 !important;
+  -webkit-box-orient: vertical !important;
 }
 
 

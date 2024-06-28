@@ -20,35 +20,80 @@ const Page = () => {
   const thematicAreasRef = useRef(null);
   const impactRef = useRef(null);
 
-  const scrollToSection = (ref) => {
-    if (ref.current) {
-      ref.current.scrollIntoView({
+  // const scrollToSection = (ref) => {
+  //   if (ref.current) {
+  //     ref.current.scrollIntoView({
+  //       behavior: "smooth",
+  //       block: "start", // Scroll to the top of the section
+  //       inline: "center", // Keep horizontal alignment
+  //     });
+
+  //     // // Add margin after scrolling
+  //     ref.current.classList.add("section-with-margin");
+
+  //     // //Remove margin after a short delay (optional)
+  //     // setTimeout(() => {
+  //     //   ref.current.classList.remove("section-with-margin");
+  //     // }, 4000); // Adjust delay as needed
+  //   }
+  // };
+
+  const scrollToSectionById = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({
         behavior: "smooth",
-        block: "start",
-        inline: "nearest",
+        block: "start", // Scroll to the top of the section
+        inline: "nearest", // Keep horizontal alignment
       });
     }
   };
 
+  // const getActiveTab = (tab) => {
+  //   switch (tab) {
+  //     case "Overview":
+        
+  //       scrollToSectionById("overview");
+  //       break;
+  //     case "Approach":
+  //       scrollToSection(ourApproachRef);
+  //       break;
+  //     case "Building Resilience of the Workforces":
+  //       scrollToSection(resilienceRef);
+  //       break;
+  //     case "Key Communities":
+  //       scrollToSection(keyCommunitiesRef);
+  //       break;
+  //     case "Thematic Areas":
+  //       scrollToSection(thematicAreasRef);
+  //       break;
+  //     case "Impact":
+  //       scrollToSection(impactRef);
+  //     default:
+  //       console.log(tab);
+  //   }
+  // };
+
   const getActiveTab = (tab) => {
     switch (tab) {
       case "Overview":
-        scrollToSection(overviewRef);
+        scrollToSectionById("overview");
         break;
       case "Approach":
-        scrollToSection(ourApproachRef);
+        scrollToSectionById("approach");
         break;
       case "Building Resilience of the Workforces":
-        scrollToSection(resilienceRef);
+        scrollToSectionById("resilience");
         break;
       case "Key Communities":
-        scrollToSection(keyCommunitiesRef);
+        scrollToSectionById("key-communities");
         break;
       case "Thematic Areas":
-        scrollToSection(thematicAreasRef);
+        scrollToSectionById("thematic-areas");
         break;
       case "Impact":
-        scrollToSection(impactRef);
+        scrollToSectionById("impact");
+        break;
       default:
         console.log(tab);
     }
@@ -87,6 +132,7 @@ const Page = () => {
         <div className="">
           <div
             ref={overviewRef}
+             id="overview"
             className="max-w-screen-xl mx-auto lg:px-40 tracking-wide text-center space-y-4 p-5"
           >
             <h2 className="lg:text-6xl text-3xl lg:hidden block">OVERVIEW</h2>
@@ -109,9 +155,10 @@ const Page = () => {
 
           <div
             ref={ourApproachRef}
+               id="approach"
             className="bg-[url('/whatWeDo/rectangle.png')] bg-no-repeat bg-cover flex flex-col items-center lg:p-10 p-3 text-center"
           >
-            <h2 className="lg:text-6xl text-3xl">APPROACH</h2>
+            <h2 className="lg:text-6xl text-3xl ">APPROACH</h2>
             <div className="bg-white lg:px-24 mt-10">
               <div className="w-full flex justify-center">
                 <Image
@@ -152,6 +199,7 @@ const Page = () => {
 
           <div
             ref={resilienceRef}
+            id="resilience"
             className="bg-customLightGray lg:p-12 p-4 flex justify-center mb-12"
           >
             <div className="lg:w-2/3 space-y-5 text-center ">
@@ -183,8 +231,10 @@ const Page = () => {
             </div>
           </div>
 
-          <div ref={keyCommunitiesRef}>
-            <OurKeyCommunities />
+          <div ref={keyCommunitiesRef} id="key-communities">
+            
+              <OurKeyCommunities />
+              
           </div>
 
           <div>
@@ -192,11 +242,11 @@ const Page = () => {
           </div>
           {/* <ThematicMobile  /> */}
 
-          <div ref={thematicAreasRef}>
+          <div id="thematic-areas" ref={thematicAreasRef}>
             <ThematicDesktop />
           </div>
 
-          <div ref={impactRef}>
+          <div id="impact" ref={impactRef}>
             <Impact />
           </div>
         </div>

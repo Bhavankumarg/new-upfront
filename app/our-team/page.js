@@ -52,7 +52,7 @@ const page = () => {
                   index % 2 === 1 ? "lg:border-s-2 border-gray-400" : ""
                 } lg:${index % 4 !== 0 ? "border-s-2 border-gray-400" : ""}`}
               >
-                <img src={item.imageUrl} className="mx-auto pt-2" />
+                <img src={item.imageUrl} className="mx-auto pt-2 w-full" />
                 <p className="pt-2 text-start">{item.name}</p>
                 <p className="text-[#7E7E7E] pt-2 text-start">{item.post}</p>
                 {item.url && (
@@ -89,7 +89,7 @@ const page = () => {
                   index % 2 === 1 ? "lg:border-s-2 border-gray-400" : ""
                 } lg:${index % 4 !== 0 ? "border-s-2 border-gray-400" : ""}`}
               >
-                <img src={item.imageUrl} className="mx-auto pt-2" />
+                <img src={item.imageUrl} className="mx-auto pt-2 w-full" />
                 <p className="pt-2 text-start">{item.name}</p>
                 <p className="text-[#7E7E7E] pt-2 text-start">{item.post}</p>
                 {item.url && (

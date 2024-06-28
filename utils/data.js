@@ -94,51 +94,72 @@ export const  thematicAreas = [
     id: 1,
     logo: '/homePage/thematicAreas/agency.svg',
     title: 'Agency Building',
+    width: '60',
+    height:'60'
   },
   {
     id: 2,
     logo: '/homePage/thematicAreas/finance.svg',
     title: 'Financial and Digital Inclusion',
+    width: '60',
+    height:'60'
   },
   {
     id: 3,
     logo: '/homePage/thematicAreas/social.svg',
     title: 'Social Protection',
+    width: '60',
+    height:'60'
   },
   {
     id: 4,
     logo: '/homePage/thematicAreas/health.svg',
     title: 'Preventive and Promotive Health',
+    width: '60',
+    height:'60'
   },
   {
     id: 5,
     logo: '/homePage/thematicAreas/climate.svg',
     title: 'Just Transition & Climate Actions',
+    width: '60',
+    height:'60'
   },
   {
     id: 6,
     logo: '/homePage/thematicAreas/gender.svg',
     title: 'Gender Equality & Equity',
+    width: '60',
+    height:'60'
   },
   {
     id: 7,
     logo: '/homePage/thematicAreas/accomodation.svg',
     title: 'Safe & Sustainable Accommodation',
+    width: '60',
+    height:'60'
   },
   {
     id: 8,
     logo: '/homePage/thematicAreas/career.svg',
     title: 'Career Progression for Women',
+    width: '60',
+    height:'60'
   },
   {
     id: 9,
     logo: '/homePage/thematicAreas/safe.svg',
     title: 'Safe & Sustainable Workplaces',
+    width: '60',
+    height:'60'
   },
   {
     id: 10,
+    
     logo: '/homePage/thematicAreas/workplace.svg',
     title: 'Inclusive Workplaces',
+    width: '60',
+    height:'60'
   },
 ]
 
@@ -375,13 +396,14 @@ export const ourAdvisors = [
     logo: <FaLinkedin />,
     url:'https://www.linkedin.com/in/shiv-kumar-a288141/',
   },
-  // {
-  //   id: 2,
-  //   imageUrl: '/insights/dummyImg.png',
-  //   name: 'Dummy Text',
-  //   post: 'Project Manager',
-  //   logo: <FaLinkedin />,
-  // },
+  {
+    id: 2,
+    imageUrl: '/coreTeam/raghu.png',
+    name: 'Raghunathan N',
+    post: 'Co-Founder, Director',
+    logo: <FaLinkedin />,
+    url:'https://www.linkedin.com/in/raghunathan-narayanan-495b587/',
+  },
   // {
   //   id: 3,
   //   imageUrl: '/insights/dummyImg.png',

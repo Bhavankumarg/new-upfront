@@ -7,8 +7,10 @@ const CarouselScreen = ({ details }) => {
       id="controls-carousel"
       class="relative w-full lg:h-screen"
       data-carousel="slide"
+      interval= {3000}
+      data-carousel-interval={7000}
     >
-      <div class="relative lg:h-full h-[780px] overflow-hidden">
+      <div class="relative lg:h-full h-[730px] overflow-hidden">
         {details.map((item) => {
           return (
             <div

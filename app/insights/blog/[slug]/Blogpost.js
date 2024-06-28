@@ -55,20 +55,20 @@ const BlogPosts = ({ slug }) => {
                   alt={post.title.rendered}
                   className="w-full"
                 />
-                <button
+                {/* <button
                   type="button"
                   className="text-white text-xl absolute top-0 start-0 w-32 text-center font-normal bg-gray-800/75 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 px-1 py-1 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
                 >
                   Blog
-                </button>
+                </button> */}
               </div>
-              <p className="card-date mb-0 pt-5 pb-4 text-[#4E4E4E]">
+              {/* <p className="card-date mb-0 pt-5 pb-4 text-[#4E4E4E]">
                 {new Date(post.acf.date).toLocaleDateString("en-US", {
                   year: "numeric",
                   month: "long",
                   day: "numeric",
                 })}
-              </p>
+              </p> */}
               <div
                 className="w-full"
                 dangerouslySetInnerHTML={{ __html: post.content.rendered }}
@@ -85,7 +85,7 @@ const BlogPosts = ({ slug }) => {
               </div>
             </div>
 
-            <div className="lg:w-1/4 w-full">
+            {/* <div className="lg:w-1/4 w-full">
             <button
                 type="button"
                 className="text-white lg:w-72 w-full text-xl  rounded-sm  font-normal bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300   px-5 py-4 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
@@ -129,7 +129,7 @@ const BlogPosts = ({ slug }) => {
               </div>
               </div>
              
-            </div>
+            </div> */}
           </div>
         </div>
       ) : (

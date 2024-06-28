@@ -58,11 +58,11 @@ const ThematicAreas = () => {
                 <div className="space-y-3 flex flex-col justify-center items-center">
                   <Image
                     src={item.logo}
-                    width={60}
-                    height={60}
+                    width={item.width}
+                    height={item.height}
                     alt={item.title}
                   />
-                  <p className="text-white text-center">{item.title}</p>
+                  <p className="text-white text-center py-2">{item.title}</p>
                 </div>
               </div>
             )

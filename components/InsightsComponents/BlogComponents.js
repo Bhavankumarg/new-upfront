@@ -29,7 +29,7 @@ const BlogComponents = () => {
 
   return (
     <div>
-      <h2 className="lg:text-6xl text-3xl py-10 lg:px-10">STORIES(BLOGS)</h2>
+      <h2 className="lg:text-6xl text-3xl py-10 lg:px-10">STORIES (BLOGS)</h2>
 
       <hr className="px-10" />
       <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 container mx-auto">
@@ -48,16 +48,16 @@ const BlogComponents = () => {
                       />
                     </div>
                   )}
-                  <button
+                  {/* <button
                     type="button"
                     className="text-white text-xl absolute top-0 start-0 w-32 text-center font-normal bg-gray-800/75 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 px-1 py-1 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
                   >
                     BLOG
-                  </button>
+                  </button> */}
                 </div>
-                <div className="bg-[#F40F34] mx-3 mt-5 p-1">
+                <div className="bg-[#F40F34] mx-3 mt-5 p-1 post-content-title">
                   <span
-                    className="text-white"
+                    className="text-white "
                     dangerouslySetInnerHTML={{ __html: post.title.rendered }}
                   />
                 </div>
