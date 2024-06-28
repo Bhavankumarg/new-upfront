@@ -20,10 +20,10 @@ export default function Home() {
   const metaImage = "/contactUs/banner.png";
   return (
     <>
-     
+     <Header />
      <Seo title={title} description={description} path={path} metaImage={metaImage} />  
-      <div className="">
-      <Header />
+      <div className="relative">
+       
         <CarouselScreen details={homeBannerCarousel} />
       </div>
       <div className="max-w-screen-xl lg:mx-auto lg:px-40 lg:py-7 mt-6 tracking-wide">
