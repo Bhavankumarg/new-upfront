@@ -41,8 +41,11 @@ const Header = () => {
     <div className="sticky top-0 z-50 bottom-0  ">
       <nav
         className={`absolute top-0 left-0 z-40 w-full ${
-          isScrolled && !isMobile ? "bg-[#222222]" : "lg:bg-transparent"
-        } ${isMobile ? "bg-black" : ""}`}
+          isScrolled ? "bg-[#222222]" : "bg-transparent"}`}
+
+        // className={`absolute top-0 left-0 z-40 w-full ${
+        //   isScrolled && !isMobile ? "bg-[#222222]" : "lg:bg-transparent"
+        // } ${isMobile ? "bg-black" : ""}`}
       >
         <div
           className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 px-4 py-5 ${

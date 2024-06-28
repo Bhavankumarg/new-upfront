@@ -26,11 +26,11 @@ export default function Home() {
        
         <CarouselScreen details={homeBannerCarousel} />
       </div>
-      <div className="max-w-screen-xl lg:mx-auto lg:px-40 lg:py-7 tracking-wide">
+      <div className="max-w-screen-xl lg:mx-auto lg:px-40 lg:py-7 mt-6 tracking-wide">
         <h1 className="lg:text-6xl text-3xl text-center">
           <span className="text-red-600 ">WHY WORKFORCE</span> <br /> WELLBEING
         </h1>
-        <p className="text-center mt-5 lg:p-0 p-5 text-xl">
+        <p className="text-center mt-3 lg:p-0 p-5 text-xl">
           Workforces are key to economic growth; however, as the world
           progresses post the COVID-19 pandemic, we have transitioned from a
           Volatile, Uncertain, Complex, and Ambiguous (VUCA) world to a Brittle,

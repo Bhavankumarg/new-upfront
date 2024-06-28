@@ -17,7 +17,7 @@ const Page = () => {
   
 
 
-  const [activeTab, setActiveTab] = useState('Partner With Us'); // Default to "Partner With Us" tab
+  const [activeTab, setActiveTab] = useState('Partner With Us');
 
   const renderContent = () => {
     switch (activeTab) {
@@ -34,7 +34,7 @@ const Page = () => {
       case "Join Us":
         return (
           <div className=" pb-10">
-            <div className="lg:ps-10 mt-6">
+            <div className="lg:ps-10 p-5 mt-6">
               <p className="text-black lg:text-6xl text-3xl pt-10">
                 CAREER OPPORTUNITIES
               </p>
@@ -45,8 +45,8 @@ const Page = () => {
         );
       case "Contact Info":
         return (
-          <div className="lg:ps-10 pb-5 lg:w-1/2">
-            <div className="mt-10 p-5">
+          <div className="lg:ps-10 p-5 lg:w-1/2">
+            <div className="mt-10">
               <h2 className="text-black lg:text-6xl text-3xl">CONTACT INFO</h2>
             </div>
 

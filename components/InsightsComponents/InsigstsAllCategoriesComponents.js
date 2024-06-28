@@ -28,7 +28,7 @@ const InsigstsAllCategoriesComponents = () => {
 
     return (
         <>
-           <div className='sticky  z-10 top-24'>
+           <div className='lg:sticky  z-10 top-24'>
            <Tab tabs={insightsTabs} getActiveTab={getActiveTab} />
            </div>
             {/* <div className="hidden lg:block sticky top-0 bg-white shadow-md z-50">
