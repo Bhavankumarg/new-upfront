@@ -105,13 +105,13 @@ const PartnerForm = ({ subject }) => {
     <>
       {/* {successMessage ? '' : (<small style={{ color: '#555' }}></small>)} */}
       {/* {successMessage ? '' : (<h3>Submit a CV/Resume:</h3>)} */}
-      <div className="form-bg mb-5">
+      <div className="form-bg mb-5 bg-[#4A4A4A] lg:w-1/2">
         {formVisible ? (
-          <form onSubmit={handleSubmit} encType="multipart/form-data">
-            <div className="mb-3 border">
+          <form onSubmit={handleSubmit} encType="multipart/form-data" className='px-5 py-2 gap-4'>
+            <div className="mb-3 border mt-7">
               <input
                 name="firstname"
-                className={`form-control ${errors.firstname ? 'is-invalid' : ''} w-full p-4`}
+                className={`form-control ${errors.firstname ? 'is-invalid' : ''} w-full p-2`}
                 placeholder="Enter Name"
                 value={formData.firstname}
                 onChange={handleChange}
@@ -119,11 +119,11 @@ const PartnerForm = ({ subject }) => {
               />
               {errors.firstname && <div className="invalid-feedback">{errors.firstname}</div>}
             </div>
-            <div className="mb-3 col-span-3 md:col-span-1 border">
+            <div className="mb-3 col-span-3 md:col-span-1">
               <input
                 name="contactNo"
                 maxLength="10"
-                className={`form-control ${errors.contactNo ? 'is-invalid' : ''} w-full p-4`}
+                className={`form-control ${errors.contactNo ? 'is-invalid' : ''} w-full p-2`}
                 placeholder="Contact No."
                 value={formData.contactNo}
                 onChange={handleChange}
@@ -131,11 +131,11 @@ const PartnerForm = ({ subject }) => {
               {errors.contactNo && <div className="invalid-feedback">{errors.contactNo}</div>}
             </div>
 
-            <div className="mb-3">
+            <div className="mb-3  border">
               <input
                 type="email"
                 name="email"
-                className={`form-control ${errors.email ? 'is-invalid' : ''} w-full p-4`}
+                className={`form-control ${errors.email ? 'is-invalid' : ''} w-full p-2 border-0`}
                 placeholder="Email"
                 value={formData.email}
                 onChange={handleChange}
@@ -143,11 +143,11 @@ const PartnerForm = ({ subject }) => {
               {errors.email && <div className="invalid-feedback">{errors.email}</div>}
             </div>
 
-            <div className="mb-3">
+            <div className="mb-3 border">
               <input
                 type="text"
                 name="jobType"
-                className={`form-control ${errors.jobType ? 'is-invalid' : ''} w-full p-4`}
+                className={`form-control ${errors.jobType ? 'is-invalid' : ''} w-full p-2 border-0`}
                 placeholder="Organisation"
                 value={formData.jobType}
                 onChange={handleChange}
@@ -158,8 +158,9 @@ const PartnerForm = ({ subject }) => {
             <div className="mb-3">
               <textarea
                 name="position"
-                className={`form-control ${errors.position ? 'is-invalid' : ''} w-full p-4`}
+                className={`form-control ${errors.position ? 'is-invalid' : ''} w-full p-2 border-0`}
                 placeholder="Message"
+                rows={4}
                 value={formData.position}
                 onChange={handleChange}
               />
@@ -168,7 +169,7 @@ const PartnerForm = ({ subject }) => {
 
             <button
               type="submit"
-              className="focus:outline-none w-44 rounded-sm text-white bg-red-500 hover:bg-red-600 font-normal text-md px-2 py-2 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 p-4"
+              className="focus:outline-none w-44 rounded-sm text-white bg-red-500 hover:bg-red-600 font-normal text-md px-2 py-2 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 p-2"
               disabled={isSubmitting}
             >
               Submit

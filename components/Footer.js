@@ -62,7 +62,7 @@ const Footer = () => {
                 href="/insights"
                 className="flex items-center justify-between text-white/60 hover:text-red-600 group"
               >
-                <li className="flex-grow">Stories</li>
+                <li className="flex-grow">Stories (Blogs)</li>
                 <FaArrowRight className="me-20 group-hover:animate-spin " />
               </Link>
               <Link
@@ -72,13 +72,13 @@ const Footer = () => {
                 <li className="flex-grow">Case Studies</li>
                 <FaArrowRight className="me-20 group-hover:animate-spin " />
               </Link>
-              <Link
+              {/* <Link
                 href="/insights"
                 className="flex items-center justify-between text-white/60 mt-2 hover:text-red-600 group"
               >
-                <li className="flex-grow">Blogs</li>
+                <li className="flex-grow"></li>
                 <FaArrowRight className="me-20 group-hover:animate-spin " />
-              </Link>
+              </Link> */}
               <Link
                 href="/insights"
                 className="flex items-center justify-between text-white/60 mt-2 hover:text-red-600 group "
@@ -126,7 +126,7 @@ const Footer = () => {
       </div>
       <div className="bg-customGray flex py-6">
         <p className="text-gray-400 px-10">
-          Upfront is an initiative of the Catalyst Group 2024. All Rights
+          Upfront is an entity of the Catalyst Group 2024. All Rights
           Reserved
         </p>
       </div>

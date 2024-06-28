@@ -11,7 +11,7 @@ import ContactForms from "@utils/ContactForms";
 import PartnerForm from "@utils/PartnerForm";
 
 const Page = () => {
-  const [activeTab, setActiveTab] = useState(contactUsTabs[1].label);
+  const [activeTab, setActiveTab] = useState('Partner With Us'); // Default to "Partner With Us" tab
 
   const renderContent = () => {
     switch (activeTab) {
@@ -23,69 +23,6 @@ const Page = () => {
               Join the force behind the Wellbeing of the Workforces
             </p>
             <PartnerForm />
-
-{/* 
-            <div className="lg:flex lg:gap-10 pt-10">
-              <Button
-                className="relative bg-black lg:w-96 w-80 p-3 group hover:bg-red-600 transition-all duration-300"
-                data-modal-target="default-modal"
-                data-modal-toggle="default-modal"
-              >
-                <span className="text-xl flex justify-center">
-                  Partner with us
-                </span>
-                <FaArrowRightLong className="text-3xl absolute right-4 transform translate-x-6 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
-              </Button>
-
-              <Button className="relative bg-black lg:w-96 w-80 p-3 group hover:bg-red-600 transition-all duration-300">
-                <span className="text-xl">Invest</span>
-                <FaArrowRightLong className="text-3xl absolute right-4 transform translate-x-6 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
-              </Button>
-              <Button className="relative bg-black lg:w-96 w-80 p-3 group hover:bg-red-600 transition-all duration-300">
-                <span className="text-xl">Work with us</span>
-                <FaArrowRightLong className="text-3xl absolute right-4 transform translate-x-6 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
-              </Button>
-            </div> */}
-
-            {/* <div
-              id="default-modal"
-              tabIndex="-1"
-              aria-hidden="true"
-              className="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
-            >
-              <div className="relative p-4 w-full max-w-2xl max-h-full">
-                <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                  <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                    <button
-                      type="button"
-                      className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                      data-modal-hide="default-modal"
-                    >
-                      <svg
-                        className="w-3 h-3"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 14 14"
-                      >
-                        <path
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-                        />
-                      </svg>
-                      <span className="sr-only">Close modal</span>
-                    </button>
-                  </div>
-
-                  <div className="p-4 md:p-5 space-y-4">
-                    <PartnerForm />
-                  </div>
-                </div>
-              </div>
-            </div> */}
           </div>
         );
       case "Join Us":
@@ -144,11 +81,9 @@ const Page = () => {
         <h1 className="text-white text-6xl mt-auto lg:ps-16 ps-10">CONTACT US</h1>
       </div>
 
-      <div className=" sticky top-24 bg-white shadow-md z-10">
+      <div className="sticky top-24 bg-white shadow-md z-10">
         <Tab tabs={contactUsTabs} getActiveTab={setActiveTab} />
       </div>
-
-
 
       {renderContent()}
     </>

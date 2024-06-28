@@ -8,7 +8,7 @@ import { insightsTabs } from '@utils/data';
 import Tab from '@components/Tab';
 
 const InsigstsAllCategoriesComponents = () => {
-    const [activeTab, setActiveTab] = useState('Stories');
+    const [activeTab, setActiveTab] = useState('Case Studies');
     const [visibleItems, setVisibleItems] = useState(8); // State to manage number of visible items
 
     const getActiveTab = (tab) => {
@@ -46,15 +46,13 @@ const InsigstsAllCategoriesComponents = () => {
                 </ul>
             </div> */}
             <div className="lg:flex lg:space-x-8 p-4 mt-4">
-                <div className={getContentClass('Stories')}>
-                    <StoriesComponents />
-                </div>
-                <div className={getContentClass('Case Studies')}>
+                 <div className={getContentClass('Case Studies')}>
                     <CaseStudiesComponents />
                 </div>
-                <div className={getContentClass('Blogs')}>
+                 <div className={getContentClass('Stories(Blogs)')}>
                     <BlogComponents />
                 </div>
+               
                 <div className={getContentClass('News and Publications')}>
                     <NewsComponents />
                 </div>

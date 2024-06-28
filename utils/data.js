@@ -369,7 +369,7 @@ export const coreTeam = [
 export const ourAdvisors = [
   {
     id: 1,
-    imageUrl: '/insights/dummyImg.png',
+    imageUrl: '/coreTeam/shiv.png',
     name: 'SHIV KUMAR',
     post: 'CO-FOUNDER, DIRECTOR',
     logo: <FaLinkedin />,
@@ -474,10 +474,10 @@ export const contactUsTabs = [
   },
 ]
 export const insightsTabs = [
-  { id: 1, tab: 'Stories' },
-  { id: 2, tab: 'Case Studies' },
-  { id: 3, tab: 'Blogs' },
-  { id: 4, tab: 'News and Publications' },
+  // { id: 1, tab: 'Stories' },
+  { id: 1, tab: 'Case Studies' },
+  { id: 2, tab: 'Stories(Blogs)' },
+  { id: 3, tab: 'News and Publications' },
   // { id: 5, tab: 'All' }
 ];
 // export const insightsTabs = [
