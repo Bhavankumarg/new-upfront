@@ -10,11 +10,18 @@ import WhatWeDo from "@components/WhatWeDo";
 import WhoAreWe from "@components/WhoAreWe";
 import { homeBannerCarousel } from "@utils/data";
 import WhoAreWeMobile from "@components/WhoWeAreMobile";
-
+import Seo from "../components/SeoComponents/Seo"
 export default function Home() {
+  // seo
+  const title = "Supporting Workforces Around the World - Wellbeing and Resilience for All with Upfront";
+  const description =
+    "Upfront is supporting the workforce worldwide to be well and resilient through systemic and inclusive ways. Join us in building enriched lives.";
+  const path = "https://upfront.global/contact-us"
+  const metaImage = "/contactUs/banner.png";
   return (
     <>
      <Header />
+     <Seo title={title} description={description} path={path} metaImage={metaImage} />  
       <div className="relative">
        
         <CarouselScreen details={homeBannerCarousel} />

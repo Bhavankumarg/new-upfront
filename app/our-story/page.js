@@ -10,6 +10,7 @@ import Image from 'next/image'
 import WeBelive from '@components/WeBelieve'
 import { useRef } from 'react'
 import OurStoryAccordion from '@components/OurStoryAccordion'
+import Seo from "../../components/SeoComponents/Seo"
 
 const page = () => {
   const worforceRef = useRef(null);
@@ -42,10 +43,18 @@ const page = () => {
     }
     console.log(tab)
   }
+    // seo
+    const title = " Advancing Workforce Wellbeing & Human Rights - Upfront's Vision";
+const description = "Discover how Upfront achieves mutual wellbeing for workers and businesses without compromise, focusing on human rights and development.";
+const path = "https://upfront.global/our-story";
+const metaImage = "/ourStory/banner.png"
+
 
   return (
     <>
      <Header />
+
+     <Seo title={title} description={description} path={path} metaImage={metaImage} />  
       <div className="lg:bg-[url('/ourStory/banner.png')] bg-[url('/ourStory/bannerMobile.png')] bg-cover lg:h-[80vh] h-[600px] flex flex-col pb-8">
        
         <h1 className="text-white lg:text-6xl text-3xl mt-auto lg:ps-16 ps-10">
@@ -66,9 +75,9 @@ const page = () => {
       </div>
 
       <div className="lg:px-24 px-10 py-16" ref={worforceRef}>
-        <h1 className="lg:text-6xl text-3xl">
+        <h5 className="lg:text-6xl text-3xl">
           <span className="text-red-600">WHY</span> WORKFORCE <br /> WELLBEING?
-        </h1>
+        </h5>
       </div>
 
       <div className='hidden lg:block'>
@@ -106,9 +115,9 @@ const page = () => {
       <OurMission />
 
       <div className="px-10 py-16" ref={ourhistoryRef}>
-        <h1 className="lg:text-6xl text-3xl lg:px-16 px-7">
+        <h4 className="lg:text-6xl text-3xl lg:px-16 px-7">
           <span className="text-red-600">OUR</span> <br /> HISTORY
-        </h1>
+        </h4>
         <div className="flex pt-16 justify-center">
           <Image
             src="/ourStory/ourHistory.png"

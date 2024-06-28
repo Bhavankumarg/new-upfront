@@ -6,6 +6,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
+import Seo from "../../components/SeoComponents/Seo"
 // import './App.css';
 
 const page = () => {
@@ -13,12 +14,23 @@ const page = () => {
     AOS.init({});
   }, []);
 
+  // seo
+  const title = "About Us - The Team Behind Upfront's Mission";
+  const description =
+    " Get to know the dedicated team that is working hard to fulfill Upfront's mission of improving the health of workforces and enabling sustainable growth.";
+  const path = "https://upfront.global/our-team";
+  const metaImage = "/coreTeam/banner.png";
+
   return (
     <>
       <Header />
-      <div className="lg:bg-[url('/coreTeam/banner.png')] bg-[url('/coreTeam/banner_mobile.png')] bg-cover lg:h-screen h-80 lg:mt-0 flex flex-col">
-      
-      </div>
+      <Seo
+        title={title}
+        description={description}
+        path={path}
+        metaImage={metaImage}
+      />
+      <div className="lg:bg-[url('/coreTeam/banner.png')] bg-[url('/coreTeam/banner_mobile.png')] bg-cover lg:h-screen h-80 lg:mt-0 flex flex-col"></div>
       <div
         className="px-10 py-16 "
         data-aos="fade-down"
@@ -61,9 +73,9 @@ const page = () => {
         data-aos="fade-down"
         data-aos-duration="1000"
       >
-        <h1 className="lg:text-6xl text-3xl mb-6 lg:px-16 mt-">
+        <h2 className="lg:text-6xl text-3xl mb-6 lg:px-16 mt-">
           <span className="text-red-600">OUR</span> MENTORS
-        </h1>
+        </h2>
         <hr />
         <ul
           className="grid lg:grid-cols-4 gap-8 container mx-auto"
@@ -92,7 +104,7 @@ const page = () => {
           })}
         </ul>
       </div>
-  
+
       {/* <div className="px-10 pt-10 pb-16 bg-customLightGray/25 ">
         <h1 className="text-6xl mb-6">
           <span className="text-red-600">OUR</span> ADVISORS

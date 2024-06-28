@@ -9,8 +9,13 @@ import { useState } from "react";
 import ContactUsAccordion from "@components/ContactUsAccordion";
 import ContactForms from "@utils/ContactForms";
 import PartnerForm from "@utils/PartnerForm";
+import Seo from "../../components/SeoComponents/Seo"
 
 const Page = () => {
+
+  
+
+
   const [activeTab, setActiveTab] = useState('Partner With Us'); // Default to "Partner With Us" tab
 
   const renderContent = () => {
@@ -39,16 +44,18 @@ const Page = () => {
         );
       case "Contact Info":
         return (
-          <div className="mx-14 pb-5">
+          <div className="mx-14 pb-5 w-1/2">
             <div className="mt-10 ">
-              <p className="text-black lg:text-6xl text-3xl">CONTACT INFO</p>
+              <h2 className="text-black lg:text-6xl text-3xl">CONTACT INFO</h2>
             </div>
 
-            <div className="lg:grid grid-cols-3 gap-4 text-xl border-b border-gray-400">
-              <div className="p-4 pt-7">Office Address:</div>
+           
+              <div className="p-4 pt-7">Office Address:
+              <div className="lg:grid grid-cols-3 gap-4 text-xl border-b border-gray-400">
+              </div>
               <div className="p-4 ">
-                <span className="text-xl">Bengaluru:</span>
-                <div>#25, 1st Main, AECS Layout, Ashwath Nagar, Bengaluru, 560094</div>
+              <div className="text-xl">Bengaluru:</div>
+              <div>#25, 1st Main, AECS Layout, Ashwath Nagar, Bengaluru, 560094</div>
               </div>
 
               <div className="p-4 text-xl">
@@ -74,9 +81,23 @@ const Page = () => {
     }
   };
 
+  // seo
+  const title = " Contact Us — Get in Touch with Upfront Today";
+  const description =
+    " Do you have any questions or need help? Reach out and connect with Upfront regarding our workforce well-being programs.";
+  const path = "https://upfront.global/contact-us"
+  const metaImage = "/contactUs/banner.png";
+
   return (
     <>
       <Header />
+
+      <Seo
+        title={title}
+        description={description}
+        path={path}
+        metaImage={metaImage}
+      />
       <div className="lg:bg-[url('/contactUs/banner.png')] bg-[url('/contactUs/bannerMobile.png')] bg-cover lg:h-[80vh] h-[600px] flex flex-col pb-8">
         <h1 className="text-white text-6xl mt-auto lg:ps-16 ps-10">CONTACT US</h1>
       </div>

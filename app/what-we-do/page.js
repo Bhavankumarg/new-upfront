@@ -10,6 +10,7 @@ import HealthWellbeing from "@components/health&wellbeing";
 import ThematicDesktop from "@components/ThematicDesktop";
 import ThematicMobile from "@components/ThematicMobile";
 import WhatWeDoMobileAccordion from "../../components/WhatWeDoMobileAccordion";
+import Seo from "../../components/SeoComponents/Seo"
 
 const Page = () => {
   const overviewRef = useRef(null);
@@ -53,9 +54,22 @@ const Page = () => {
     }
   };
 
+  // seo
+  const title = "Empowering Global Workforces - Upfront's Holistic Approach";
+  const description =
+    " Upfront is driving workforce empowerment worldwide by helping people gain skills and fighting for systemic change. Help us make work environments thrive.";
+  const path = "https://upfront.global/what-we-do";
+  const metaImage = "/whatWeDo/banner.png";
+
   return (
     <>
      <Header />
+     <Seo
+        title={title}
+        description={description}
+        path={path}
+        metaImage={metaImage}
+      />
       <div className="">
         <div className="lg:bg-[url('/whatWeDo/banner.png')] bg-[url('/whatWeDo/bannerMobile.png')] bg-cover lg:h-[80vh] h-[600px] flex flex-col  pb-8 ">
          
@@ -96,7 +110,7 @@ const Page = () => {
             ref={ourApproachRef}
             className="bg-[url('/whatWeDo/rectangle.png')] bg-no-repeat bg-cover flex flex-col items-center lg:p-10 p-3 text-center"
           >
-            <h1 className="lg:text-6xl text-3xl">APPROACH</h1>
+            <h2 className="lg:text-6xl text-3xl">APPROACH</h2>
             <div className="bg-white lg:px-24 mt-10">
               <div className="w-full flex justify-center">
                 <Image
@@ -140,10 +154,10 @@ const Page = () => {
             className="bg-customLightGray lg:p-12 p-4 flex justify-center mb-12"
           >
             <div className="lg:w-2/3 space-y-5 text-center ">
-              <h1 className="lg:text-6xl text-3xl pt-5">
+              <h2 className="lg:text-6xl text-3xl pt-5">
                 BUILDING RESILIENCE OF
                 <br /> THE WORKFORCES
-              </h1>
+              </h2>
               <p className="text-[#222222] text-xl">
                 Upfront focuses on fostering individual resilience by building
                 agency, ensuring access to essential services, and enhancing

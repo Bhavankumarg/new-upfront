@@ -50,9 +50,9 @@ const OurKeyCommunities = () => {
   return (
     <>
       <div className="space-y-5 lg:px-10 mb-10 text-center">
-        <h1 className="lg:text-6xl text-3xl mb-10">
+        <h2 className="lg:text-6xl text-3xl mb-10">
           KEY <br /> COMMUNITIES
-        </h1>
+        </h2>
         <div>
           <Slider {...settings}>
             <div>

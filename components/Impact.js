@@ -9,7 +9,7 @@ const Impact = () => {
       <h1 className="lg:text-6xl text-3xl pb-5">IMPACT</h1>
       <div className="lg:w-4/5 space-y-7">
         <h2 className="text-3xl lg:w-1/2">
-          Relief, Recovery & Resilience for <CountUp end={8299061} duration={5}/> individual Workers & their Families
+          Relief, Recovery & Resilience for <CountUp end={8299061} duration={5}/> Individual Workers & their Families
         </h2>
         <ul className="flex flex-wrap gap-3">
           {impact.map((item) => (
