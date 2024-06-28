@@ -10,7 +10,7 @@ import ContactUsAccordion from "@components/ContactUsAccordion";
 import ContactForms from "@utils/ContactForms";
 import PartnerForm from "@utils/PartnerForm";
 
-const Page = () => {
+const ContactPage = () => {
   const [activeTab, setActiveTab] = useState(contactUsTabs('Partner With Us'));
 
   const renderContent = () => {
@@ -155,4 +155,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default ContactPage;

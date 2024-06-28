@@ -62,7 +62,7 @@ const page = () => {
         data-aos-duration="1000"
       >
         <h1 className="lg:text-6xl text-3xl mb-6 lg:px-16 mt-">
-          <span className="text-red-600">OUR</span> ADVISORS
+          <span className="text-red-600">OUR</span> MENTORS
         </h1>
         <hr />
         <ul
