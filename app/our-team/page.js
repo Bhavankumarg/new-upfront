@@ -24,7 +24,7 @@ const page = () => {
         data-aos="fade-down"
         data-aos-duration="1000"
       >
-        <h1 className="lg:text-6xl text-3xl mb-6 lg:px-16">
+        <h1 className="lg:text-6xl text-3xl mb-6 lg:px-16 mt-">
           <span className="text-red-600">CORE</span> TEAM
         </h1>
         <hr />
@@ -55,8 +55,45 @@ const page = () => {
           })}
         </ul>
       </div>
-      {/* 
-      <div className="px-10 pt-10 pb-16 bg-customLightGray/25 ">
+
+      <div
+        className="px-10 py-16 "
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
+        <h1 className="lg:text-6xl text-3xl mb-6 lg:px-16 mt-">
+          <span className="text-red-600">OUR</span> ADVISORS
+        </h1>
+        <hr />
+        <ul
+          className="grid lg:grid-cols-4 gap-8 container mx-auto"
+          data-aos="fade-up"
+        >
+          {ourAdvisors.map((item, index) => {
+            return (
+              <li
+                key={item.id}
+                className={`p-3 ${
+                  index % 2 === 1 ? "lg:border-s-2 border-gray-400" : ""
+                } lg:${index % 4 !== 0 ? "border-s-2 border-gray-400" : ""}`}
+              >
+                <img src={item.imageUrl} className="mx-auto pt-2" />
+                <p className="pt-2 text-start">{item.name}</p>
+                <p className="text-[#7E7E7E] pt-2 text-start">{item.post}</p>
+                {item.url && (
+                  <Link href={item.url} target="_blank">
+                    <p className="text-4xl text-[#0177B7] mt-3 text-center">
+                      {item.logo}
+                    </p>
+                  </Link>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+  
+      {/* <div className="px-10 pt-10 pb-16 bg-customLightGray/25 ">
         <h1 className="text-6xl mb-6">
           <span className="text-red-600">OUR</span> ADVISORS
         </h1>

@@ -373,28 +373,29 @@ export const ourAdvisors = [
     name: 'Dummy Text',
     post: 'Project Manager',
     logo: <FaLinkedin />,
+    url:'https://www.linkedin.com/in/shiv-kumar-a288141/',
   },
-  {
-    id: 2,
-    imageUrl: '/insights/dummyImg.png',
-    name: 'Dummy Text',
-    post: 'Project Manager',
-    logo: <FaLinkedin />,
-  },
-  {
-    id: 3,
-    imageUrl: '/insights/dummyImg.png',
-    name: 'Dummy Text',
-    post: 'Project Manager',
-    logo: <FaLinkedin />,
-  },
-  {
-    id: 4,
-    imageUrl: '/insights/dummyImg.png',
-    name: 'Dummy Text',
-    post: 'Project Manager',
-    logo: <FaLinkedin />,
-  },
+  // {
+  //   id: 2,
+  //   imageUrl: '/insights/dummyImg.png',
+  //   name: 'Dummy Text',
+  //   post: 'Project Manager',
+  //   logo: <FaLinkedin />,
+  // },
+  // {
+  //   id: 3,
+  //   imageUrl: '/insights/dummyImg.png',
+  //   name: 'Dummy Text',
+  //   post: 'Project Manager',
+  //   logo: <FaLinkedin />,
+  // },
+  // {
+  //   id: 4,
+  //   imageUrl: '/insights/dummyImg.png',
+  //   name: 'Dummy Text',
+  //   post: 'Project Manager',
+  //   logo: <FaLinkedin />,
+  // },
 ]
 
 export const ourWorkTabs = [
@@ -465,7 +466,7 @@ export const contactUsTabs = [
   },
   {
     id: 2,
-    tab: 'Career Opportunities',
+    tab: 'Join Us',
   },
   {
     id: 3,

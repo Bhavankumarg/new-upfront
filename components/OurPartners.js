@@ -103,6 +103,62 @@ const OurPartners = () => {
               alt=""
             />
           </div>
+          <div>
+            <Image
+              src="/homePage/ourPartner7.png"
+              width={200}
+              height={100}
+              alt=""
+            />
+          </div>
+          <div>
+            <Image
+              src="/homePage/ourPartner8.png"
+              width={200}
+              height={100}
+              alt=""
+            />
+          </div>
+          <div>
+            <Image
+              src="/homePage/ourPartner9.png"
+              width={200}
+              height={100}
+              alt=""
+            />
+          </div>
+          <div>
+            <Image
+              src="/homePage/ourPartner10.png"
+              width={200}
+              height={100}
+              alt=""
+            />
+          </div>
+          <div>
+            <Image
+              src="/homePage/ourPartner11.png"
+              width={200}
+              height={100}
+              alt=""
+            />
+          </div>
+          <div>
+            <Image
+              src="/homePage/ourPartner12.png"
+              width={200}
+              height={100}
+              alt=""
+            />
+          </div>
+          <div>
+            <Image
+              src="/homePage/ourPartner13.png"
+              width={200}
+              height={100}
+              alt=""
+            />
+          </div>
         </Slider>
       </div>
     </div>

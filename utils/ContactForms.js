@@ -5,7 +5,7 @@ const ContactForm = ({ subject }) => {
   const [yourState, setYourState] = useState(null);
   const [yourCity, setYourCity] = useState(null);
   const [file, setFile] = useState(null);
-  const [isSubmitting, setIsSubmitting] = useState(true);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState({});
   const [fileErrors, setFileErrors] = useState(false);
   const [error, setError] = useState("");
@@ -151,153 +151,163 @@ const ContactForm = ({ subject }) => {
       setError("An error occurred. Please try again.");
     }
 
-    setIsSubmitting(true);
+    setIsSubmitting(false);
   };
 
   return (
-    <div className="bg-[#4A4A4A] py-1 px-5 mt-5">
+    <div className="flex justify-center items-center min-h-screen bg-gray-900 py-1 px-5">
       {formVisible ? (
-        <>
+        <div className="bg-[#4A4A4A] py-5 px-5 mt-5 container mx-auto max-w-3xl">
           <p className="text-white mt-5">
-            If you would like to explore an opportunity to work with Upfront,<br/>
-            please fill up this form and submit
+            If you would like to explore an opportunity to work with Upfront,
+            please fill up this form and submit.
           </p>
-          <div className="mt-5">
-            <form
-              className="grid grid-cols-1 md:grid-cols-3 gap-4"
-              encType="multipart/form-data"
-            >
-              <div className="mb-3">
-                <input
-                  name="firstname"
-                  className={`form-select border border-gray-500 w-full px-3 py-2${
-                    errors.firstname ? "is-invalid" : ""
-                  }`}
-                  placeholder="Enter Name"
-                  value={formData.firstname}
-                  onChange={handleChange}
-                  maxLength={6}
-                />
-                {errors.firstname && (
-                  <div className="invalid-feedback">{errors.firstname}</div>
-                )}
-              </div>
-              <div className="mb-3 col-span-1">
-                <input
-                  name="contactNo"
-                  maxLength="10"
-                  className={`form-select border border-gray-500 w-full px-3 py-2 ${
-                    errors.contactNo ? "is-invalid" : ""
-                  }`}
-                  placeholder="Contact No."
-                  value={formData.contactNo}
-                  onChange={handleChange}
-                />
-                {errors.contactNo && (
-                  <div className="invalid-feedback">{errors.contactNo}</div>
-                )}
-              </div>
-              <div className="mb-3">
-                <input
-                  type="email"
-                  name="email"
-                  className={`form-select border border-gray-500 w-full px-3 py-2 ${
-                    errors.email ? "is-invalid" : ""
-                  }`}
-                  placeholder="Email"
-                  value={formData.email}
-                  onChange={handleChange}
-                />
-                {errors.email && (
-                  <div className="invalid-feedback">{errors.email}</div>
-                )}
-              </div>
-              <div className="mb-3 col-span-1">
-                <select
-                  className={`form-select border border-gray-500 text-gray-500 w-full px-3 py-2 ${
-                    errors.jobType ? "is-invalid" : ""
-                  }`}
-                  id="jobType"
-                  name="jobType"
-                  onChange={handleVesselChange}
-                >
-                  <option value="">Job Type</option>
-                  {jobType.map((option) => (
-                    <option key={option.id} value={option.id}>
-                      {option.name}
-                    </option>
-                  ))}
-                </select>
-                {errors.jobType && (
-                  <div className="invalid-feedback">{errors.jobType}</div>
-                )}
-              </div>
-              <div className="mb-3">
-                <select
-                  id="position"
-                  name="position"
-                  className={`form-select border border-gray-500 text-gray-500 w-full px-3 py-2 ${
-                    errors.position ? "is-invalid" : ""
-                  }`}
-                  disabled={!selectedVessel}
-                  onChange={handlePositionChange}
-                >
-                  <option value="">Select Position</option>
-                  {applying.map((items) => (
-                    <option key={items.id} value={items.position}>
-                      {items.position}
-                    </option>
-                  ))}
-                </select>
-                {errors.position && (
-                  <div className="invalid-feedback">{errors.position}</div>
-                )}
-              </div>
-              <div className="mb-3 col-span-1">
-                <input
-                  type="file"
-                  name="resume"
-                  id="resume"
-                  className={`form-select text-gray-500 bg-white actual-file-input w-full border ${
-                    fileErrors || errors.resume ? "is-invalid" : ""
-                  }`}
-                  onChange={handleFileChange}
-                  aria-describedby="inputGroupFileAddon04"
-                  aria-label="Upload"
-                />
-                <p className="text-white"  style={{ lineHeight: "16px", fontSize: "12px" }}>
-                  Complete your job application by uploading your resume or CV.
-                  Upload either DOC, DOCX, PDF, RTF or TXT file types, 4 MB max.
-                </p>
-                {errors.resume && (
-                  <div className="invalid-feedback">{errors.resume}</div>
-                )}
-                <div className="fs-6" style={{ color: "#b02a37" }}>
+          <form
+            className="mt-5 grid grid-cols-3 md:grid-cols-2 gap-4"
+            encType="multipart/form-data"
+            onSubmit={handleSubmit}
+          >
+            <div className="mb-3">
+              <input
+                name="firstname"
+                className={`form-input border border-gray-500 w-72 px-3 py-2 ${
+                  errors.firstname ? "is-invalid" : ""
+                }`}
+                placeholder="Enter Name"
+                value={formData.firstname}
+                onChange={handleChange}
+                maxLength={6}
+              />
+              {errors.firstname && (
+                <div className="invalid-feedback text-red-500">
+                  {errors.firstname}
+                </div>
+              )}
+            </div>
+            <div className="mb-3">
+              <input
+                name="contactNo"
+                maxLength="10"
+                className={`form-input border border-gray-500 w-72 px-3 py-2 ${
+                  errors.contactNo ? "is-invalid" : ""
+                }`}
+                placeholder="Contact No."
+                value={formData.contactNo}
+                onChange={handleChange}
+              />
+              {errors.contactNo && (
+                <div className="invalid-feedback text-red-500">
+                  {errors.contactNo}
+                </div>
+              )}
+            </div>
+            <div className="mb-3">
+              <input
+                type="email"
+                name="email"
+                className={`form-input border border-gray-500 w-72 px-3 py-2 ${
+                  errors.email ? "is-invalid" : ""
+                }`}
+                placeholder="Email"
+                value={formData.email}
+                onChange={handleChange}
+              />
+              {errors.email && (
+                <div className="invalid-feedback text-red-500">
+                  {errors.email}
+                </div>
+              )}
+            </div>
+            <div className="mb-3">
+              <select
+                className={`form-select border border-gray-500 text-gray-500 w-72 px-3 py-2 ${
+                  errors.jobType ? "is-invalid" : ""
+                }`}
+                id="jobType"
+                name="jobType"
+                onChange={handleVesselChange}
+              >
+                <option value="">Job Type</option>
+                {jobType.map((option) => (
+                  <option key={option.id} value={option.id}>
+                    {option.name}
+                  </option>
+                ))}
+              </select>
+              {errors.jobType && (
+                <div className="invalid-feedback text-red-500">
+                  {errors.jobType}
+                </div>
+              )}
+            </div>
+            <div className="mb-3">
+              <select
+                id="position"
+                name="position"
+                className={`form-select border border-gray-500 text-gray-500 w-72 px-3 py-2 ${
+                  errors.position ? "is-invalid" : ""
+                }`}
+                disabled={!selectedVessel}
+                onChange={handlePositionChange}
+              >
+                <option value="">Select Position</option>
+                {applying.map((items) => (
+                  <option key={items.id} value={items.position}>
+                    {items.position}
+                  </option>
+                ))}
+              </select>
+              {errors.position && (
+                <div className="invalid-feedback text-red-500">
+                  {errors.position}
+                </div>
+              )}
+            </div>
+            <div className="mb-3 col-span-2 md:col-span-2">
+              <input
+                type="file"
+                name="resume"
+                id="resume"
+                className={`form-input text-gray-500 bg-white w-72 border ${
+                  fileErrors || errors.resume ? "is-invalid" : ""
+                }`}
+                onChange={handleFileChange}
+                aria-describedby="inputGroupFileAddon04"
+                aria-label="Upload"
+              />
+              <p
+                className="text-white text-xs mt-1 w-64"
+                style={{ lineHeight: "16px", fontSize: "12px" }}
+              >
+                Complete your job application by uploading your resume or CV.
+                Upload either DOC, DOCX, PDF, RTF or TXT file types, 4 MB max.
+              </p>
+              {errors.resume && (
+                <div className="invalid-feedback text-red-500">
                   {errors.resume}
                 </div>
-                {fileErrors && (
-                  <div className="error">
-                    Please upload the resume (DOC, DOCX, PDF, RTF, TXT).
-                  </div>
-                )}
-              </div>
-              <div className="col-span-1 md:col-span-3">
-                <button
-                  type="button"
-                  className="focus:outline-none w-full md:w-44 rounded-sm text-white bg-red-500 hover:bg-red-600 font-normal text-md px-2 py-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
-                  onClick={handleSubmit}
-                  disabled={hideSubmitButton}
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
-          </div>
-        </>
+              )}
+              {fileErrors && (
+                <div className="text-red-500">
+                  Please upload the resume (DOC, DOCX, PDF, RTF, TXT).
+                </div>
+              )}
+            </div>
+            <div className="col-span-3 md:col-span-2">
+              <button
+                type="submit"
+                className="focus:outline-none w-full md:w-auto rounded-sm text-white bg-red-500 hover:bg-red-600 font-normal text-md px-4 py-2 mb-2"
+                disabled={hideSubmitButton || isSubmitting}
+              >
+                {isSubmitting ? "Submitting..." : "Submit"}
+              </button>
+            </div>
+          </form>
+        </div>
       ) : (
-        <div className="mt-5 text-center mb-5 ">
-          <h3 className="fs-4 text-white">Thank you for your interest.</h3>
-          <h3 className="fs-4 text-white">
+        <div className="mt-5 text-center mb-5">
+          <h3 className="text-white text-lg">Thank you for your interest.</h3>
+          <h3 className="text-white text-lg">
             We will get in touch with you as soon as possible.
           </h3>
         </div>
