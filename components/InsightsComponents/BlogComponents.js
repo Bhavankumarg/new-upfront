@@ -39,12 +39,14 @@ const BlogComponents = () => {
               <div className="w-80">
                 <div className="relative">
                   {post.acf && post.acf.thumbnail_image && (
-                    <img
-                      src={post.acf.thumbnail_image.url}
-                      alt={post.title.rendered}
-                      className="w-full"
-                      height={220}
-                    />
+                    <div className=" lg:min-h-[220px]">
+                      <img
+                        src={post.acf.thumbnail_image.url}
+                        alt={post.title.rendered}
+                        className="w-full min-h-[220px]"
+                        height={220}
+                      />
+                    </div>
                   )}
                   <button
                     type="button"
@@ -76,10 +78,7 @@ const BlogComponents = () => {
                     className="fs-5 mb-3 mx-3 mt-5 p-1 post-content"
                   ></div>
                   <Button className="text-black w-52 hover:bg-black bg-[#E8E8E8] border border-[#909090] hover:text-white rounded-none mt-5 mx-3 mb-5">
-                    <Link
-                      href={`/insights/blog/${post.slug}`}
-                      className="px-7"
-                    >
+                    <Link href={`/insights/blog/${post.slug}`} className="px-7">
                       Read more
                     </Link>
                   </Button>

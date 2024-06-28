@@ -8,6 +8,7 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     
   ],
+  
   theme: {
     listStyleType: {
       none: 'none',

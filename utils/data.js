@@ -370,8 +370,8 @@ export const ourAdvisors = [
   {
     id: 1,
     imageUrl: '/coreTeam/shiv.png',
-    name: 'SHIV KUMAR',
-    post: 'CO-FOUNDER, DIRECTOR',
+    name: 'Shiv Kumar',
+    post: 'Co-Founder, Director',
     logo: <FaLinkedin />,
     url:'https://www.linkedin.com/in/shiv-kumar-a288141/',
   },

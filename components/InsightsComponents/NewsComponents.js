@@ -1,9 +1,9 @@
-'use client'
+"use client";
 
-import React, { useEffect, useState } from 'react';
-import ConfigData from '../../config';
-import Link from 'next/link';
-import { Button } from 'flowbite-react';
+import React, { useEffect, useState } from "react";
+import ConfigData from "../../config";
+import Link from "next/link";
+import { Button } from "flowbite-react";
 
 const NewsComponents = () => {
   const siteUrl = ConfigData.wpApiUrl;
@@ -14,11 +14,14 @@ const NewsComponents = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`${siteUrl}/posts?categories=${categoryId}&_embed&production_mode[]=${serverUrl}`);
+        const response = await fetch(
+          `${siteUrl}/posts?categories=${categoryId}&_embed&production_mode[]=${serverUrl}`
+        );
         const data = await response.json();
         setData(data);
+        console.log(data);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error("Error fetching data:", error);
       }
     };
 
@@ -27,14 +30,16 @@ const NewsComponents = () => {
 
   return (
     <div>
-      <h2 className="lg:text-6xl text-3xl py-10 lg:px-10">NEWS AND PUBLICATIONS</h2>
+      <h2 className="lg:text-6xl text-3xl py-10 lg:px-10">
+        NEWS AND PUBLICATIONS
+      </h2>
       <hr className="px-10" />
-      <ul className="flex flex-wrap gap-6 mt-8 container mx-auto">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 container mx-auto">
         {data.length > 0 ? (
           data.map((post) => (
-            <li key={post.id} className="lg:border mb-10">
-              <div className="w-80">
-                <div className="relative">
+            <li key={post.id} className="border mb-10">
+              <div className="w-full">
+                {/* <div className="relative">
                   {post.acf && post.acf.thumbnail_image && (
                     <img
                       src={post.acf.thumbnail_image.url}
@@ -49,8 +54,8 @@ const NewsComponents = () => {
                   >
                     NEWS
                   </button>
-                </div>
-                {post.acf && post.acf.date && (
+                </div> */}
+                {/* {post.acf && post.acf.date && (
                   <p className="card-date mb-0 mt-3">
                     {new Date(post.acf.date).toLocaleDateString("en-US", {
                       year: "numeric",
@@ -58,34 +63,32 @@ const NewsComponents = () => {
                       day: "numeric",
                     })}
                   </p>
-                )}
-                <div className="bg-[#F40F34] mx-3 mt-5 p-1">
-                  <span
-                    className="text-white"
-                    dangerouslySetInnerHTML={{ __html: post.title.rendered }}
-                  />
-                </div>
-                <div className="lg:h-[220px] flex flex-col justify-between">
-                  <div
-                    dangerouslySetInnerHTML={{
-                      __html: post["excerpt"]["rendered"],
-                    }}
-                    className="fs-5 mb-3 mx-3 mt-5 p-1 post-content"
-                  ></div>
-                  <Button className="text-black w-52 hover:bg-black bg-[#E8E8E8] border border-[#909090] hover:text-white rounded-none mt-5 mx-3 mb-5">
-                    <Link
-                      href={`/insights/news/${post.slug}`}
-                      className="px-7"
-                    >
-                      Read more
-                    </Link>
-                  </Button>
+                )} */}
+                <div className="flex-col h-48 flex justify-between">
+                  <div className="mx-3 mt-5 p-1">
+                    <span
+                      className="text-black font-bold"
+                      dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+                    />
+                  </div>
+
+                  <div>
+                    <Button className="text-black w-52 hover:bg-black bg-[#E8E8E8] border border-[#909090] hover:text-white rounded-none mt-5 mx-3 mb-5">
+                      <Link
+                        target="_blank"
+                        href={`${post.acf.news_and_publications_url}`}
+                        className="px-7"
+                      >
+                        Read more
+                      </Link>
+                    </Button>
+                  </div>
                 </div>
               </div>
             </li>
           ))
         ) : (
-          <div className="text-center text-3xl">Currently No Data Available</div>
+          <div className="text-center text-3xl">Loading...</div>
         )}
       </ul>
     </div>
