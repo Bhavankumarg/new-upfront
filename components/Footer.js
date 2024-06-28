@@ -11,6 +11,7 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaXTwitter } from "react-icons/fa6";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { FaLinkedinIn } from "react-icons/fa";
+// import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -18,12 +19,13 @@ const Footer = () => {
       <div className="bg-customBlack pt-12 pb-24 px-10">
         <div className="max-w-screen-xl mx-auto flex flex-wrap justify-between">
           <div className="mb-10 lg:mb-0">
+            <Link href="/">
             <Image
               src="/homePage/upfrontLogo.svg"
               width={118}
               height={111}
               alt="upfront logo"
-            />
+            /></Link>
           </div>
           <div className="flex flex-wrap gap-16 lg:gap-28">
             <ul className="text-white/60 text-xl mb-8 lg:mb-0">

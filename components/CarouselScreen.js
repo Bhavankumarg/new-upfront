@@ -13,7 +13,7 @@ const CarouselScreen = ({ details }) => {
           return (
             <div
               key={item.id}
-              class="hidden duration-2000 ease-in-out"
+              class="hidden duration-1000 ease-in-out"
               data-carousel-item
             >
               <img
