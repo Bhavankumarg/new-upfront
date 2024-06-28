@@ -32,7 +32,7 @@ const WeBelieve = () => {
                             key={item.id}
                             className="lg:ps-5 lg:border-s-2 lg:border-b-0 border-b-2  lg:py-0 py-5 border-gray-400"
                         >
-                            <div className="space-y-3 flex flex-col justify-center lg:w-64">
+                            <div className="space-y-3 flex flex-col justify-center lg:w-64 w-full">
                                 <Image
                                     src={item.logo}
                                     width={50}

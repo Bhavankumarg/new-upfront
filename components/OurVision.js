@@ -4,7 +4,7 @@ const OurVision = () => {
   return (
     <div className="lg:flex bg-customBlack pb-16 lg:pb-0">
       <div className="lg:flex lg:w-2/5">
-        <div className="bg-customRed flex flex-col justify-center px-10 py-28 space-y-2">
+        <div className="bg-customRed flex flex-col justify-center px-10 lg:py-28 py-11 space-y-2">
           <h2 className="lg:text-6xl text-3xl text-white">
             OUR <br /> VISION
           </h2>
