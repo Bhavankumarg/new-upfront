@@ -34,9 +34,9 @@ const Page = () => {
       case "Join Us":
         return (
           <div className=" pb-10">
-            <div className="px-14 mt-10 ">
+            <div className="lg:ps-10 mt-6">
               <p className="text-black lg:text-6xl text-3xl pt-10">
-                CAREER <br /> OPPORTUNITIES
+                CAREER OPPORTUNITIES
               </p>
               <p className="text-xl text-red-500 mt-3">No Current Openings</p>
               <ContactForms />
@@ -45,8 +45,8 @@ const Page = () => {
         );
       case "Contact Info":
         return (
-          <div className="mx-14 pb-5 lg:w-1/2">
-            <div className="mt-10 ">
+          <div className="lg:ps-10 pb-5 lg:w-1/2">
+            <div className="mt-10 p-5">
               <h2 className="text-black lg:text-6xl text-3xl">CONTACT INFO</h2>
             </div>
 
