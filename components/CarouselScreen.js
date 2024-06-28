@@ -10,7 +10,7 @@ const CarouselScreen = ({ details }) => {
       interval= {3000}
       data-carousel-interval={7000}
     >
-      <div class="relative lg:h-full h-[80vh] overflow-hidden">
+      <div class="relative lg:h-full h-[80vh] overflow-hidden mt-0 pt-0">
         {details.map((item) => {
           return (
             <div
