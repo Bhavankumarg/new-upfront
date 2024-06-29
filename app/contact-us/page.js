@@ -64,7 +64,7 @@ const Page = () => {
             <div className="lg:flex text-xl border-b border-gray-400">
               <div className="lg:p-4 pt-5 pb-2 lg:pb-0">Email:</div>
               <Link href="mailto:info@upfrontglobal.com">
-                <div className="lg:p-4 pt-5 pb-2">info@upfrontglobal.com</div>
+                <div className="pt-4 pb-2">info@upfrontglobal.com</div>
               </Link>
             </div>
 
