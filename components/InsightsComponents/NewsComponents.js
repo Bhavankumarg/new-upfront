@@ -37,7 +37,7 @@ const NewsComponents = () => {
       <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 container mx-auto">
         {data.length > 0 ? (
           data.map((post) => (
-            <li key={post.id} className="border mb-10">
+            <li key={post.id} className="border-red-600 border mb-10">
               <div className="w-full">
                 {/* <div className="relative">
                   {post.acf && post.acf.thumbnail_image && (

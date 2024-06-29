@@ -176,9 +176,9 @@ const PartnerForm = ({ subject }) => {
             </button>
           </form>
         ) : (
-          <div className="mt-5 text-center mb-5">
-            <h3 className="fs-4">Thank you for your interest.</h3>
-            <h3 className="fs-4">We will get in touch with you as soon as possible.</h3>
+          <div className="mt-5 text-center mb-5 p-5">
+            <h3 className="fs-4 text-white">Thank you for your interest.</h3>
+            <h3 className="fs-4 text-white">We will get in touch with you as soon as possible.</h3>
           </div>
         )}
       </div>
