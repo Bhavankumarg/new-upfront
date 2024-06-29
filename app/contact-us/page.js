@@ -25,7 +25,7 @@ const Page = () => {
         return (
           <div className="lg:ps-10 p-5 mt-10">
             <p className="text-black lg:text-6xl text-3xl">GET INVOLVED</p>
-            <p className="text-black mt-4 text-xl">
+            <p className="text-black mt-4 text-xl mb-3">
               Join the force behind the Wellbeing of the Workforces
             </p>
             <PartnerForm />

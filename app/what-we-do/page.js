@@ -118,7 +118,7 @@ const Page = () => {
       <div className="">
         <div className="lg:bg-[url('/whatWeDo/banner.png')] bg-[url('/whatWeDo/bannerMobile.png')] bg-cover lg:h-[75vh] h-[400px] flex flex-col  pb-8 ">
          
-          <h1 className="text-white lg:text-6xl text-3xl mt-auto ps-16">
+          <h1 className="text-white text-6xl mt-auto ps-16">
             WHAT <br /> WE DO
           </h1>
         </div>
