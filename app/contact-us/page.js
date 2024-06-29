@@ -34,7 +34,7 @@ const Page = () => {
       case "Join Us":
         return (
           <div className=" pb-10">
-            <div className="lg:ps-10 p-5 mt-6">
+            <div className="lg:ps-10 p-5">
               <p className="text-black lg:text-6xl text-3xl pt-10">
                 CAREER OPPORTUNITIES
               </p>
