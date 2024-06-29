@@ -27,7 +27,7 @@ const Workplace = () => {
                 width={100}
                 height={100}
                 alt=""
-                className="w-10"
+                className="w-14"
               />
             </div>
             <div className="flex flex-col px-3">
@@ -54,7 +54,7 @@ const Workplace = () => {
                 width={100}
                 height={100}
                 alt=""
-                className="w-10"
+                className="w-14"
               />
             </div>
             <div className="lg:flex flex-col px-3 ">

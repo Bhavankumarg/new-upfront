@@ -58,7 +58,7 @@ const Financial = () => {
                 width={100}
                 height={100}
                 alt=""
-                className="w-10"
+                className="w-12"
               />
             </div>
             <div className="lg:flex flex-col px-3 ">

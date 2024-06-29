@@ -7,6 +7,7 @@ import Link from "next/link";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,20 +38,21 @@ const Header = () => {
     };
   }, []);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <div className="sticky top-0 z-50 bottom-0  ">
+    <div className="sticky top-0 z-50">
       <nav
         className={`absolute top-0 left-0 z-40 w-full ${
-          isScrolled ? "bg-[#222222]" : "bg-transparent"}`}
-
-        // className={`absolute top-0 left-0 z-40 w-full ${
-        //   isScrolled && !isMobile ? "bg-[#222222]" : "lg:bg-transparent"
-        // } ${isMobile ? "bg-black" : ""}`}
+          isScrolled ? "bg-[#222222]" : "bg-transparent"
+        }`}
       >
         <div
-          className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 px-4 py-5 ${
+          className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ${
             isScrolled ? "border-none" : "border-b border-gray-400"
-          } border-b border-gray-400`}
+          }`}
         >
           <Link
             href="/"
@@ -70,7 +72,8 @@ const Header = () => {
             type="button"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-dropdown"
-            aria-expanded="false"
+            aria-expanded={isMenuOpen}
+            onClick={toggleMenu}
           >
             <span className="sr-only">Open main menu</span>
             <svg
@@ -90,17 +93,19 @@ const Header = () => {
             </svg>
           </button>
           <div
-            className="hidden w-full md:block md:w-auto"
+            className={`${
+              isMenuOpen ? "block " : "hidden"
+            } w-full md:block md:w-auto`}
             id="navbar-dropdown"
           >
-            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 text-white border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:items-center md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="flex bg-[#222222] lg:bg-transparent  flex-col font-medium p-4 md:p-0 mt-4 text-white border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:items-center md:mt-0 md:border-0">
               <li>
                 <button
                   id="dropdownNavbarLink"
                   data-dropdown-toggle="dropdownNavbar"
-                  className={`flex items-center justify-between w-full py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto ${
+                  className={`flex items-center justify-between w-full py-2 px-3  md:hover:bg-transparent md:p-0 md:w-auto ${
                     isScrolled && !isMobile
-                      ? "md:dark:hover:text-blue-500 dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                      ? "md:dark:hover:text-blue-500 md:dark:hover:bg-transparent"
                       : ""
                   }`}
                 >

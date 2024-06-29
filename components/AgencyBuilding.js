@@ -20,19 +20,19 @@ const AgencyBuilding = () => {
             Agency Building for Women & Young Girls
           </p>
 
-          <div className="lg:flex flex-row ">
+          <div className="flex flex-row ">
             <div className="flex flex-col">
               <Image
                 src="/whatWeDo/tab-img-7.svg"
                 width={100}
                 height={100}
                 alt=""
-                className="w-10"
+                className="lg:w-10 w-20"
               />
             </div>
             <div className="flex flex-col px-3">
               <p className="text-md font-medium ">
-                EQUIPPING WOMEN AND YOUNG GIRLS <br></br> WITH KNOWLEDGE AND
+                EQUIPPING WOMEN AND YOUNG GIRLS WITH KNOWLEDGE AND
                 LIFE SKILLS:
               </p>
             </div>
@@ -53,7 +53,7 @@ const AgencyBuilding = () => {
                 width={100}
                 height={100}
                 alt=""
-                className="w-10"
+                className="w-14"
               />
             </div>
             <div className="lg:flex flex-col px-3 ">

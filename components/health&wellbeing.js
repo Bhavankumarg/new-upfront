@@ -27,7 +27,7 @@ const HealthWellbeing = () => {
                 width={100}
                 height={100}
                 alt=""
-                className="w-10"
+                className="w-12"
               />
             </div>
             <div className="flex flex-col px-3">
@@ -79,7 +79,7 @@ const HealthWellbeing = () => {
                 width={100}
                 height={100}
                 alt=""
-                className="w-10"
+                className="w-14"
               />
             </div>
             <div className="flex flex-col px-3">
@@ -102,11 +102,11 @@ const HealthWellbeing = () => {
                 width={100}
                 height={100}
                 alt=""
-                className="w-10"
+                className="w-14"
               />
             </div>
             <div className="flex flex-col px-3">
-              <p className="text-md font-medium">
+              <p className="text-md font-medium pt-2">
                 WOMEN’S HEALTH AND WELLBEING:
               </p>
             </div>

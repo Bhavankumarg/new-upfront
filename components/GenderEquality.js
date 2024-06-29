@@ -15,7 +15,7 @@ const GenderEquality = () => {
       </div>
 
       <div className="lg:flex lg:mt-20">
-        <div className="lg:w-1/2  bg-[#FFE8EC] p-4 lg:pt-20">
+        <div className="lg:w-1/2 w-full bg-[#FFE8EC] p-4 lg:pt-20">
           <p className="text-4xl bold font-normal pb-5 pt-3 mt-10">
             Gender Equality, Inclusion, and Diversity at Workplaces
           </p>
@@ -27,7 +27,7 @@ const GenderEquality = () => {
                 width={100}
                 height={100}
                 alt=""
-                className="w-10"
+                className="w-12"
               />
             </div>
             <div className="flex flex-col px-3">
@@ -54,7 +54,7 @@ const GenderEquality = () => {
                 width={100}
                 height={100}
                 alt=""
-                className="w-10"
+                className="w-12"
               />
             </div>
             <div className="flex flex-col px-3 ">
