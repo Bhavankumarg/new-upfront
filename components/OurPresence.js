@@ -22,16 +22,7 @@ const OurPresence = () => {
             className="w-full lg:hidden block"
             alt="map"
           />
-          {/* <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300"></div>
-          <div className="absolute inset-0 flex items-center cursor-pointer justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <Image
-              className="w-64 lg:w-4/5"
-              src="/homePage/indiaMap.png"
-              width={500}
-              height={500}
-              alt="India"
-            />
-          </div> */}
+         
         </div>
       </div>
 
