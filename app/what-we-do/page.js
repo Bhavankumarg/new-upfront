@@ -105,7 +105,7 @@ const Page = () => {
           <div className="bg-white lg:px-24 mt-10">
             <div className="w-full flex justify-center">
               <Image
-                src="/whatWeDo/ourApproach.png"
+                src="/whatWeDo/our_Approach.png"
                 width={500}
                 height={500}
                 alt="Our Approach"
@@ -139,7 +139,7 @@ const Page = () => {
               wealthy, and thriving workforce.
             </p>
             <Image
-              src="/whatWeDo/our_approach_mobile.png"
+              src="/whatWeDo/our_approach_Mobile.png"
               width={500}
               height={500}
               alt="Our Approach Mobile"
@@ -165,14 +165,14 @@ const Page = () => {
               transformative change.
             </p>
             <Image
-              src="/whatWeDo/PeopleResilience.png"
+              src="/whatWeDo/People_Resilience.png"
               width={600}
               height={400}
               alt="People Resilience"
               className="w-full hidden lg:block"
             />
             <Image
-              src="/whatWeDo/PeopleResilienceMobile.png"
+              src="/whatWeDo/People_Resilience_Mobile.png"
               width={600}
               height={400}
               alt="People Resilience Mobile"
