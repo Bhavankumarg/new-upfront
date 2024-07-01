@@ -12,7 +12,14 @@ const OurPresence = () => {
             src="/homePage/map.png"
             width={600}
             height={600}
-            className="w-full"
+            className="w-full hidden lg:block"
+            alt="map"
+          />
+          <Image
+            src="/homePage/map_mobile.png"
+            width={600}
+            height={600}
+            className="w-full lg:hidden block"
             alt="map"
           />
           {/* <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300"></div>
