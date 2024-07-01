@@ -9,7 +9,7 @@ const OurPresence = () => {
       <div className="lg:w-1/2 relative">
         <div className="group relative">
           <Image
-            src="/homePage/map.png"
+            src="/homePage/map_desktop.png"
             width={600}
             height={600}
             className="w-full hidden lg:block"
